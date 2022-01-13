@@ -9,35 +9,59 @@
 <body>
     <header>
         <h1>Juan Ramón Coroba Peñalver</h1>
-        <nav class="menu">
-            <li><a href="file:///C:/Users/jrcor/bootcamp-fullstack-work/juan-ramon-coroba/bootcamp-fullstack-mad-enero-2022/students/juan-ramon-coroba/portafolioweb/index.html">Home</a></li>
-            <li><a href="file:///C:/Users/jrcor/bootcamp-fullstack-work/juan-ramon-coroba/bootcamp-fullstack-mad-enero-2022/students/juan-ramon-coroba/portafolioweb/micv.html">Mi CV</a></li>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="micv.html">Mi CV</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+
         </nav>
     </header>
-<hr>
-<main>
-    <h2>Contacto</h2>
-    <label for="Nombre">Nombre</label>
-    <input type="text" name="Nombre" placeholder="Escribe tu nombre" id="Nombre">
-    <label for="Apellido">Apellido</label>
-    <input type="text" name="Apellido" placeholder="Escribre tu apellido" id="Apellido">
-    <label for="Email">Email</label>
-    <input type="text" name="Email" placeholder="Escribe tu email" id="Email">
-    <label for="Telefono">Teléfono</label>
-    <input type="number" name="Telefono" placeholder="Telefono" id="Telefono">
-    <input type="radio" value="España" id="España">
-    <label for="España">España</label>
-    <input type="radio" value="Resto de Europa" id="Resto de Europa">
-    <label for="Resto de Europa">Resto de Europa</label>
-</main>
-
-<main>
-    <textarea name="mensaje" rows="10" cols="30"></textarea>
-    <select name="select">
-        <option value="opcion1">Opción 1</option>
-        <option value="opcion2">Opción 2</option>
-    </select>
-    <input type="submit">
-</main>
+    <hr/>
+    <main>
+        <h2>Contacto</h2>
+        <div>
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" placeholder="Escribe tu nombre" id="Nombre">
+        </div>
+        <div>
+            <label for="Apellido">Apellido</label>
+            <input type="text" name="Apellido" placeholder="Escribre tu apellido" id="Apellido">
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" name="Email" placeholder="Escribe tu email" id="Email">
+        </div>
+        <div>
+            <label for="Telefono">Teléfono</label>
+            <input type="text" name="Telefono" placeholder="Telefono" id="Telefono">
+        </div>
+        <div>
+            <input type="radio" value="España" id="España">
+            <label for="España">España</label>
+        </div>
+        <div>
+            <input type="radio" value="Resto de Europa" id="Resto de Europa">
+            <label for="Resto de Europa">Resto de Europa</label>
+        </div>
+        <div>
+            <textarea name="mensaje" rows="10" cols="30"></textarea>
+        </div>
+        <div>
+            <select name="select">
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+            </select>
+        </div>
+        
+        <button type="submit">ENVIAR</button>
+    </main>
 </body>
 </html>
