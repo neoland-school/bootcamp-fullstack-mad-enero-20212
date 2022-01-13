@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cristina Romero</title>
 </head>
 <body>
     <header>
@@ -28,10 +28,13 @@
                
            </ul>
      
-   
+            <hr>
+
        </header>
 
        <main>
+           <br>
+
             <form>
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="escribe tu nombre" required>
@@ -46,41 +49,49 @@
                 <br>
 
                 <label for="mail">Email:</label>
-                <input type="text" id="mail" name="mail" placeholder="escribe tu correo electrónico" required>
+                <input type="text" id="mail" name="mail" placeholder="correo electrónico" required>
 
                 <br>
                 <br>
 
                 <label for="telefono">Teléfono:</label>
-                <input type="text" id="telefono" name="telefono" placeholder="escribe tu teléfono" required>
+                <input type="text" id="telefono" name="telefono" placeholder="teléfono" required>
 
                 <br>
                 <br>
-                <label for="ok">Estoy de acuerdo:</label>    
-                <input type="radio" id="ok" name="ok">
+                <br>
+
+                <label for="ok">Elige la opción que deseas:</label>    
+                <p>Front-end<input type="radio" id="ok" name="ok"></p>
+                <p>Back-end<input type="radio" id="ok" name="ok"></p>
+                <p>Fullstack<input type="radio" id="ok" name="ok"></p>
+
+
+                <br>
+                
+
+                <h4>Deja tu comentario aquí:</h4>
+                <textarea id="comentario" name="comentario" rows="7" cols="50"> Dime lo que piensas </textarea>
 
                 <br>
                 <br>
 
-                <label for="comentario">Deja tu comentario aquí</label>
-                <textarea id="comentario" name="comentario" rows="5" cols="30"> Dime lo que piensas </textarea>
-
-                <br>
-                <br>
-
-                <label for="opciones">Elige una opción:</label>
+                <label for="opciones">Quieres recibir notificaciones?</label>
                 <select name="opciones" id="opciones">
                 <option value="si">Si</option>
                 <option value="no">No</option>
-                <option value="no">No lo se</option>
+                
     
   </select>
 
                 <br>
                 <br>
                 <br>
+                <label for="Enviar"></label>
+                <input type="submit" value="Enviar" name="Enviar">
 
-                <input type="submit" value="Submit">
+                <br>
+                <br>
 
             </form>
        </main>
