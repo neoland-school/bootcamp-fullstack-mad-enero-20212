@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi primera Web</title>
 </head>
-<body>
+<body style="background-color:darkgray;">
     <header>
         <h1> <strong style="color: blue; font-size: larger; font-style: oblique;"> Jorge López Villar</strong></h1>
         <h2>Full Stack Developer</h2>
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html">Mi web</a>
                 </li>
                 <li>
                     <a href="cv.html">Mi CV</a>
@@ -26,7 +26,7 @@
     </header>
         <main>
             <h2>Bienvenido a mi Web</h2>
-            <img src="img/jorge.jpg" alt="Imagen de perfil" width="300px;">
+            <img src="img/jorge1.jpg" alt="Imagen de perfil" width="400" height="400">
 
          <hr/>
 
@@ -44,24 +44,32 @@
 
     <aside>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/NQKzXHnBo9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
     </aside>
         <hr/>   
+            
         
         <form> <h3>Formulario de contacto</h3>
 
          <div>
-            <label for="nombre">Nombre:</label>
+            <label for="nombre">Nombre y apellidos:</label>
             <input type="text" name="Nombre y apellidos" id="nombre" placeholder="Escribe tu nombre y apellidos">
+        </div>
+        <div>
+            <label for="name">Dirección:</label>
+            <input type="text" name="Dirección" id="Adress" placeholder="Domicilio">
+        </div>
+        
+        <div>
+            <label for="Telefono">Teléfono:</label>
+            <input type="text" name="Telefono de contacto" id="nombre" placeholder="Teléfono">
+        </div>
+        <div>
+            Fecha de nacimiento
+            <input type="date"/>
         </div>
 
         <div> email <input type="email"/></div>
         
-        <div>
-            <label for="number">Años:</label>
-            <input type="number" name="Años" id="nombre" placeholder="Escribe tu edad">
-        </div>
-
         <div> Género:
             <input type="radio" name="genero" id="hombre"value="hombre"/>
             <label for="hombre">Hombre</label>
@@ -74,26 +82,19 @@
             <input type="date"/>
         </div>
         
-        <div>
-            <label for="Telefono">Teléfono:</label>
-            <input type="text" name="Telefono de contacto" id="nombre" placeholder="Teléfono">
-        </div>
+
         
         <hr>    
-        
-        <div>
-            <textarea name="Comentarios" id="Comentarios y sugerencias" cols="30" rows="10"></textarea>
-
-            <input type="button" value="enviar"/>
-        </div>
-      
         </form>
 
-        <footer>
+        <footer >
+          <div style="text-align: center;color: red;">
             <h1> 
                 Visita mi Blog
             </h1>
-            <h2>copyright</h2>
+            <p>copyright 2021 &copy;</p>
+        </div>
+     
         </footer>
 
        
