@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>contact</title>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">home</a><br>
+    <a href="my-cv.html">my cv</a><br>
+    <a href="contact.html">contact</a><br>
+  </nav>
+  <hr />
+  <h1>Contact</h1>
+  <form id="contact-form">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="your name" required />
+    <br />
+
+    <label for="surname">Surname</label>
+    <input type="text" name="surname" id="surname" placeholder="your surname" required />
+    <br />
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="your email" required />
+    <br />
+
+    <label for="phone-numb">Phone number</label>
+    <input type="tel" name="phone-numb" id="phone-numb" placeholder="your number" required />
+    <br />
+
+    <label for="newsletter">Subscribe to ann's newsletter?</label>
+    <input type="radio" id="yes-subscribe" name="yes-subscribe" checked /> Yes!
+    <input type="radio" id="no-subscribe" name="no-subscribe" /> Nope
+    <br />
+
+    <label for="contact-pref">Choose contact preference:</label>
+    <select name="contact-options" id="contact-options" form="contac-form">
+      <option value="email">Email</option>
+      <option value="phone-number">Phone number</option>
+    </select>
+    <br />
+
+    <label for="additional-comment">Anything to say?</label>
+    <textarea name="comment" form="contact-form">Enter your text here...</textarea>
+    <br />
+    <input type="submit" value="submit">
+
+    </select>
+  </form>
+
+  <iframe src="https://giphy.com/embed/kd9BlRovbPOykLBMqX" id="leo" width="300" height="300" frameBorder="0"></iframe>
+
+  <hr />
+  <footer>
+    <a href="https://github.com/ann-jrti" target="blank">My github</a>
+  </footer>
+</body>
+
+
+</html>
