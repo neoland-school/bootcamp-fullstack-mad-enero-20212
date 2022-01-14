@@ -1,13 +1,37 @@
+*
+
+
 * {
     margin:0;
+    
 }
+
+
+div {
+    cursor: crosshair;
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 .contenedor {
 
     color: red;
 }
 
+
 .contenedor-parrafo-1 {
 
     color: blue;
 }
+
+.display-inline {
+
+    display: inline;
+
+}
+
+.display-block {
+
+        display: block;
+    
+ }
