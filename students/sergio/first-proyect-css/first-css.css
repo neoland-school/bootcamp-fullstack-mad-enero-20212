@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: darkgreen;
+}
+
+div p {
+    color: darkred;
+    border: 1px white;
+}
+
+p {
+    width: 350px; 
+    display: inline;
+}
+
+div {
+    cursor: pointer;
+    
+}
