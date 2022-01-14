@@ -1,0 +1,54 @@
+*{margin:0;padding:0;box-sizing:border-box;font-size:0;}  
+nav a{
+      text-decoration:none;  /*esto me ha quitado el subrayado de el link*/
+      color:inherit;
+      font-size:14px;
+      }
+            
+nav li{
+      display:inline-block;
+      width:150px;
+      height:30px;
+      padding:5px 10px;
+      background-color:#000;
+      border:1px solid #000;
+      text-align:center;
+      color:#fff;
+      position:relative;
+}
+            
+nav li:hover{
+      background-color:#fff;
+      color:#000;
+      }
+            
+nav li>ul{
+      display:none;
+      }
+
+nav li:hover>ul{
+      display:block;
+      position:absolute;
+      top:30px;
+      left:0px;
+}
+.estatico{
+    position: sticky;
+}
+.pruebauno{
+    border: solid;
+    border-color: rgb(255, 253, 255);
+    background-color: darkviolet;
+    box-shadow: hotpink;
+    width: 150px;
+    height: 150px;
+
+}
+.pruebados{
+    width: 300px;
+    height: 150px;
+    border: dotted;
+    box-shadow: lawngreen;
+    border-color: lightseagreen;
+    background-color: maroon;
+}

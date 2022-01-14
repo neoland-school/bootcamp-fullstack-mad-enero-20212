@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+div p{
+    color: blueviolet;
+    padding: 100px;
+}
+
+.pseudoselectores:hover{
+    color: crimson;
+    
+
+}
+.letra-diferente{
+    font-family: sans-serif;
+    /* font: oblique 120% sans-serif bold; */
+
+}
+.bloques{
+    /* display: inline; */
+    background-color: rgb(236, 16, 16);
+    margin: 20px;
+    display: block;
+    
+}
+
+
+
