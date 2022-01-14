@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    color: darkgreen;
 }
 
 div p {
@@ -13,10 +12,10 @@ div p {
 
 p {
     width: 350px; 
-    display: inline;
+    display: block;
 }
 
-div {
+div:hover {
     cursor: pointer;
-    
 }
+
