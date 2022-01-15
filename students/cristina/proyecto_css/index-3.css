@@ -1,0 +1,55 @@
+.flex-container{
+    display: flex;
+    flex-wrap:wrap;
+    
+}
+
+.flex-container div {
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    line-height: 350px;
+}
+
+.div-1{
+    background-color: rgb(136, 201, 179);
+
+}
+
+.div-2{
+    background-color: rgb(231, 227, 163);
+}
+
+.div-3{
+    background-color: rgb(116, 114, 202);
+}
+
+.div-4{
+    background-color: rgb(107, 45, 45);
+}
+
+.div-5{
+    background-color: rgb(105, 180, 105);
+    
+}
+
+.div-6{
+    background-color: #d69880;
+}
+
+.div-7{
+    background-color: #d4eac0;
+    
+}
+
+.div-8{
+    background-color: #b4a8bf;
+}
+
+.div-9{
+    background-color: #61566b;
+}
+
+.div-10{
+    background-color: #8590f7;
+}
