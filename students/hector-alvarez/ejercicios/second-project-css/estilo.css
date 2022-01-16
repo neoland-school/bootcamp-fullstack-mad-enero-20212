@@ -1,12 +1,101 @@
 
 nav {
 
-    position: fixed;
+    display: block;
+    position: sticky;
+    background-color: black;
 }
 
 
 .menu {
 
     text-decoration: none;
-    color: black;
+    color: white;
 }
+
+.contenedor-div-1 {
+
+    width: 150px;
+    height: 150px;
+    background-color: grey;
+    border: solid;
+    border-color: khaki;
+    box-shadow: 10px 10px;
+  
+}
+
+.contenedor-div-2 {
+
+    width: 300px;
+    height: 100px;
+    background: linear-gradient(#e66465, #9198e5);
+    border: 4px dotted blue;
+    box-shadow: 5px -5px 0 2px blue;
+  
+}
+
+
+.imagen-montana {
+   
+    max-height: 100%;
+    max-width: auto;
+    opacity: 0.5;
+
+  
+  }
+
+.contenedor-div-3 {
+
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+  
+}
+
+.texto-de-imagen {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: rgb(68, 98, 8);
+    font-family: arial black;
+    
+  
+}
+
+
+.contenedor-footer {
+
+    background-color: brown;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-content: center;
+    
+  
+}
+
+.contenedor-imagen-footer {
+
+    border-radius: 20px;
+    background-color: rgb(38, 124, 17);
+    
+  
+}
+
+.logo-facebook {
+
+    height: 25px;
+    width: auto;
+    position: relative;
+  
+}
+
