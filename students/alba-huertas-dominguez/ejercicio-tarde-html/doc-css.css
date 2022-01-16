@@ -3,6 +3,7 @@
 .menu
 {text-decoration: none;
     color: black;
+    display: block;
 }
 
 .cabecera{
@@ -50,14 +51,13 @@
     border: hidden;
     background-image: url(https://www.nolodejesalazar.es/wp-content/uploads/sites/26/2021/03/no-lo-dejes-al-azar-border-collie.jpg);
     background-position: center;
-    background-size: 450px;
+    background-size:cover
     
 }
 .textofondo{ text-align:center;
-    color:red;
+    color:white;
     font-size: 30px;
-    padding-block:50px;
-
+    padding: 50px;
 
 
 
@@ -74,11 +74,15 @@
     height: 200px;
     background:burlywood;
     position: absolute;
+    margin: 10px;
+    
    
 }
 
-.fotopie{padding:10px;
-    margin:10px
+.fotopie{ padding: 50px;
+       
+   
+  
     
 }
 
@@ -86,17 +90,17 @@
 .div1{background-color: #F08080;
     width: 350px;
     height: 350px;
-    display: inline-block;
+    display: inline-flex;
 }
 .div2{background-color:#90EE90;
     width: 350px;
     height: 350px;
-    display: inline-block;
+    display: inline-flex;
 }
 .div3{background-color: #E0FFFF;
     width: 350px;
     height: 350px;
-    display: inline-block;
+    display: inline-flex;
 }
 .div4{background-color:#FFB6C1;
     width: 350px;
