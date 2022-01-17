@@ -2,17 +2,18 @@ body {
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    background-color: gainsboro;
+}
+p {
+    color: white;
 }
 
 #card {
-    background: linear-gradient(90deg, rgba(43,119,87,1) 0%, rgba(28,95,175,1) 100%);
+    background: linear-gradient(45deg, rgba(43,119,87,1) 25%, rgba(28,95,175,1) 100%);
     width: 430px;
     height: 240px;
     border-radius: 20px;
-}
-
-p {
-    color: white;
+    
 }
 
 #pattern {
@@ -24,7 +25,6 @@ p {
     position: fixed;
     top: 0;
     opacity: 0.1;
-    filter: blur(1.3px);
 }
 
 #visa-credit {

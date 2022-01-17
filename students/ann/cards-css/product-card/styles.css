@@ -24,6 +24,7 @@ h2 {
 h3 {
     font-size: 14px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 p {
@@ -37,6 +38,7 @@ p {
     align-self: center;
 }
 
+/* PRODUCT IMAGE */
 
 #img-container {
     display: flex;
@@ -59,6 +61,8 @@ button:hover {
     cursor: pointer;
 }
 
+/* PRODUCT INFORMATION */
+
 .text-card {
     display: flex;
     display: block;
@@ -78,7 +82,6 @@ button:hover {
     justify-content: space-between;
 }
 
-
 #product-info {
     padding-left: 40px;
     display: flex;
@@ -90,18 +93,18 @@ button:hover {
 }
 
 
-/* COLORS */
+/* AVAILABLE COLORS */
 
 .sneakers-colors {
     display: flex;
     padding-top: 5px;
-    gap: 10px;
+    gap: 8px;
 }
 
 .sneakers-colors > div {
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
 }
 
 #color-blue {
