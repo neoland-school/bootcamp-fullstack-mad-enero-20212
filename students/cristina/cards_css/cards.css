@@ -61,7 +61,7 @@ div.parte-superior > {
     padding: 10px;
 }
 
-.letras {
+.nombre-precio {
     display: flex;
     justify-content: space-between;
     color: #969191;
