@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+.card-1 {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 0 2px 3px 3px #cccccc;
+    margin: 10px auto;
+}
+
+
+/*
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto Condensed', sans-serif*/
+
+.container_header {
+    background: url(camiseta-adidas-2.png) no-repeat center;
+    height: 360px;
+    width: 360px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.detalles a {
+    background-color: #ffffff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 1px;
+}
+
+.detalles a:hover {
+    background-color: #3d3df8;
+    color: #ffffff;
+}
+
+.container-main {
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+
+.originals h1 {
+    margin: 20px 0 0 0;
+}
+
+.originals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.originals i {
+    font-size: 15px;
+    margin-right: 1px;
+}
+
+.originals p {
+    color: blue;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.margin-0 {
+    margin: 0;
+    color: #808080;
+}
+
+.container-sizes h4 {
+    margin-bottom: 0;
+}
+
+.container-sizes h4~p {
+    display: inline-block;
+    margin: 0;
+    color: #808080;
+}
+
+.container-colors h4 {
+    margin-bottom: 0;
+}
+
+.container-colors div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.container-colors div:nth-child(2) {
+    background-color: #0000ff;
+}
+
+.container-colors div:nth-child(3) {
+    background-color: #ff0000;
+}
+
+.container-colors div:nth-child(5) {
+    background-color: #008000;
+}
+
+
+/*------------------------------ CARD-2 ----------------------*/
+
+.contenedor-card-2 {
+    width: 360px;
+    height: 200px;
+    background-image: linear-gradient(to top right, #add8e6, #0000ff);
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+.header-card-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-card-2 {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main-card-2 h2 {
+    margin-bottom: 0;
+}
+
+.main-card-2 p {
+    margin-top: 0;
+}
+
+
+/* 
+.header-card-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-card-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-card-2 h2 {
+    margin: 0;
+}
+
+.main-card-2 h2::first-letter {
+    color: #434368;
+}
+
+.main-card-2 p {
+    margin-top: 5px;
+}*/
