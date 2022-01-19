@@ -85,10 +85,12 @@
 
 // document.write(cifra1+cifra2);
 
-// let cifra1= "5";
-// let cifra2= "5";
+// let cifra1= '5';
+// let cifra2= '5';
 
 // document.write(cifra1+cifra2);
+
+// let cifraresultado =(cifra1+cifra2)
 
 
 // document.write(' ')
@@ -101,6 +103,9 @@
 
 // let resultadosuma=(suma+suma2);
 // document.write(resultadosuma);
+
+// document.write(cifraresultado==resultadosuma)
+// document.write(cifraresultado===resultadosuma)
 
 //apartado7
 
@@ -136,12 +141,32 @@
 
 //APARTADO 9
 
-let numerico= prompt('intoducir numero');
+// let numerico= prompt('intoducir numero');
 
-let resto=numerico%2;
-let respuesta= 1>resto;
+// let resto=numerico%2;
+// let respuesta= 1>resto;
 
-document.write('<p> es par? </p>' + respuesta);
+// document.write('<p> es par? </p>' + respuesta);
+
+//apartado10
+
+// let numerohijos= prompt('escribe numero de hijos');
+// document.write (numerohijos >= 3);
+
+
+//apartado 11
+
+let saldobancario=prompt('saldo de cuenta');
+
+let tomate=5;
+let lechuga=4;
+let patata=7;
+let zanahoria=3;
+
+document.write((tomate+lechuga+patata+zanahoria)>= saldobancario );
+
+
+
 
 
 
