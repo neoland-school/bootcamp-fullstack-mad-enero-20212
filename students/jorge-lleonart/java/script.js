@@ -89,6 +89,25 @@
 // document.write(cincuenta+cinco3);
 
 
+
+// copiado de macarena, hecho como dijo el profe
+
+
+
+// let cifra1= '5';
+// let cifra2= '5';
+// document.write(cifra1+cifra2);
+// let cifraresultado =(cifra1+cifra2)
+// // document.write(' ')
+// let  suma= 27.5;
+// let suma2= 27.5;
+// let resultadosuma=(suma+suma2);
+// document.write(resultadosuma);
+// document.write(cifraresultado==resultadosuma)
+// document.write(cifraresultado===resultadosuma)
+
+
+
 //apartado 7
 
 // let numero1= 4;
@@ -113,7 +132,28 @@
 
 //apartado 9
 
-let numero=prompt('introduce numero');
-let resto=numero%2;
-let respuesta= 1>resto;
-document.write('<p>es par?</p>' + respuesta);
+// let numero=prompt('introduce numero');
+// let resto=numero%2;
+// let respuesta= 1>resto;
+// document.write('<p>es par?</p>' + respuesta);
+
+
+//apartado 10
+
+
+// let numerohijos= prompt('Escribir el numero de hijos');
+// document.write('<p>¿Es familia numerosa?' + (numerohijos>=3) + '</p>');
+
+
+// apartado 11
+
+let saldo= prompt('saldo cuenta');
+
+let tomates= 5;
+let lechuga= 4;
+let patata= 7;
+let zanahoria=3;
+
+document.write('<p>¿Tengo saldo en la cuenta?' + ' '+ (saldo>=(tomates+lechuga+zanahoria+patata)) + '</p>');
+
+
