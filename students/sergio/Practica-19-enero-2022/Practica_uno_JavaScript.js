@@ -50,11 +50,11 @@ document.write( '<br>' );
 
 let celsius = prompt('¿Cúantos grados Celsius hace?')
 let farenheit = ( celsius * ( 9 / 5 ) ) + 32 ;
-let farenheit2 = ( parseInt(celsius) * ( 9 / 5 ) ) + 32 ;
+
 document.write( '<br>' );
 
 
-document.write( celsius, 'º Celsius, son ', farenheit, '', farenheit2, 'º Farenheit');
+document.write( celsius, 'º Celsius, son ', farenheit, 'º Farenheit');
 
 document.write( '<br>' );document.write( '<br>' );
 
