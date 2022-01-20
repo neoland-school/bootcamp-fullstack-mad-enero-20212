@@ -1,0 +1,129 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*---------------------- RESETS -----------------*/
+        
+        .card {
+            width: 260px;
+            transition-duration: 0.3s;
+            box-shadow: 2px 2px 5px 0px #000000;
+        }
+        
+        .card:hover {
+            transform: scale(1.1) rotate(-1.1deg);
+            cursor: pointer;
+        }
+        
+        .articulo__img {
+            background: url(../imagenes/zapatilla-img.webp) no-repeat center;
+            background-size: cover;
+            height: 260px;
+        }
+        
+        .articulo {
+            position: relative;
+        }
+        
+        .articulo-details {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+        /* .articulo-details {
+            display: inline-block;
+        } */
+        
+        .articulo-details--link {
+            background-color: #ffffff;
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 20px;
+            box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.93);
+        }
+        /*                 no sale la img        */
+        
+        .detalles {
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        
+        .detalles__precio {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .precio {
+            color: #0000ff;
+            font-weight: bold;
+        }
+        
+        .thin {
+            color: #a8a5a5;
+            margin-top: 10px;
+        }
+        
+        .sizes {
+            margin-top: 20px;
+        }
+        
+        .colors {
+            margin-top: 15px;
+        }
+        
+        .colors__divs {
+            display: flex;
+            margin-top: 10px;
+        }
+        
+        .redondo {
+            width: 12px;
+            height: 12px;
+            border-radius: 50px;
+            border: 1px solid #000000;
+            margin-right: 2px;
+        }
+        
+        .blue {
+            background-color: #0000ff;
+        }
+        
+        .red {
+            background-color: #ff0000;
+        }
+        
+        .green {
+            background-color: #008000;
+        }
+        /*---------------------------- GRID -----------------------------*/
+        /* ------------------------- MODIFICA AL FINAL-------------------*/
+        
+        .body-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-auto-rows: 476px;
+            /* grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            grid-auto-rows: 600px; */
+            gap: 20px;
+            background-color: black;
+        }
+        
+        .card-grid {
+            transition: 0.3s;
+        }
+        
+        .item-1 {
+            grid-column: span 2;
+        }
+        
+        .item-6 {
+            grid-column: span 2;
+        }
+        
+        .hover:hover {
+            transform: scale(1.1);
+        }
