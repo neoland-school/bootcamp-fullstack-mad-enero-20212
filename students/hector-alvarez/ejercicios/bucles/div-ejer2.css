@@ -1,0 +1,23 @@
+
+.color-contenedor {
+
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+
+}
+
+.color-par {
+    width: 40px;
+    height: 40px;
+    background-color:#F47732;
+    margin-top: 10px;
+}
+
+.color-impar {
+
+    width: 40px;
+    height: 40px;
+    background-color: #1148F3;
+    margin-top: 10px;
+}
