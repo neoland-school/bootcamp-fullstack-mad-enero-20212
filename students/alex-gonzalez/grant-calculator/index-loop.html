@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grant Calculator</title>
+  </head>
+  <body>
+    <script>
+      /*
+            1. Solicitar 7 notas al usuario de asignaturas.
+                a. Para cada nota que solicito la añado a una variable con el valor acumulado
+                b. Para cada nota, si la nota es >= 5 sumo uno al contador de aprobados
+            2. Muestro los resultados y si tiene beca o no.
+                a. Tiene beca si el nº asignaturas aprobadas es >=5 y además si la media aritmética
+                   es >=6
+        */
+      const SUBJECTS = 7;
+      let subjectNotesAcc = 0; // inicio el acumulador de notas en 0
+      let subjectPassedCount = 0; // inicio el numero de asignaturas aprobadas en 0
+
+      for (let i = 1; i <= SUBJECTS; i++) {
+        let currentSubjectNote = parseFloat(prompt("Indicame la nota de la siguiente asignatura"));
+        if (!isNaN(currentSubjectNote)) {
+          subjectNotesAcc += currentSubjectNote; // añado la nota al acumulador
+          subjectPassedCount += currentSubjectNote >= 5 ? 1 : 0; // sumo uno si está aprobada
+        }
+      }
+
+      /** WHILE VERSION **/
+    //   let i = 1;
+    //   while(i<=SUBJECTS){
+    //     let currentSubjectNote = parseFloat(prompt("Indicame la nota de la siguiente asignatura"));
+    //     if (!isNaN(currentSubjectNote)) {
+    //       subjectNotesAcc += currentSubjectNote; // añado la nota al acumulador
+    //       subjectPassedCount += currentSubjectNote >= 5 ? 1 : 0; // sumo uno si está aprobada
+    //     }
+    //     i++;
+    //   }
+      /** WHILE VERSION **/
+
+      document.write(`<p>La cantidad de asignaturas aprobadas es: ${subjectPassedCount}</p>`);
+      document.write(`<p>La nota media es: ${subjectNotesAcc / SUBJECTS}</p>`);
+      document.write(`<p>Puedes optar a beca: ${subjectPassedCount >= 5 && subjectNotesAcc / SUBJECTS >= 6 ? "SI" : "NO"}</p>`);
+    </script>
+  </body>
+</html>
