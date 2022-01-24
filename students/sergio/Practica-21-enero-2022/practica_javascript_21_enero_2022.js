@@ -44,7 +44,11 @@ document.write('<br>', 'Ejercicio 3: 1º Parte ', '<br>')
 for (let i=1; i< 2**100; i+=i) {
     document.write( i + ' ,',)
 }
-
+/* Solucion Alex:
+for (let i=1; i< 2**100; i **= 2) {
+    document.write( i + ' ,',)
+}
+*/
 // i*=2 //
 
 document.write('<br>');
@@ -55,12 +59,17 @@ let contvoc = 0;
 let LONGITUD = palabra.length ;
 let a = 0;
 while ( a < LONGITUD ) {
+/* Aqui podriamos meter un charAt en vez de poner [a] en cada palabra, adeamas seria conveniente cambiar la palabra a minuscula y no poner tantas letras condicionales */
+
     if ( palabra[a] === 'a' || palabra[a] === 'A' || palabra[a] === 'e' || palabra[a] === 'E' || palabra[a] === 'i' || palabra[a] === 'I' || palabra[a] === 'o' || palabra[a] === 'O' || palabra[a] ==='u' || palabra[a] === 'U' ) {
         contvoc++;
     } a++;
 }
+// habria que mirar como soportar todos los caracteres especiales, hay que pensar en todas las posibilidades //
 
 document.write(`La palabra ${palabra} tiene `, contvoc, ` vocales.` )
+
+
 
 
 document.write('<br>');
