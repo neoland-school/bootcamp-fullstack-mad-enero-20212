@@ -1,0 +1,15 @@
+td{
+    background-color: rgb(112, 112, 133);
+    border: solid 1px black;
+    padding: 5px;
+}
+
+
+.column{
+    width: 100px;
+    height: 20px;
+    background-color: chartreuse;
+    margin: 5px;
+    width: 30px;
+    display: inline-block;
+}
