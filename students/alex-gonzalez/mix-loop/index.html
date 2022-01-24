@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mix loops exercises</title>
+  </head>
+  <body>
+    <style>
+      .block {
+        width: 50px;
+        height: 50px;
+        border: 1px dashed black;
+      }
+
+      .bg_odd {
+        background-color: #1148f3;
+      }
+
+      .bg_even {
+        background-color: #f47732;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+    <script>
+      /** EJERCICIO 2 **/
+      let htmlOutput = `<div class="container">`;
+      for (let i = 1; i <= 100; i++) {
+        // utilizo un ternario para elegir una clase u otra en función de si es el div par o impar
+        htmlOutput += `<div class="block ${i % 2 === 0 ? "bg_even" : "bg_odd"}"></div>`; // esto crea 1 div
+      }
+      htmlOutput += `</div>`;
+      document.write(htmlOutput);
+
+      /** Ejercicio 3 **/
+      const LAST_POW = 100;
+      htmlOutput = '<p>';
+      for(let i=1; i< 2**LAST_POW; i *= 2){ // este bucle da 100 vueltas
+          htmlOutput += `${i},`;
+      }
+      htmlOutput += `${2**LAST_POW}</p>`;
+      document.write(htmlOutput);
+
+      /** Ejercicio 4 **/
+      const USER_WORD = prompt('Introduzca una palabra').toLowerCase();
+      let vowelsCount = 0;
+      for(let i=0; i< USER_WORD.length; i++){
+          const char = USER_WORD.charAt(i); // obtengo el caracter de la posicion actual
+          if(char === 'a' || char==='e' || char === 'i' || char=== 'o' || char==='u' ||
+             char === 'á' || char==='é' || char === 'í' || char=== 'ó' || char==='ú'){ // soportar el resto de casos
+              vowelsCount++; // sumamos uno a nuestro contador
+          }
+      }
+      document.write(`<p>Nº de vocales: ${vowelsCount} </p>`);
+    </script>
+  </body>
+</html>
