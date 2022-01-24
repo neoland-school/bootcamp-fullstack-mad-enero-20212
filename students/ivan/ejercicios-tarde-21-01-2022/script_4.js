@@ -9,17 +9,29 @@
     de manera infinita). 
 */
 
-const DIMENSION = parseFloat(prompt('Escoja un numero del 1 al 100;'));
+const DIMENSION = parseInt(prompt('Escoja un numero del 1 al 100;'));
+
+let htmlOutput = `<div class="container">`;
 for ( let i = 0; i < DIMENSION ; i++) {
-   let asterisco = '*';
-   for ( let j = 0; j<i ; j++) {
-   asterisco+='*'};
-   document.write(asterisco, '<br>')
+    htmlOutput+= `<div class="row">`
+  
+   for ( let j = 0; j<=i ; j++) {
+       htmlOutput+= `<div class="block bg_asc"></div>`;
 }
-for ( let k = DIMENSION; k >= 0; k--) {
-    let asterisco = '*';
-    for ( let l = 0; l<k ; l++) {
-        asterisco+='*'};
-        document.write(asterisco, '<br>');
+    htmlOutput+= `</div>`;
+}
+
+for(let i=DIMENSION; i>=0; i--){
+    htmlOutput+=`<div class="row">`;
+    for(let j=0; j<i;j++){
+        htmlOutput+=`<div class="block bg_desc"></div>`;
     }
+    htmlOutput+= `</div>`;
+
+}
+htmlOutput+= `</div>`;
+
+document.write(htmlOutput);
+
+
 
