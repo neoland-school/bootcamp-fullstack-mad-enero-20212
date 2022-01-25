@@ -32,7 +32,7 @@ identificacion (a,b)
 
 3. Crea una función que dado un numero por prompt, devuelva el número al revés por pantalla, usar function expression.
 
-*/
+
 
 let num = prompt("introduce un numero");
 
@@ -48,11 +48,5 @@ function b (a) {
 document.write (b(num));
 
 
+-------------------------------------------------------
 
-
-
-
-
-
-
- 
