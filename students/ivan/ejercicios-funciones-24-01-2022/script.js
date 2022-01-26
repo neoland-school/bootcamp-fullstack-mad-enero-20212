@@ -8,23 +8,23 @@ function resta (a,b){
     return a-b;
 }
 
-// let a = parseInt(prompt('Indique un número'));
-// let b = parseInt(prompt('Indique un número'));
+ let a = parseInt(prompt('Indique un número'));
+ let b = parseInt(prompt('Indique un número'));
 
-// c = resta(a,b);
+ c = resta(a,b);
 
-// document.write(`<p>El resultado de restar ${a} y ${b} es ${c}</p>`);
+ document.write(`<p>El resultado de restar ${a} y ${b} es ${c}</p>`);
 
-// document.write(`<p>El resultado de restar ${a} y ${b} es ${resta(a,b)}</p>`);
+ document.write(`<p>El resultado de restar ${a} y ${b} es ${resta(a,b)}</p>`);
 
-// a = parseInt(prompt('Indique un número'));
-// b = parseInt(prompt('Indique un número'));
-// document.write(`<p>El resultado de restar ${a} y ${b} es ${resta(a,b)}</p>`);
+ a = parseInt(prompt('Indique un número'));
+ b = parseInt(prompt('Indique un número'));
+ document.write(`<p>El resultado de restar ${a} y ${b} es ${resta(a,b)}</p>`);
 
 
-// a = parseInt(prompt('Indique un número'));
-// b = parseInt(prompt('Indique un número'));
-// document.write(`<p>El resultado de restar ${a} y ${b} es ${resta(a,b)}</p>`);
+ a = parseInt(prompt('Indique un número'));
+ b = parseInt(prompt('Indique un número'));
+ document.write(`<p>El resultado de restar ${a} y ${b} es ${resta(a,b)}</p>`);
 
 /*
 2. Crear una función que dado un string 
