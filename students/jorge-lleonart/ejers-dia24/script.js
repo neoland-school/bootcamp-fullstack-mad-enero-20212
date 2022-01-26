@@ -38,16 +38,16 @@
 // 3. Crea una función que dado un numero por prompt, devuelva el número al revés por pantalla, usar function expression.
 
 
-// let num= prompt('introducir numero');
+let num= prompt('introducir numero');
 
-// function volt(a) {
-//     let b='';
-//     for (let i = a.length-1; i >= 0 ; i--) {
-//         b+= a.charAt(i);
-//     };
-// return document.write(b)};
+function volt(a) {
+    let b='';
+    for (let i = a.length-1; i >= 0 ; i--) {
+        b+= a.charAt(i);
+    };
+return document.write(b)};
 
-// volt(num);
+volt(num);
 
 // 4.Escribir varias funciones que dada las medidas por prompt(radio, lados, etc) que calculen área y perímetro de diferentes figuras geométricas (Rectángulo, Cuadrado, triángulo y Círculo), para el rectangulo y cuadrado usaremos arrow function.
 
