@@ -205,9 +205,8 @@ let dato = parseInt(prompt("introduce una palabra"));
 
 (Medium) 9. Escribir una función que dado un número, indique si este es capicua o no. Un numero es capicua si se lee igual de izquierda a derecha que de derecha a izquierda. EJ. 1221
 */
+
 /*
-let dato = parseInt(prompt("introduce un numero"));
-*/
 
 let dato = prompt("introduce un numero");
 
@@ -232,4 +231,159 @@ function palin (x) {
 
 palin (dato);
 
-/*
+
+
+
+------------- ARRAYS --------------------------
+
+
+
+1.Crea un array de números por prompt e imprimelo por pantalla.(easy).
+
+
+
+
+
+let arr = [prompt(),prompt(),prompt()];
+document.write (arr[0]);
+
+
+-------------------------
+
+
+2. Crear una función que reciba por parámetros 2 array. Esta función devolverá los 2 arrays concatenados y los mostrará en el navegador.(easy)
+
+
+
+let arr1 = ["hola"];
+let arr2 = ["people"];
+
+function strin (x,y) {
+
+    document.write(x + y);
+}
+
+strin(arr1,arr2);
+
+--------------
+
+3.Crea un array  de música rock que contenga subgeneros [punk, metal, hardcore], luego un array de los géneros musicales [rock, pop, country] en el array de los géneros musicales 'rock' será el array de subgéneros de música rock, luego crea un array de banda que contenga un string "metallica" y el array de géneros y con ese array de banda muestra por pantalla el nombre de la banda "metallica" y el subgénero "metal".(easy)
+
+
+
+let rock = ["punk" , "metal" , "hardcore"]
+
+let generos = [ rock, "pop" , "country"]
+
+let banda = ["metallica" , generos]
+
+
+document.write (banda[0], rock[1]);
+
+
+
+----------------------
+
+4. Crear una función que reciba un parámetro de entrada y que imprima por pantalla true si el parámetro es un array y false si es otro tipo de dato.(easy)
+
+
+
+let arr = 2;
+
+function bol(x) {
+
+const b = [];
+
+if (typeof(x) === typeof(b))
+{
+   document.write ("true")
+}else {
+    document.write ("false")
+}
+}
+
+bol(arr);
+
+----------------------------
+
+5. Crear una función que reciba un array de 10 números e imprima por pantalla true si todos son mayor de 10 o false en caso contrario.(easy)
+
+
+
+let arr = [11, 2, 13, 14, 15, 16, 17, 18, 19, 20]
+
+function comp(x) {
+    let counter = true;
+    for (let i = 0; i <10; i++){
+        if (x[i]<10){  
+            counter=false;
+        } 
+    }
+    document.write(counter);
+}
+
+comp(arr)
+
+
+--------------------------------------
+
+6.Crea una función que reciba un array y una palabra y devuelva true o false si palabra existe o no dentro del array.(easy)
+
+
+
+
+let arr = ["hola que tal", "otra vez"];
+
+
+
+function comp(x,y) {
+    let counter = false;
+    for (let i = 0; i <arr.length; i++){
+        if (x[i]===y){  
+            counter=true;
+        } 
+    }
+    document.write(counter);
+}
+
+
+comp(arr,"otra vez")
+
+---------------
+
+7. Crear una función que reciba un array de números y devuelva un array con los que son mayores que 10.(easy)
+
+
+
+
+
+let arr = [2, 4, 6, 81, 1, 6, 7, 3, 5, 9]
+
+function maydiez(x) {
+
+    for (let i = 0; i <x.length; i++){
+        if (x[i]>10){  
+            document.write(x[i]);}
+    }
+}
+
+maydiez(arr)
+
+-------------------
+
+8. Crear una función que reciba un array de strings e imprime por pantalla el array con los strings capitalized,(pista: substring) ejmp: let =[jose,maca,jorge], output: [Jose,Maca,Jorge].(medium)
+
+*/
+
+
+let bandas = ["punk" , "metal" , "hardcore"]
+
+
+function mayus(x) {
+
+    for (let i = 0; i <x.length; i++){  
+            document.write(x[i]);}
+}
+
+
+maydiez(bandas)
