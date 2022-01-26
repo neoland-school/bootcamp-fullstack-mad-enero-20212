@@ -1,0 +1,31 @@
+h2 {
+    background-color: rgb(180, 180, 214);
+    text-align: center;
+}
+
+.sub {
+    background-color: rgb(6, 6, 59);
+    color: white;
+    padding-left: 20px;
+}
+
+.box {
+    margin: 5px;
+    /*
+    El flex no me funciona, y por eso es display in-bl
+    */
+    display: flex;
+    display: inline-block;
+}
+
+.box-pares {
+    width: 10px;
+    height: 10px;
+    background-color: #F47732;
+}
+
+.box-impares {
+    width: 10px;
+    height: 10px;
+    background-color: #1148F3;
+}
