@@ -373,7 +373,7 @@ maydiez(arr)
 
 8. Crear una función que reciba un array de strings e imprime por pantalla el array con los strings capitalized,(pista: substring) ejmp: let =[jose,maca,jorge], output: [Jose,Maca,Jorge].(medium)
 
-*/
+
 
 
 let bandas = ["punk" , "metal" , "hardcore"]
@@ -387,3 +387,116 @@ function mayus(x) {
 
 
 maydiez(bandas)
+
+
+--------------------------------
+
+## METODOS ARRAY
+
+
+
+1.Crear una función que reciba por parámetros 2 array. Esta función devolverá los 2 arrays concatenados y los mostrará en el navegador.(easy)
+
+
+
+// const array1 = ['hola', 'que', 'tal'];
+// const array2 = ['y ', 'tu', 'que'];
+
+// const array3 = array1.concat(array2);
+// document.write(array3)
+
+
+
+----------------------------
+
+2.Crear una función que reciba un parámetro de entrada y que imprima por pantalla true si el parámetro es un array y false si es otro tipo de dato, ver metodos de array!.(easy)
+
+
+let array1 = 5;
+
+document.write(Array.isArray(array1));
+
+--------------------
+
+3. Crear una función que reciba un array de 10 números e imprima por pantalla true si todos son mayor de 10 o false en caso contrario (hay un metodo de array para esto empieza por E...).(easy)
+
+const array2 = [25 , 37, 14];
+
+const allValues = array2.every(v => v>=10); // true. todos los elementos son mayor de diez.
+document.write(allValues)
+
+
+--------------------
+
+4. Crea una función que reciba un array y una palabra e imprima true o false si palabra existe o no dentro del array (ver metodo empieza por i).(easy)
+
+
+const array2 = ['hola', 'pepe'];
+
+let ok = array2.includes( 'pepe' );
+document.write(ok)
+
+--------------------
+
+5.Crear una función para ordenar un array de números desordenados de mayor a menor.(easy)
+
+
+
+
+var arr = [ 300, 1, 201, 200 ];
+
+function comparar ( a, b )
+    { return b - a; }
+
+    document.write(arr.sort( comparar ));  // [ 1, 5, 40, 200 ]
+
+
+    --------------------
+
+6. Crear una función que reciba un array de números y devuelva un array con los que son mayores que 10.(easy)
+
+
+const arr= [ 7, 300, 1, 201, 200, 17, 25 ];
+
+document.write(newArr = arr.filter(v => v>10)); 
+
+
+--------------------
+
+7. Crear una función que reciba un array de strings e imprime por pantalla el array con los strings capitalized, ejmp: let =[jose,maca,jorge], output: [Jose,Maca,Jorge].(medium)
+
+
+
+const arr = ['jose','maca','jorge'];
+
+arr.forEach((v,i,array) => {
+    array[i]=array[i].charAt(0).toUpperCase()+array[i].substring(1,array[i].length);
+});
+document.write(arr)
+
+
+
+--------------------
+
+8. Crear una función que dado un número y un array de números, te devuelva  por pantalla la posición donde se encuentra el número o  -1 si no lo encuentra.(medium)
+
+
+
+var num = [ 5, 1, 3, 200 ];
+
+function pos(x,y) { 
+    const foundedIndex = x.findIndex((v) => y === v)
+    document.write(foundedIndex)
+}
+
+ pos(num,17);
+
+ ----------------------------
+
+ 9.Crear una función que reciba un array,  deberá mostrar en el navegador el array tantas veces como elementos contiene  y en cada una de ellas eliminará el último elemento: El output visualizado debe ser el siguiente:   // 'c', 'c++', 'python', 'golang', 'solidity', typescript', 'javascript', 'java', 'go', 'pascal'                                                                                              // 'c', 'c++', 'python', 'golang', 'solidity', typescript', 'javascript', 'java', 'go'                                                                                                                                                                                  // 'c', 'c++', 'python', 'golang', 'solidity', typescript', 'javascript', 'java'                                                                                                                                                                                         // 'c', 'c++', 'python', 'golang', 'solidity', typescript', 'javascript',    etc..(medium)
+
+
+*/
+
+
+
