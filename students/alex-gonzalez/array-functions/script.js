@@ -1,5 +1,3 @@
-
-
 const n = parseInt(prompt('Introduzca un número'));
 
 const words = [];
@@ -81,3 +79,4 @@ const isInfinitive = w => w.endsWith('er') || w.endsWith('ar') || w.endsWith('ir
 words.reduce((acc, w) => acc + (isInfinitive(w.toLowerCase()) ? 1 : 0), 0);
 // version REGEX
 words.reduce((acc, w) => acc + (/(er|ir|ar)$/i.test(w) ? 1 : 0), 0);
+
