@@ -152,3 +152,164 @@ for(let i=0; i<arr.length; i++){
 }
 
 ```
+
+## Metodos y utilidades de Arrays
+
+Existen una serie de operaciones utiles para trabajar con arrays en JS.
+
+### Añadir o eliminar elementos al princicio o al final del array
+
+```js
+const arr = [];
+
+arr.push(3, ...); // añade al final del array los parámetros de entrada
+arr.push(3); // el array quedaría [3]. es equivalente a arr[arr.length-1] = 3;
+arr.push(3,4,5); // el array quedaría así [3,4,5] (suponiendo la array vacio)
+
+const a = arr.pop(); // elimina el último elemento del array, devolviendo su valor. a tendría el valor de la última posicion del array. Este método modifica la longitud del array
+
+arr.unshift(3); // añade los elementos que pasemos como parámetros al principio del array, desplazando los que ya hay [3,4,2] --> unshift(2) --> [2,3,4,2]
+
+arr.shift(); // elimina el primer elemento de un array, devolviendo su valor y actualizando los indices y la longitud del resto elementos
+ 
+```
+
+### Buscar elementos dentro del array
+
+Todas las funciones que se tienen que pasar como parámetro de entrada a estos métodos de arrays tienen la misma estructura. Se les conocen en este caso como predicados.
+
+Los métodos de los arrays tienen internamente un bucle y en cada vuelta del bucle llaman a la funcion predicado
+
+La estructura de las funciones predicado es la siguiente:
+
+- Aceptan 3 parámetros de entrada
+    1. Es el valor que se está recorriendo cada vez que pase una vuelta del bucle --> arr[i]
+    2. Es el valor del índice del bucle, es decir, nuestra i antigua
+    3. Es el array completo
+
+- Devuelve un booleano, que indica true si se cumple tu predicado
+
+FIND
+
+```js
+
+const arr = [3,4,1,9];
+
+// find devuelve el primer valor que encuenta que cumpla la condicion. si no existe ninguno devuelve undefined
+
+const foundedValue = arr.find((v, i, array) => v === 4); // Esto devuelve el valor 4
+// arr.find(v => v === 4)
+
+const foundedValue = arr.find((v, i, array) => v === 10); // Esto devuelve el valor undefined porque ningun elemento del array cumple la condicion de ser igual a 10 
+
+const foundedValue = arr.find(v => v>5); // El valor sería 9
+
+const foundedValue = arr.find((v,i) => v>3 && i%2 === 0);// undefined. Ni en la posicion 0 ni en la posicion 2 hay un número mayor que 3
+
+const foundedValue = arr.find((v,i) => v>3 && i%2 === 1);// 4, es el valor de la primera posicion impar cuyo valor es superior a 3
+
+
+const arr = [3,4,1,9];
+const foundedValue = arr.find((v,i,array) => v>3 && i%2 === array.length%2); // undefined, no hay un número > 3 en las posiciones pares
+
+const arr = [3,2,1,5,9];
+const foundedValue = arr.find((v,i,array) => v>3 && i%2 === array.length%2); // 5, es el primer número en posiciones impares cuyo valor es superior a 3
+
+```
+
+Otras funciones de búsqueda
+
+```js
+
+// findIndex --> Igual que el find pero en vez de devoler el valor, devuelve la posicion
+const arr = [3,2,1,5,9];
+const foundedIndex = arr.findIndex((v,i,array) => v>3 && i%2 === array.length%2); // 3, la posicion del 5, que es el número que cumple la condicion
+
+// some --> Devuelve un booleano que indica si hay algun elemento que cumple la condicion
+const arr = [3,2,1,5,9];
+const hasValue = arr.some((v,i,array) => v>3 && i%2 === array.length%2); // true, el elemento de la pos 3 cumple la condicion
+const arr = [3,4,1,9];
+const hasValue = arr.some((v,i,array) => v>3 && i%2 === array.length%2); // false, no hay ningun elemento en el array que cumpla la condicion
+
+// every --> DEvuelve un boolean que indica si todos los elementos cumplen la condicion o no
+const arr = [2,4,6,12,48];
+const allValues = arr.every(v => v%2===0); // true. todos los elementos son pares
+/* codigo con bucles
+  let every = true;
+  let i =0;
+  while(every && i<arr.length){
+    every = arr[i]%2 === 0;
+    i++
+  }
+
+  ---- aqui everi será true si todos cumplen la condicion. En cuando haya uno que no para el bucle y se queda en false
+
+  function myEvery(arr, predicate){
+    let every = true;
+    let i =0;
+    while(every && i<arr.length){
+      every = predicate(arr[i], i, arr);
+      i++;
+    }
+
+    return every;
+  }
+*/
+
+// filter => devulve un subarray con los elementos que cumplan el predicado
+const arr=[3,1,4,2,2,5];
+
+const newArr = arr.filter(v => v%2===0); // newArr = [4,2,2]
+
+
+```
+
+### Metodos para Recorrer un array
+
+forEach
+
+```js
+
+// El método permite recorrer un array como si fuese un for. NO devuelve nada y puede modificar el array que está recorriendo
+
+const arr = [3,1,2,4];
+
+arr.forEach((v,i,array) => {
+  // codigo que queramos hacer como cuerpo del for. No debe tener return
+  array[i] = _otro_valor_; // ESTO SI MODIFICA EL VALOR DEL ARRAY
+  // v= _otro_valor_; --> ESTO NO MODIFICA EL VALOR DEL ARRAY
+});
+
+```
+
+MAP
+
+al igual que el forEach, el map recorre el array, pero devuelve un nuevo array con los valores que devuelvas en la funcion.
+
+```js
+
+const arr=[3,1,4,2,2,5];
+
+const newArr = arr.map(v => v*2); // newArr = [6,2,8,4,4,10];
+const otherNewArr = arr.map(v => v%2===0); // otherNewArr = [false, false, true, true, true, false]
+
+const otherOtherNewArr = arr.map(v => v%2===0 ? 'par':'impar'); // otherOtherNewArr = ['impar', 'impar', 'par', 'par', 'par', 'impar']
+
+```
+
+Reduce
+
+recorre el array acumulando y devolviendo en una variable un valor que nosotros queramos
+```js
+
+const arr=[3,1,4,2,2,5];
+
+const sum = arr.reduce((acc,v,i,arr) => acc+v, 0); // sum = 17
+// i=0; acc=0, v = 3 --> el reducer devolvera 0+3 = 3;
+// i=1; acc=3, v = 1 --> el reducer devolvera 3+1 = 4;
+// i=2; acc=4, v = 4 --> el reducer devolvera 4+4 = 8;
+// ...
+// i=5; acc=12, v = 5 --> el reducer devolvera 12+5 = 17;
+
+
+```
