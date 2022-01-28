@@ -18,13 +18,18 @@ const users = [
 ]
 
 const modaHobbies = {}
-users.forEach(h => {
-    h.hobbies.map(e => {
-        if (modaHobbies[e]) {
-            modaHobbies[e] += 1
-        } else {
-            modaHobbies[e] = 1
-        }
+
+const getModaHobbies = users => {
+    users.forEach(h => {
+        h.hobbies.map(e => {
+            if (modaHobbies[e]) {
+                modaHobbies[e] += 1
+            } else {
+                modaHobbies[e] = 1
+            }
+        })
     })
-})
-console.log(modaHobbies);
+    return modaHobbies
+}
+
+console.log(getModaHobbies(users));
