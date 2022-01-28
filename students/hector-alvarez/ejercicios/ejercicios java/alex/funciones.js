@@ -496,7 +496,234 @@ function pos(x,y) {
  9.Crear una función que reciba un array,  deberá mostrar en el navegador el array tantas veces como elementos contiene  y en cada una de ellas eliminará el último elemento: El output visualizado debe ser el siguiente:   // 'c', 'c++', 'python', 'golang', 'solidity', typescript', 'javascript', 'java', 'go', 'pascal'                                                                                              // 'c', 'c++', 'python', 'golang', 'solidity', typescript', 'javascript', 'java', 'go'                                                                                                                                                                                  // 'c', 'c++', 'python', 'golang', 'solidity', typescript', 'javascript', 'java'                                                                                                                                                                                         // 'c', 'c++', 'python', 'golang', 'solidity', typescript', 'javascript',    etc..(medium)
 
 
-*/
 
 
+
+
+/*viernes 28/01 por la mañana
+
+. Solicitar al usuario un número. A continuación solicitar al usuario tantas palabras como haya indicado en el primer número y guardarlas en un array de palabras. Con ese array tenemos que:
+Ordenar las palabras de menor a mayor longitud.
+Imprimir con un P si hay alguna palabra con más de una letra 't'
+Imprimir con un p si todas las palabras contienen al menos una 'a'
+Imprimir con un p la primera palabra que empiece por 'h' o el mensaje "no hay palabras que empiecen por h"
+Generar un nuevo array con las palabras dadas la vuelta
+Imprimir con una p cuántas palabras son infinitivos (terminan en ar er o ir)
+
+
+
+
+let num = parseInt(prompt("inserte un numero"));
+
+const pal = [];
+
+    for (let i = 0; i < num ; i++) {
+       pal.push(prompt("inserte otra palabra");
+  
+  }
+
+
+
+ 
+  1- Crear un objeto que tenga dos propiedades ('demo'  de tipo string)  y ('hello' de tipo boolean). Los valores serán 'hola' para demo y true para 'hello'
+
+    */
+
+//   const person = { // esto es un objeto con una propiedad/característica
+//     demo: 'hola',
+//     hello : true,
+// }
+
+
+// // 2. Cambiar el valor de 'hello' a false 
+
+// const person = { // esto es un objeto con una propiedad/característica
+//     demo: 'hola',
+//     hello : false,
+// }
+
+// 3. Crear un objeto que represente el Pais España con las propiedades ( nombre, capital, continente y SMI (en $)). Crear otros 4 países (EEUU, China, Nueva Zelanda y Andorra).
+//            Añadir los objetos a un array.
+//            Mostrar en una list de HTML los países que tengan un salario modal superior a 1500$
+//            Mostrar en una lista de HTML los países que pertenecen a europa (editado) 
+
+
+
+
+    // const españa = {
+
+    // nombre: 'españa',
+    // capital: 'madrid',
+    // continente: 'europa',
+    // SMI: 1200,
+
+    //     };
+
+    // const eeuu = {
+
+    // nombre: 'eeuu',
+    // capital: 'washington',
+    // continente: 'america',
+    // SMI: 1800,
+
+    //     };
+
+    // const china = {
+
+    // nombre: 'china',
+    // capital: 'pekin',
+    // continente: 'asia',
+    // SMI: 1800,
+
+    //     };
+
+    // const nuevazelanda = {
+
+    // nombre: 'nueva zelanda',
+    // capital: 'wellington',
+    // continente: 'oceania',
+    // SMI: 2100,
+
+    //     };
+
+    // const andorra = {
+
+    // nombre: 'andorra',
+    // capital: 'andorra',
+    // continente: 'europa',
+    // SMI: 2000,
+
+    //     };
+
+
+//            Añadir los objetos a un array.
+
+// const paises = [españa,eeuu,china,nuevazelanda,andorra];
+
+
+//            Mostrar en una list de HTML los países que tengan un salario modal superior a 1500$
+
+
+// const smimay = paises.filter(npais => npais.SMI >= 1500);
+
+
+//     let htmloutput = `<ul>`
+//     for (let i = 0; i < smimay.length; i++) {
+//         htmloutput +=`<li>${smimay[i].nombre} </li>`;
+// }
+// htmloutput += `</ul>`
+
+// document.write(htmloutput);
+
+
+//            Mostrar en una lista de HTML los países que pertenecen a europa (editado) 
+
+
+// const smimay = paises.filter(npais => npais.continente === 'europa');
+
+
+//     let htmloutput = `<ul>`
+//     for (let i = 0; i < smimay.length; i++) {
+//         htmloutput +=`<li>${smimay[i].nombre} </li>`;
+// }
+// htmloutput += `</ul>`
+
+// document.write(htmloutput);
+
+
+
+// --------------------------------------------------------
+
+// 1.Crear un objeto que tenga dos propiedades , entre ellas una  de tipo number, Imprimelo por pantalla el objeto y luego imprime por pantalla solo la propiedad de tipo number. Repetir el proceso pero con propiedades que tengan los tipos de datos string, boolean, null, undefined , array, function, objects.(easy)
+
+
+// const miob = {
+
+//     edad: 18,
+//     genero: 'hombre',
+//     casado: true,
+//     profesion:["tecnico","administrativo"],
+
+// }
+
+// document.write (miob.profesion);
+
+// --------------------------------
+
+// 2.Crea una función que dado un objeto y un string que represente el nombre de la propiedad de ese objeto, elimine esa propiedad del objeto.(easy)
+
+// const ob = {
+
+//     edad: 18,
+// }
+
+// let pal = 'peso'
+// function eliminar (x,y) {
+//     delete x[y];
+// }
+
+// eliminar (ob, pal);
+// document.write (ob.edad);
+
+
+// 2.Crea una función que reciba por parámetro un objeto y una propiedad, y devuelva true o false si esa propiedad existe o no dentro del objeto pista (hasOwn...).(easy)
+
+
+// const ob = {
+
+//         edad: 18,
+//     }
+
+// let pal = "eda";
+
+//     function prop (x,y) {
+//         document.write (x.hasOwnProperty(y));  
+//     }
+
+//    prop (ob, pal);
+
+//    ---------------
+
+//    4.Crea una función que imprima por pantalla el 'nombre: valor' de cada objeto (buscar mertodos de objeto ejmp Object Keys).(easy)
+
+
+// const china = {
+
+//     nombre: 'china',
+//     capital: 'pekin',
+//     continente: 'asia',
+
+//         };
+
+//     document.write (Object.entries(china));
+
+
+// 5.Crea una función que dado un string con una hora (ej: 14:36:57) devuelva un objeto con la propiedad hora, minutos y segundos e imprimelo por pantalla.(medium)
+
+
+let str = [prompt("escribe la hora")];
+
+// const horatr = {
+
+// hora:[],
+// minutos:[],
+// segundos:[]
+
+
+function hora(a) {
+    let arr = a.split(':')
+    let objHora = {
+        hora: arr[0],
+        minutos: arr[1],
+        segundos: arr[2],
+    }
+    document.write(Object.entries(objHora))
+}
+
+hora(str)
+
+
+                
+
+    
 
