@@ -1,0 +1,32 @@
+h2 {
+    background-color: #0ac9c9;
+    padding-left: 100px;
+}
+
+.verde {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.intermitente-ambar {
+    background-color: #dfeb76;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.ambar {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.rojo {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
