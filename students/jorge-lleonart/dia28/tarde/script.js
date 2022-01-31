@@ -136,47 +136,47 @@
 
 // 7. Crear un objeto que represente un coche y tenga las propiedades marca, modelo, matricula, una imagen del coche, velocidad actual y algo que me indique si está encendido o apagado, luego Crea un array de objetos coche e imprime por pantalla   la velocidad del 4º coche.(medium)
 
-let coche1 = {
-    marca: 'bmw',
-    modelo: '320',
-    matricula: '1234bsj',
-    velocidad: 200,
-    encendido: true,
-}
+// let coche1 = {
+//     marca: 'bmw',
+//     modelo: '320',
+//     matricula: '1234bsj',
+//     velocidad: 200,
+//     encendido: true,
+// }
 
-let coche2 = {
-    marca: 'bmw',
-    modelo: '320',
-    matricula: '1234bsj',
-    velocidad: 220,
-    encendido: true
-}
+// let coche2 = {
+//     marca: 'bmw',
+//     modelo: '320',
+//     matricula: '1234bsj',
+//     velocidad: 220,
+//     encendido: true
+// }
 
-let coche3 = {
-    marca: 'bmw',
-    modelo: '320',
-    matricula: '1234bsj',
-    velocidad: 300,
-    encendido: true
-}
+// let coche3 = {
+//     marca: 'bmw',
+//     modelo: '320',
+//     matricula: '1234bsj',
+//     velocidad: 300,
+//     encendido: true
+// }
 
-let coche4 = {
-    marca: 'bmw',
-    modelo: '320',
-    matricula: '1234bsj',
-    velocidad: 240,
-    encendido: true
-}
+// let coche4 = {
+//     marca: 'bmw',
+//     modelo: '320',
+//     matricula: '1234bsj',
+//     velocidad: 240,
+//     encendido: true
+// }
 
-let coche5 = {
-    marca: 'mercedes',
-    modelo: '320',
-    matricula: '1234bsj',
-    velocidad: 250,
-    encendido: true
-}
+// let coche5 = {
+//     marca: 'mercedes',
+//     modelo: '320',
+//     matricula: '1234bsj',
+//     velocidad: 250,
+//     encendido: true
+// }
 
-let arr = [coche1,coche2,coche3,coche4,coche5];
+// let arr = [coche1,coche2,coche3,coche4,coche5];
 
 // document.write(arr[3].velocidad)
 
