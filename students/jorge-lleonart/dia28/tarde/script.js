@@ -126,11 +126,11 @@
 // let arr=[prod1,prod2,prod3];
 
 // function coste(a) {
-//     let arrPrecio=[];
+//     let arrPrecio=0;
 //     for (i=0; i < a.length; i++) {
-//         arrPrecio=arrPrecio.push([a[i].precio])
+//         arrPrecio=arrPrecio+a[i].precio
 //     }
-//     document.write(`<p>${arrPrecio.reduce((acc,v) => acc+v, 0)}</p>`)
+//     document.write(`<p>${arrPrecio}</p>`)
 // }
 // coste(arr)
 
@@ -141,7 +141,7 @@ let coche1 = {
     modelo: '320',
     matricula: '1234bsj',
     velocidad: 200,
-    encendido: true
+    encendido: true,
 }
 
 let coche2 = {
@@ -169,26 +169,58 @@ let coche4 = {
 }
 
 let coche5 = {
-    marca: 'bmw',
+    marca: 'mercedes',
     modelo: '320',
     matricula: '1234bsj',
     velocidad: 250,
     encendido: true
 }
 
-// let arr = [coche1,coche2,coche3,coche4,coche5];
+let arr = [coche1,coche2,coche3,coche4,coche5];
 
 // document.write(arr[3].velocidad)
 
 // 8. Hacer una función que devuelva un array con los coches de una marca que se le pasa por parametro.(medium)
 
-// function marca(a) {
-        
-
+// function marca(a,b) {
+//     let coches=[];
+//     for (i=0;i<a.length;i++){
+//         if(a[i].marca===b){
+//             coches=coches.push(a[i]);
+//         }
+//     }
+//     document.write(coches)
 // }
 
 // 9. Hacer una función que me indique si hay algún coche encendido.(medium)
 
-function encendido(a) {
-    
-}
+// function cochesEncendidos (a) {  
+//     // const newArr = a.filter(v => v.encendido===true);
+//     // const onn= newArr.length
+//     document.write(a.filter(v => v.encendido===true).length>0)
+// }
+// cochesEncendidos(arrcoches)
+// function isTurnOff(arr){
+//     Object.keys(arr.filter(coche=> coche.encendido === true))
+// }
+// document.write (isTurnOff(arrcoches))
+// isTurnOff(arrcoches)
+
+//10. Hacer una función que me devuelva la velocidad media de todos los coches.(medium)
+
+// function veloc(a){
+//     let veloci= 0
+//     for(i=0; i<a.length; i++){
+//         veloci+=a[i].velocidad;
+//     }
+//     document.write(veloci/a.length)
+// }
+// veloc(arrcoches)
+
+//11. Haz una función  que a través de una marca que le indique el usuario por prompt,, te imprima por pantalla  mediante Cards los coches de nuestro array de objetos coche que cumplen con esa marca.(medium)
+
+
+//12. Dado un array de objetos Usuario,  que contenga las propiedad nombre y la propiedad aficiones la cual será un array de string con varias aficiones, devolver cuales son las aficiones mas comunes entre los usuarios ejmp=output:{informatica:6, cine:7, futbol:2}(hard)
+
+
+
