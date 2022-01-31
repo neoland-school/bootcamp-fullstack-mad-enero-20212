@@ -701,7 +701,7 @@ const pal = [];
 // 5.Crea una función que dado un string con una hora (ej: 14:36:57) devuelva un objeto con la propiedad hora, minutos y segundos e imprimelo por pantalla.(medium)
 
 
-let str = [prompt("escribe la hora")];
+// let str = [prompt("escribe la hora")];
 
 // const horatr = {
 
@@ -710,20 +710,162 @@ let str = [prompt("escribe la hora")];
 // segundos:[]
 
 
-function hora(a) {
-    let arr = a.split(':')
-    let objHora = {
-        hora: arr[0],
-        minutos: arr[1],
-        segundos: arr[2],
-    }
-    document.write(Object.entries(objHora))
-}
+// function hora(a) {
+//     let arr = a.split(':')
+//     let objHora = {
+//         hora: arr[0],
+//         minutos: arr[1],
+//         segundos: arr[2],
+//     }
+//     document.write(Object.entries(objHora))
+// }
 
-hora(str)
+// hora(str)
+
+// ----------------------------------------------
 
 
-                
+// ### DOM ###
+
+
+/* <body>
+   <p class="text">hola</p>
+   <div class="container">
+      <h1 class="text">Titulo</h1>
+   </div>
+   <button class="text" id="MY_BUTTON">Demo</button>
+</body> */
+
+
+// 1. pintar  por la consola JS (console.log) el body.
+
+console.log(document.body)
+
+// console.log(mostrarbody.parentElement());
+
+// 2.recuperar el primer p y pintarlo por consolaJS
+
+// onsole.log(document.body)
+
+
+
+// ----------------------------------------
+
+// Jose
+// 1. En un documento html vacio, crea un H2, luego ponle un texto y luego una clase que cambie de color, usando los métodos del objeto Document.
+
+
+// const h2 = document.createElement('h2');
+
+// h2.textContent = 'Hola';
+// document.body.appendChild(h2);
+// h2.classList.add('color');
+
+
+
+// 2.El h2 creado previamente mételo dentro de un div usando los métodos del objeto Document.(easy)
+
+
+
+// // const div1 = document.createElement('div')
+
+
+// // document.body.appendChild(div1);
+
+// // div1.appendChild(h2);
+
+
+// // 3. En un documento html vacío, añadir un div el cual tendrá dentro un enlace a  Google, un párrafo y una  lista de marca de coches ('SEAT', FORD Y CITROEN), usar metodos del objeto Document (create element....).(easy)
+
+
+// const div = document.createElement('div');
+
+// document.body.appendChild(div);
+
+// const enlace = document.createElement('a');
+
+// enlace.innerHTML = `<a href= "https://www.forocoches.com"> ir a foro coches </a>`;
+
+// div.appendChild(enlace);
+
+// const parrafo = document.createElement('p');
+
+
+// div.appendChild(parrafo);
+
+// const lista = document.createElement('ul');
+
+// div.appendChild(lista);
+
+// const seat = document.createElement('li');
+
+// seat.textContent = 'seat';
+
+// lista.appendChild(seat);
+
+// const ford = document.createElement('li');
+
+// ford.textContent = 'ford';
+
+// lista.appendChild(ford);
+
+// const citroen = document.createElement('li');
+
+// citroen.textContent = 'citroen';
+
+// lista.appendChild(citroen);
+
+
+
+// 4. En un documento html crea un UL con un Atributo llamado "dom-demo" , dentro del UL deben ir 4 LI,  tendrán una class llamada "item", dos de ellos tendrán además  otra class llamada "special", un LI tendrá el atributo dom-demo  y por ultimo el cuarto elemento debe tener un id llamado "cuarto_elemento". El ejercicio será el siguiente, en tu pagina js:(medium)
+// Recuperar todos los li de la página y muéstralos por consola.
+// Recuperar todos los elementos con class "item" y muéstralos por consola.
+// Recuperar el elemento con id="cuarto_elemento" y muéstralo por consola.
+// Recuperar los elementos que tengan atributo  data-demo y muéstralo por consola (getAtribu....).
+// Cambiar el texto de todos los elementos  que tengan la clase "special" a "texto de la clase Special cambiado".
+// Cambiar el tamaño de letra usando estilo en linea STYLE, de los elemento con atributo  data-demo.
+// Crear un li que tenga un id="CREADO_CUSTOM" y añadirlo como último hijo del ul.
+
+
+// const lin = document.getElementById('cuarto_elemento');
+
+
+// console.log(lin);
+
+// const ul2 = document.querySelector("ul");
+// const rr = ul2.getAttribute("dom-demo");
+
+
+// console.log(rr);
+
+
+// Cambiar el texto de todos los elementos  que tengan la clase "special" a "texto de la clase Special cambiado".
+
+
+// const specialtodos = document.querySelectorAll('.special');
+
+// for (let i = 0; i < specialtodos.length; i++) {
+//     specialtodos[i].textContent = 'texto special cambiado';
+    
+// }
+// console.log(specialtodos);
+
+
+// Cambiar el tamaño de letra usando estilo en linea STYLE, de los elemento con atributo  data-demo.
+
+
+
+// const domtodo = document.querySelector('[dom-demo]');
+
+// domtodo.style = "font-size: 100px";
 
     
+// console.log(domtodo);
+
+
+// Crear un li que tenga un id="CREADO_CUSTOM" y añadirlo como último hijo del ul.
+
+
+
+
 
