@@ -22,8 +22,8 @@ while (i <= 10) {
 
 
 
-document.write('<h2>Ejercicio-2</h2>');
-document.write('<p style="font-weight:bold;">Crea un programa que recorra los números del 1-100 e imprima por pantalla :Fizz, si es multiplo de 3. Buzz, si es múltiplo de 5. FizzBuzz, si es múltiplo de 3 y 5 a la vez.</p>');
+// document.write('<h2>Ejercicio-2</h2>');
+// document.write('<p style="font-weight:bold;">Crea un programa que recorra los números del 1-100 e imprima por pantalla :Fizz, si es multiplo de 3. Buzz, si es múltiplo de 5. FizzBuzz, si es múltiplo de 3 y 5 a la vez.</p>');
 
 /*
 .Crea un programa que recorra los números del 1-100 e imprima por pantalla :
@@ -32,23 +32,23 @@ Buzz, si es múltiplo de 5.
 FizzBuzz, si es múltiplo de 3 y 5 a la vez.
 */
 
-for (let i = 1; i <= 100; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-        document.write(`<p>${i} - FizzBuzz</p>`);
-    } else if (i % 3 === 0) {
-        document.write(`<p>${i} - Fizz</p>`);
-    } else if (i % 5 === 0) {
-        document.write(`<p>${i} - Buzz</p>`);
-    } else {
-        document.write(`<p>${i}</p>`);
-    }
-}
+// for (let i = 1; i <= 100; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//         document.write(`<p>${i} - FizzBuzz</p>`);
+//     } else if (i % 3 === 0) {
+//         document.write(`<p>${i} - Fizz</p>`);
+//     } else if (i % 5 === 0) {
+//         document.write(`<p>${i} - Buzz</p>`);
+//     } else {
+//         document.write(`<p>${i}</p>`);
+//     }
+// }
 
 
-document.write('<h2>Ejercicio-3</h2>');
-document.write('<p style="font-weight:bold;"> Escribir un programa que solicite al usuario el número de filas y el número de columnas. Dibujar una tabla con las filas y columnas introducidas, usar etiquetas html " th, tr, td.."</p>');
+// document.write('<h2>Ejercicio-3</h2>');
+// document.write('<p style="font-weight:bold;"> Escribir un programa que solicite al usuario el número de filas y el número de columnas. Dibujar una tabla con las filas y columnas introducidas, usar etiquetas html " th, tr, td.."</p>');
 
-let filas = prompt('Cuantas filas quere que contenga la tabla?');
-let columnas = prompt('Cuantas columnas quere que contenga la tabla?');
+// let filas = prompt('Cuantas filas quere que contenga la tabla?');
+// let columnas = prompt('Cuantas columnas quere que contenga la tabla?');
 
-for ()
+// for ()
