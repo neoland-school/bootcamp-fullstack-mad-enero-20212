@@ -866,6 +866,72 @@ console.log(document.body)
 // Crear un li que tenga un id="CREADO_CUSTOM" y añadirlo como último hijo del ul.
 
 
+// ------------------------------------------------
+
+
+// ###Eventos###
+
+// ---------------------------------------
 
 
 
+// 1. crear un archivo HTML que tenga un div vacío y un boton (añadir). Cada vez que pulse en el botón se debe añadir un p con el texto añadido desde JS dentro del div.
+
+// const btn = document.querySelector("button");
+
+// btn.addEventListener('click', e => {
+// 
+//     const div = document.createElement('div');
+//     document.body.appendChild(div);
+//     const p = document.createElement('p');
+//     p.textContent = 'Hola sala';
+//     div.appendChild(p);
+// });
+
+// -------------------------------------------
+
+// 2. Contador: Crear un HTML con un botón  (-), un Parrafo y otro botón (+). El p inicialmente mostrará 0. Cuando pulse en el "+" se deberá sumar uno al valor del p. Cuando pulse en el "-" se deberá restar 1.
+
+// const btnsum = document.querySelector(".sumar");
+// const btnrest = document.querySelector(".restar");
+// const parr = document.querySelector("p");
+// console.log(parr);
+// let counter = 0;
+
+
+// btnsum.addEventListener('click', e => {
+// counter++;
+// parr.textContent = counter;
+
+// });
+
+// btnrest.addEventListener('click', e => {
+//     counter--;
+//     parr.textContent = counter;
+    
+// });
+
+
+// 3. Crea un input que capture el evento del teclado (buscar eventos del teclado, keyD...) y muestre en un P debajo del input  las teclas que estas escribiendo.
+
+
+
+
+// 4. Crea el siguiente formulario ahora vamos a recuperar sus datos, cuando terminemos de llenar el formulario y le demos al boton de submit, se debe mostrar debajo en tres P, el nombre, el email y el número, para esto es necesario que cancelemos el evento en nuestra función (usar e.preventDefault() ). (editado) 
+
+
+const nombre = document.getElementById('nombre');
+const correo = document.getElementById('correo');
+const telefono = document.getElementById('telefono');
+const botonenviar = document.getElementById('botonenviar');
+const puno = document.querySelector(".puno");
+const pdos = document.querySelector(".pdos");
+const ptres = document.querySelector(".ptres");
+
+botonenviar.addEventListener('click', e => {
+    e.preventDefault();
+    puno.textContent = nombre.value;
+    pdos.textContent = correo.value;
+    ptres.textContent = telefono.value;
+    
+});
