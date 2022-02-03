@@ -739,7 +739,7 @@ const pal = [];
 
 // 1. pintar  por la consola JS (console.log) el body.
 
-console.log(document.body)
+// console.log(document.body)
 
 // console.log(mostrarbody.parentElement());
 
@@ -986,21 +986,151 @@ console.log(document.body)
 
 
 
-const nombre = document.getElementById('nombre');
-const password = document.getElementById('password');
-const botonenviar = document.getElementById('botonenviar');
+// const nombre = document.getElementById('nombre');
+// const password = document.getElementById('password');
+// const botonenviar = document.getElementById('botonenviar');
 
 
-botonenviar.addEventListener('click', e => {
-    e.preventDefault();
-    let valuenom = nombre.value;
-    let valueap = password.value;
-    localStorage.setItem('nombre', valuenom);
-    localStorage.setItem('password', valueap);
-    location.href = "./usuario.html";
+// botonenviar.addEventListener('click', e => {
+//     e.preventDefault();
+//     let valuenom = nombre.value;
+//     let valueap = password.value;
+//     localStorage.setItem('nombre', valuenom);
+//     localStorage.setItem('password', valueap);
+//     location.href = "./usuario.html";
 
     
+// });
+
+
+
+
+// 1. Crea un array de objetos que tenga dos propiedades : description (un string cualquiera que nos inventemos) y votes: un number con el contador de votaciones.
+
+
+    // const pp = { 
+    //     description: 'pp',
+    //     votes: 0,
+    // };
+
+    // const psoe = { 
+    //     description: 'psoe',
+    //     votes: 0,
+    // };
+
+    // const vox = { 
+    //     description: 'vox',
+    //     votes: 0,
+    // };
+
+    // const podemos = { 
+    //     description: 'podemos',
+    //     votes: 0,
+    // };
+
+    // const arr = [];
+
+
+//    2. Pintar en el HTML una lista con el array de objetos. Cada elemento de la lista tienen que mostrar la descripción y un botón que tenga el tenga el icono de thumbs-up y dentro del botón también se muestre el número de votos.
+
+// document.getElementById('ppid');
+// document.getElementById('psoeid');
+// document.getElementById('voxid');
+// document.getElementById('podemosid');
+
+// ppid.textContent = pp.description;
+// psoeid.textContent = psoe.description;
+// voxid.textContent = vox.description;
+// podemosid.textContent = podemos.description;
+
+// document.getElementById('votospp');
+// document.getElementById('votospsoe');
+// document.getElementById('votosvox');
+// document.getElementById('votospodemos');
+
+// votospp.textContent = pp.votes;
+// votospsoe.textContent = psoe.votes;
+// votosvox.textContent = vox.votes;
+// votospodemos.textContent = podemos.votes;
+
+
+// 3.Cuando se pulse el botón, añadir uno a las votaciones actualizando el HTML
+
+
+// let ppcounter =0;
+
+// votospp.addEventListener('click', e => {
+    
+//     ppcounter++;
+//     votospp.textContent = ppcounter;
+
+// });
+
+
+// let psoecounter =0;
+
+// votospsoe.addEventListener('click', e => {
+    
+//     psoecounter++;
+//     votospsoe.textContent = psoecounter;
+
+// });
+
+
+// let voxcounter =0;
+
+// votosvox.addEventListener('click', e => {
+    
+//     voxcounter++;
+//     votosvox.textContent = voxcounter;
+    
+//     });
+
+
+// let podemoscounter =0;
+
+// votospodemos.addEventListener('click', e => {
+ 
+//     podemoscounter++;
+//     votospodemos.textContent = podemoscounter;
+        
+//     });
+
+
+// 4. Añadir un input y un botón para poder crear un nuevo objeto para votar. En este punto podemos vaciar el array de objetos inicial, ya que los temas de votación los introduciremos desde la interfaz.
+
+
+
+    const arr = [];
+
+
+
+    const inputpartido = document.createElement('input');
+    document.body.appendChild(inputpartido);
+    inputpartido.classList.add("inputclass");
+     const infoinput = document.querySelector(".inputclass");
+
+
+
+
+    const botonenviar = document.createElement('button');
+    botonenviar.classList.add("botonclase");
+    document.body.appendChild(botonenviar);
+    document.querySelector(".botonclase");
+
+    
+    botonenviar.textContent = "votar";
+
+
+    
+botonenviar.addEventListener('click', () => {
+    
+  const parti = {
+      descripcion: infoinput.value,
+      voto: 0,
+    }
+    console.log(parti);
 });
 
 
-
+    
