@@ -69,7 +69,5 @@ sumar_tarea.addEventListener('click', e => {
 
 })
 
-const checkbox = document.getElementsByClassName
-
 
 

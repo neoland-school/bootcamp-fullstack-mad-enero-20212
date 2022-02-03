@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.input_ej1 {
+   
+    background-color: burlywood;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contaiener_form {
+    width: 80%;
+    height: 130;
+    background-color: burlywood;
+  
+}
+
+.container_name {
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+    display: flex;
+    justify-content: center;
+}
+.container_email {
+    
+    height: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+.container_pasword {
+
+    height: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+.container_submit {
+   
+    height: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.input_name {
+    width: 60%;
+}
+
+.input_email{
+    width: 60%;
+}
+
+.input_pasword{
+    width: 60%;
+}
+
+.input_submit {
+    width: 15%;
+    background-color: rgb(70, 69, 69);
+    color: whitesmoke;
+}
