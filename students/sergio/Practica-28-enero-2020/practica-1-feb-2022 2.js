@@ -53,7 +53,7 @@ input_ej3.addEventListener('keydown', e => {
     p_ej3.textContent += e.key;
  }
 })
-*/
+
 // EJERCICIO 5 //
 
 // buscamos todos los inputs de entrada de texto //
@@ -83,4 +83,7 @@ input_submit.addEventListener('click', e => {
     p3.textContent = input_pasword.value;
     document.body.appendChild(p3);
 })
+*/
+
+// EJERCICIO 5 //
 

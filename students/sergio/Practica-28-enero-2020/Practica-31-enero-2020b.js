@@ -156,8 +156,8 @@ const ciudades = [city_mad,city_vlc,city_bcn,city_sev,city_carca,city_alzira];
 function addCity(arr,par) {
     const arrciudades = arr.filter(o => o.nombre === par);
     let city = arrciudades[0];
-    if(city != undefined) {
-       return city; 
+    if(city != undefined) {  // filtro para si la ciudad existe, en este caso si la ciudad no existe, nos devuelve undefined
+       return city;          // por lo tanto igualo al diferente al undefined para buscar la ciudad, si no nos dara una alerta
     } else {
         window.alert("el valor es erroneo")
     }
@@ -234,17 +234,20 @@ htmlOutPut(addCity(ciudades,parametro5));
 htmlOutPut(addCity(ciudades,parametro6));
 */
 
+// buscamos los elementos y los metemos en cosntantes para poder trabajar en DOM.
 const input_text_busq = document.getElementById('input_text_busq');
 
 const bottom_buscar = document.getElementById('bottom_buscar');
 
 const bottom_limpiar = document.getElementById('bottom_limpiar');
 
-bottom_buscar.addEventListener('click', e => {
-    let parametro = input_text_busq.value;
-    htmlOutPut(addCity(ciudades,parametro));
-});
 
+// Creamos el evento, dado que no es de remove(), 
+bottom_buscar.addEventListener('click', e => {
+    let parametro = input_text_busq.value;   // aqui buscamos el valor de un input y lo metemos en la variable parametro 
+    htmlOutPut(addCity(ciudades,parametro)); // para poder llamar a la funcion que te hacia la busqueda de su ciudad
+});                                          // y te crea la estructura HTML. Mas arriba se hace el filtro para si existe 
+                                             // la ciudad o no, dar una alerta.
 //funcion que elimne los valores //
 // 
 
