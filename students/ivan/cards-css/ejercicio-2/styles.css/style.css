@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #3705eb, #b5e9ff);
+}
+.row-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 40px;
+}
+.column-view {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+}
+
+div p:not([class]) {
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.row-view p::first-letter {
+  text-transform: capitalize;
+}
+.row-view p + p {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.column-view p {
+  text-transform: uppercase;
+}

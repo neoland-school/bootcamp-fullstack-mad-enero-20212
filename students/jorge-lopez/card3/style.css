@@ -1,0 +1,32 @@
+* {padding: 0px; margin: 0px; }
+
+.grid {display: grid;grid-template-columns: auto auto auto auto;grid-template-rows: auto auto auto auto; gap: 20px}
+
+.card 
+    {display: flex;justify-content: center;
+    margin-top: 50px;}
+
+.texto {position: absolute;left: 80px;
+    top: 120px;}
+
+.foto {position: relative;}
+
+.card .tp-transform {transition-property:initial;}
+
+.card__container {width: 100%;height: 100%; border: black 5px;box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);}
+.card__container:hover {transform: scale(1.1) rotate(1deg); transition: transform 750ms ease-in-out 0s;}
+
+.info {padding:20px ;}
+
+.blue {list-style: none; border-radius: 50%; border: solid black 1px;height: 15px; width: 15px; margin-left: 50%;background-color: blue; margin: 5px;}
+.red {list-style: none;border-radius: 50%; border: solid black 1px;height: 15px; width: 15px; margin-left: 50%;background-color: red; margin: 5px;}
+.green {list-style: none;border-radius: 50%; border: solid black 1px;height: 15px; width: 15px; margin-left: 50%;background-color: green; margin: 5px;}
+
+.colors {display: flex;}
+.tallas {display: flex;list-style: none;}
+
+.card1 { grid-column: 1 / 3 ;
+    grid-row: 1 ;}
+
+.card7 {grid-column:  3/ 5;  }
