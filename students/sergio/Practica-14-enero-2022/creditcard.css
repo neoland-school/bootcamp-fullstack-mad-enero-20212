@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.initial-container {
+    width: 500px;
+    height: 300px;
+    background-image: url(src/creditcard.jpeg);
+    background-size: 100% 100%;
+}
+
+.text-container {
+    width: 380px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.part-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.part-down {
+    display: flex;
+    flex-direction: column;
+}
+
+#type-card {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #614a06
+}
+
+#brand-card {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: #614a06
+}
+
+#id-client {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #614a06
+}
+
+#numer-card-client {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: #614a06
+}
+
+
+.img-card {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    background: rgb(34,193,195);
+    background: linear-gradient(234deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.id-client::first-letter {
+    text-transform: capitalize;
+}
