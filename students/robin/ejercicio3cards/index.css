@@ -1,0 +1,99 @@
+* {
+    list-style: none;
+}
+
+body{
+    margin: 10px;
+}
+
+.card{
+    border: 1px solid black;
+    width: 300px;
+    box-shadow: 1px 1px 10px 1px;
+}
+
+
+.part1 {
+    background: url(./img/zap.webp) center/cover ;
+    height: 280px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part1 h1{
+    border: 1px solid black;
+    padding: 10px;
+    background: white;  
+    box-shadow: 0px 5px 10px;
+
+}
+
+.name h1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.name {
+    margin-left: 20px;
+}
+
+.name p{
+    font-size: 12px;
+    color: gray;
+}
+
+.name i {
+    color: #5e87f5;
+    font-weight: bold;
+}
+
+.color{
+    display: flex;
+    margin-left: -40px;
+}
+
+.color div{
+    margin-right: 2px;
+}
+
+.blue {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: blue;
+}
+
+.red {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: red;
+}
+
+.yellow {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: yellow;
+}
+
+.pink {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: pink;
+}
+
+.card:hover {
+    
+    transform:scale(1.1) rotate(-1.1deg);
+ 
+}
+
