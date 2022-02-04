@@ -1,0 +1,117 @@
+
+.card{
+    width: 300px;
+    height: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+
+.divheader{background-image: url("https://img01.ztat.net/article/spp-media-p1/e1f3ac5cf6a93031a2272eebafcc0033/88298e680c844aba8d733ef9bdab4d95.jpg?imwidth=1800");
+    width: 300px;
+    height: 350px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    border-radius: 10px;
+
+          
+
+        }
+
+.divheader p{ text-align: center;
+    align-self: center;
+    color: seashell;
+    background-color:#D3D3D3;
+    border-style:double;
+    opacity: 0.7;
+    border-color:rgb(198, 204, 209);
+
+    
+
+
+}
+
+.divmain {
+    border-radius: 10px;
+    border-color: gainsboro;
+    border-style: solid;
+    justify-content: center;
+    width: 300px;
+    height: 350px;
+
+
+
+   }
+
+    
+
+
+.adidas{
+    display: flex;
+color: grey;
+}
+
+.numeros{display: inline;
+    text-indent: 100px;
+
+
+}
+
+.sizes{
+
+    color: grey}
+
+h2{color:rgb(48, 46, 51%)
+}
+.colors{margin:0px;
+
+    color: grey;
+
+}
+
+.colors-container{
+    display: flex;
+
+
+}
+
+
+.c1{background-color: rgb(221, 4, 4);
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 10px;}
+    
+    
+    .c2{background-color: rgb(235, 213, 16);
+        width: 20px;
+        height: 20px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        margin: 10px;
+        display: flex}
+ .c3{background-color: rgb(75, 15, 170);
+            width: 20px;
+            height: 20px;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            margin: 10px;
+            display: flex}
+
+            .c4{background-color: rgb(13, 173, 139);
+                width: 20px;
+                height: 20px;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                margin: 10px;}
+
+
+
+
