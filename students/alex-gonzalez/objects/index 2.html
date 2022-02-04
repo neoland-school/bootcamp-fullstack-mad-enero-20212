@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .car {
+            border: 1px solid salmon;
+        }
+
+        .car > img {
+            width: 100px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <script>
+      const seatLeonFR = {
+        marca: "Seat",
+        modelo: "Leon",
+        matrícula: "5432HHH",
+        img: "https://static.motor.es/fotos-jato/seat/uploads/seat-leon-fr_mid601d60342fda9.jpg",
+      };
+
+      const mini = {
+        marca: "Mini",
+        modelo: "Cooper",
+        matricula: "3021ANN",
+        img: "https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2020/09/mini-cooper-2077489.jpg",
+        "velocidad actual": 0,
+        encendido: false,
+      };
+
+      const honda = {
+        marca: "Honda",
+        modelo: "Civic",
+        matricula: "3928ANN",
+        img: "https://www.honda.es/content/dam/central/cars/Civic-5-door-2020/overview/Civic-5dr-close-contact-mobile.jpg/jcr:content/renditions/m_r.jpg",
+        "velocidad actual": 150,
+        encendido: true,
+      };
+
+      const tesla = {
+        marca: "Seat",
+        modelo: "Model 3",
+        matricula: "0000ANN",
+        img: "https://www.diariomotor.com/imagenes/2021/09/tesla-model-3-oferta-septiembre-2021-portada.jpg",
+        "velocidad actual": 120,
+        encendido: true,
+      };
+
+      const cars = [seatLeonFR, mini, tesla, honda];
+
+      function filterByBrand(cars, brand){
+          return cars.filter(c => c.marca.toLowerCase() === brand.toLowerCase());
+      }
+
+      function printCars(cars){
+          let htmlOutput = '<div class="container">';
+          cars.forEach(c => {
+              htmlOutput += `<div class="car">
+                    <h2>${c.marca} ${c.modelo}</h2>
+                    <img src="${c.img}" />
+                </div>
+                `;
+          });
+          htmlOutput+='</div>';
+          document.write(htmlOutput);
+      }
+
+    
+      const seats = filterByBrand(cars, 'seat');
+      printCars(seats);
+
+      const minis = filterByBrand(cars, 'mini');
+      printCars(minis);
+
+
+      document.write({hola: 'hola'})
+    </script>
+  </body>
+</html>
