@@ -1101,36 +1101,240 @@ const pal = [];
 
 
 
-    const arr = [];
+//     const arr = [];
 
 
 
-    const inputpartido = document.createElement('input');
-    document.body.appendChild(inputpartido);
-    inputpartido.classList.add("inputclass");
-     const infoinput = document.querySelector(".inputclass");
+//     const inputpartido = document.createElement('input');
+//     document.body.appendChild(inputpartido);
+//     inputpartido.classList.add("inputclass");
+//      const infoinput = document.querySelector(".inputclass");
 
 
 
 
-    const botonenviar = document.createElement('button');
-    botonenviar.classList.add("botonclase");
-    document.body.appendChild(botonenviar);
-    document.querySelector(".botonclase");
-
-    
-    botonenviar.textContent = "votar";
-
+//     const botonenviar = document.createElement('button');
+//     botonenviar.classList.add("botonclase");
+//     document.body.appendChild(botonenviar);
+//     document.querySelector(".botonclase");
 
     
-botonenviar.addEventListener('click', () => {
+//     botonenviar.textContent = "votar";
+
+
     
-  const parti = {
-      descripcion: infoinput.value,
-      voto: 0,
+// botonenviar.addEventListener('click', () => {
+    
+//   const parti = {
+//       descripcion: infoinput.value,
+//       voto: 0,
+//     }
+//     console.log(parti);
+// });
+// ------------------------------------------------------------------------
+
+// <!-- ## poo ( oop) programacion orientada a objetos -->
+
+
+
+// <!-- 1- Crear una clase que represente un perro (nombre, edad, numero de patas, color, hacerSonido()). -->
+
+
+// class Dog {
+
+//     constructor(name,age,legs,color,) {
+       
+//         this.name = name;
+//         this.age = age;
+//         this.legs = legs;
+//         this.color = color;
+//     }
+
+//     makesound(){
+//             return 'guau guau';
+//         }
+//     }
+
+
+
+    // 2- Crear una clase que represente un gato (nombre, edad, numero de patas, color, hacerSonido())
+
+    // class Cat {
+
+    //     constructor(name,age,legs,color,) {
+           
+    //         this.name = name;
+    //         this.age = age;
+    //         this.legs = legs;
+    //         this.color = color;
+    //     }
+    
+    //     makesound(){
+    //             return 'miau miau';
+    //         }
+    //     }
+
+
+// ---------------------------------------------------------------
+
+// 3- Crear un objeto de cada clase e imprimir el sonido que hace.
+
+// const garfield = new Cat('garfield', 13, 4, 'orange'); 
+// console.log(garfield);
+
+
+// const pluto = new Dog('pluto', 8, 4, 'black'); 
+// console.log(pluto);
+
+// console.log(garfield.makesound());
+// console.log(pluto.makesound());
+
+// 4- Vamos a crear una clase que represente a un animal. (nombre, edad, numero de patas, color, hacerSonido())
+
+
+        
+    // class Animal {
+
+    //     constructor(name,age,legs,color,) {
+           
+    //         this.name = name;
+    //         this.age = age;
+    //         this.legs = legs;
+    //         this.color = color;
+    //     }
+    
+    //     makesound(){
+    //             return 'sonidoanimal';
+    //         }
+    //     }
+
+
+    // 5- Vamos a crear la clase vaca que hereda de animal y que agregue otro parámetro que sea "tipo", sobrescribe el método hacerSonido() por el sonido de la vaca , crea un objeto de la clase vaca y muestra por consola el sonido.
+
+    // class Cow extends Animal { // esto permite que la clase perro herede propiedades y métodos del Animal
+
+    //     constructor(name,age,legs,color,type){
+    //         super(name,age,legs,color); 
+    //         this.type=type;
+    //     }
+    
+    //     makesoundvaca(){
+    //         return 'muuuu';
+    //     }
+        
+    // }
+
+    // const milka = new Cow('milka', 3, 4, 'black'); 
+    //     console.log(milka.makesoundvaca());
+
+
+    // 6. Vamos a crear la clase koala que hereda de animal y agrega un método extra que sea saludarAnimal() que devuelve un string que diga `Hola soy el koala ... y tengo ... años`, crea un objeto de la clase Koala y muéstralo por consola.
+
+
+    // class Koala extends Animal { 
+
+    //     constructor(name,age,legs,color,){
+    //         super(name,age,legs,color); 
+    //     }
+    
+    //     saludaranimal(){
+    //         return `hola, soy el Koala ${this.name} y tengo ${this.age} años`;
+    //     }
+        
+    // }
+
+    // const koly = new Koala('koly', 10, 4, 'grey'); 
+    //     console.log(koly.saludaranimal());
+
+
+// 7- Crear un clase que represente a un círculo. tendrá la propiedad radio y color y como métodos tendremos calcularArea y calcularPerimetro. Crear dos círculos uno con radio 2cm y otro con radio de 15cm. Crear una función en JS que dado un Circulo como parámetro de entrada, pinte el círculo con la dimensión real en el HTML. Además este círculo tiene que  tener una animación infinita de rotado sobre el eje Y
+
+
+// class Circulo {
+
+//     constructor(radio,color,) {
+       
+//         this.radio = radio;
+//         this.color = color;
+
+//     }
+    
+//     calcularArea = function() {
+//         return Math.PI * Math.pow(this.radio,2);
+//       }
+
+//     calcularPerimetro = function() {
+//         return Math.PI * this.radio * 2;
+//      }
+
+    
+
+//     }
+
+//     const cir1 = new Circulo(2,'green');
+
+//     const cir2 = new Circulo(15,'red');
+
+//     console.log(cir1.calcularArea());
+//     console.log(cir2.calcularArea());
+
+
+
+
+// Crear una función en JS que dado un Circulo como parámetro de entrada, pinte el círculo con la dimensión real en el HTML. Además este círculo tiene que  tener una animación infinita de rotado sobre el eje Y
+    
+
+
+    // pintarCirculo = function(ob) {
+    //     const pcirculo = document.createElement('div');
+    //     pcirculo.style= `background-color:${ob.color}; width:${ob.radio *2}cm ; height:${ob.radio *2}cm; border-radius:50%;`;
+    //     document.body.appendChild(pcirculo);
+    //   }
+
+    // pintarCirculo(cir1);
+
+
+
+// ----------------------------------------------------
+
+
+/* 1-Crea una clase de tipo producto que contenga nombre, imagen  y precio. */
+
+class Product {
+
+        constructor(name,image,price) {
+           
+            this.name = name;
+            this.image = image;
+            this.price = price;
+    
+        }
     }
-    console.log(parti);
-});
+
+// 2. luego crea varios productos de la clase Producto.
 
 
-    
+const chocolate = new Product('milka', 'https://m.media-amazon.com/images/I/815LKytPiZS._AC_SL1500_.jpg' , 3);
+
+const tomate = new Product('orlando', 'https://distribucionesplata.com/tienda/18550-thickbox_default/tomate-frito-orlando-brik-780-gr.jpg' , 4);
+
+const patatas = new Product('lays', 'https://m.media-amazon.com/images/I/71VaXGXPXGS._AC_SX342_.jpg' , 2);
+
+
+// 3- Crea una clase de carrito de compra que va a contener, una array de los productos,  un precio total,  el descuento, la cuenta global, y un método de agregar productos el cual sumara productos al array e ira sumando al precio total.
+
+
+
+
+class Carrito {
+
+    constructor(products,total,discount,global) {
+       
+        this.products = products = []
+        this.total = ;
+        this.price = price;
+
+    }
+}
+
+
