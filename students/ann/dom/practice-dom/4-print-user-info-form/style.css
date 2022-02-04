@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(242, 250, 212);
+  height: 15rem;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+}
+
+#submitButton {
+  width: 18rem;
+  height: 3rem;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  text-transform: uppercase;
+}
+
+#userName,
+#userEmail,
+#userNumber {
+  width: 35rem;
+  height: 2rem;
+}
+
+.user-info-container {
+  margin-top: 5rem;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.user-info-container > p {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
