@@ -59,7 +59,6 @@ navigator.getBattery().then(//escuchamos la promesa
                 const batteryState = document.querySelector('.battery_status');
                 batteryState.textContent = `${Math.floor(battery.dischargingTime/3600)} hours
                                                 ${Math.floor((battery.dischargingTime/3600-Math.floor(battery.dischargingTime/3600))*60)} min remaining.`;
-                
             }
             if(battery.level<=0.7 && battery.level>0.5){
                 const batteryStatus = document.querySelector('.main-container > div:first-child');
