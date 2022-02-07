@@ -12,11 +12,11 @@ printHelloTimeOut.then((value) => {
 })
 
 //2
-// const every500ms = setInterval(() =>{
-//     const textToPrint = document.createElement('p');
-//     textToPrint.textContent = 'Connecting...';
-//     document.body.appendChild(textToPrint);
-// }, 500)
+const every500ms = setInterval(() =>{
+    const textToPrint = document.createElement('p');
+    textToPrint.textContent = 'Connecting...';
+    document.body.appendChild(textToPrint);
+}, 500)
 
 //3
 const printNumbersButton = document.createElement('button');
@@ -26,38 +26,19 @@ document.body.appendChild(printNumbersButton);
 let num = 0;
 
 printNumbersButton.addEventListener('click', () => {
-
-       const print = setInterval(() => {
-            const number = document.createElement('p');
-            number.textContent = num;
-            document.body.appendChild(number);
-            num ++
-            if (num > 10) {
-                clearInterval(print);
-            }
-        }, 500)
+    const print = setInterval(() => {
+        const number = document.createElement('p');
+        number.textContent = num;
+        document.body.appendChild(number);
+        num ++
+        if (num > 10) {
+            clearInterval(print);
+        }
+    }, 500)
     
 })
 
 //4
-
-
-
-// function printWatch() {
-//     seconds++;
-//     if (seconds % 60 === 0) {
-//         minutes ++;
-//         seconds = 0;
-//     }
-//     if (minutes % 60 === 0 && minutes !== 0) {
-//         hours ++;
-//         minutes = 0;
-//     }
-//     if (seconds >= 10) watch.textContent = `${hours}:${minutes}:${seconds}`;
-//     else if (minutes >= 10) watch.textContent = `${hours}:${minutes}:${seconds}`;
-//     else if (hours >= 10) watch.textContent = `${hours}:${minutes}:${seconds}`;
-//     else watch.textContent = `0${hours}:0${minutes}:0${seconds}`;
-// }
 
 let seconds = 0;
 let minutes = 0;
