@@ -3,3 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.button_thumbsUp{
+    background-image: url(/sergio/4-feb-2022/carro-de-la-carretilla.png);
+    background-size: 100% 100%;
+    width: 40px;
+    height: 40px;
+    background-color:khaki;
+    margin-left: 10px;
+
+}
+.votos_items{
+    margin-top: 8px;
+}
+
+.tasks__list_item {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+    padding: 5px;
+    background-color: rgb(224, 210, 210);
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.descripcion_item {
+    align-self:center;
+    font-size: 20px;
+}
