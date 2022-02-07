@@ -1,0 +1,40 @@
+*{
+
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5DC;
+}
+
+input{
+    width: 50%;
+    margin-top: 0.5rem;
+}
+
+#submit{
+    margin-bottom: 2rem;
+    background-color: #263238;
+    width: 20%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.data_submit{
+
+    margin-top: 0.5rem;
+}
+
+
+.results_form{
+    margin-top: 1rem;
+    background-color: #FFFFFF;
+    text-align: center;
+}

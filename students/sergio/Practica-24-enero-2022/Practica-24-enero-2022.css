@@ -1,0 +1,16 @@
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: greenyellow;
+    border-radius: 50%;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.row:first-child > .circle, .row:last-child > .circle, circle:first-child, .circle:last-child{
+    background-color: red;
+}
+
