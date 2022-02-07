@@ -1,0 +1,15 @@
+body p {
+    color: yellow;
+}
+
+.cambio {
+    cursor:pointer;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.muestra {
+    display: block;
+}

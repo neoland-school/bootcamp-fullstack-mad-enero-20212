@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#header {
+  background-color: rgb(31, 31, 33);
+  position: sticky;
+  height: 100px;
+  width: 100%;
+  top: 0px;
+}
+.logo-img {
+  width: 150px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.center-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+}
+.bar-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  color: white;
+  width: 200px;
+  text-decoration: none;
+}
+.container {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+[data-background-color] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  font-size: 30px;
+  border: 2px solid black;
+  margin: 10px;
+  align-self: center;
+}
+
+[data-background-color="1"] {
+  background-color: rgb(210, 105, 30);
+}
+[data-background-color="2"] {
+  background-color: rgb(210, 192, 30);
+}
+[data-background-color="3"] {
+  background-color: rgb(147, 210, 30);
+}
+[data-background-color="4"] {
+  background-color: rgb(210, 72, 30);
+}
+[data-background-color="5"] {
+  background-color: rgb(153, 30, 210);
+}
+[data-background-color="6"] {
+  background-color: #1ed245;
+}
+[data-background-color="7"] {
+  background-color: #d21e36;
+}
+[data-background-color="8"] {
+  background-color: #1eccd2;
+}
+[data-background-color="9"] {
+  background-color: #525151;
+}
+[data-background-color="10"] {
+  background-color: #c7c4c4;
+}
+
+#footer {
+  margin-top: 10px;
+  height: 50px;
+  background-color: rgb(101, 101, 109);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-github {
+  height: 50px;
+  color: white;
+}
+main {
+  min-height: calc(100vh - 100px - 50px);
+}

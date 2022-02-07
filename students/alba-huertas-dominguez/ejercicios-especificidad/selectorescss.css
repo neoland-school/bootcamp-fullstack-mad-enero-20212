@@ -1,0 +1,15 @@
+a.link{color: blueviolet;
+}
+.link{color: cadetblue
+    ;}
+
+a:not([href]){ background-color: crimson;
+}
+
+div.container>:nth-child(even){box-shadow: cornflowerblue;}
+
+a+p{border: 5px;}
+
+.container div{font: 25px;}
+
+
