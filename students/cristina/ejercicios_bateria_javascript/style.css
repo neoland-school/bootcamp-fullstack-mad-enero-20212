@@ -16,6 +16,7 @@
     box-shadow: 5px 5px 15px 5px darkgrey ;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(55, 55, 56);
+    position: relative;
 }
 
 .parte_superior {
@@ -69,4 +70,16 @@
     background-color: #ffffff;
     margin: 2px;
 
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px #ffffff solid;
+    background-color: darkgreen;
+    position: absolute;
+    right: 0;
+    margin: 140px 10px;
+    color: #ffffff;
 }

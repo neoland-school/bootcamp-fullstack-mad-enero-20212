@@ -181,16 +181,13 @@ setInterval(() => {
 
     
 
-    let clockNew = `${hours > 9 ? hours : 0 + hours}:${minutes}:${seconds > 9 ? seconds : 0 + seconds}`;
+    let clockNew = `${hours}:${minutes}:${seconds}`;
 
     clockPrint.textContent = (clockNew)
 
 
 }, 1000); */
 
-//     h1.textContent = (hora > 9 ? hora : "0" + hora) 
-//         	 + ":" + (minuto > 9 ? minuto : "0" + minuto)
-//        		 + ":" + (sec > 9 ? sec : "0" + sec);
 
 
 /* Widget de estado de bateria. Vamos a crear un widget que nos indique el estado de la batería. Las imágenes de los diseños deben quedar así. Para poder obtener la información de la batería necesitamos la función navigator.getBattery */
@@ -248,7 +245,7 @@ const bat = navigator.getBattery()
         divInferior.appendChild(descripton);
 
     })
-    .catch(function (e) {
+    .error(function (e) {
         console.error(e);
     });
 
