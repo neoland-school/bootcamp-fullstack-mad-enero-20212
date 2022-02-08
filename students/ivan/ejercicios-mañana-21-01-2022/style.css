@@ -1,0 +1,41 @@
+.div__container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div__container-soon-1{
+    background-color: #1148F3;
+    height: 50px; 
+    width: 50px;
+    margin:2px;
+}
+.div__container-soon-2{
+    background-color: #F47732;
+    height: 50px; 
+    width: 50px;
+    margin:2px;
+}
+
+
+
+.chess__board-row{
+    display: flex;
+    background-color: rgb(185, 185, 185);
+    width: min-content;
+
+}
+.chess__board-colum{
+    background-color: black;
+    height: 20px;
+    width: 20px;
+    margin: 1px;
+    padding: 2px;
+}
+
+
+.bg__black{
+    background-color: #832000;
+}
+.bg__whithe{
+    background-color: #FCCF8B;
+}
