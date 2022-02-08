@@ -12,7 +12,6 @@ function updateInterface(battery) {
     } if (battery.charging === false) {
         batteryStatus.textContet = 'Battery not charging'
         if (battery.dischargingTime === Infinity) {
-            batteryStatus.textContet = 'Battery not charging'
             printBatteryWhenNotCharging(batteryLevel);
         } else {
             const secondsReimaining = battery.dischargingTime;
