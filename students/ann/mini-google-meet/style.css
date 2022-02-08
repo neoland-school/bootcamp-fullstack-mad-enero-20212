@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+.meet__header {
+    display: flex;
+    width: auto;
+    margin-left: 1rem;
+    height: 3rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.meet__text {
+    font-size: 1.5rem;
+}
+.meet__icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: rgb(18, 136, 110);
+    border-radius: 50%;
+}
+
+.fa-video {
+    color: white;
+}
+
+/* meeting container */
+
+.meet__meeting-container {
+    display: flex;
+    max-width: 1000px;
+    max-height: 500px;
+}   
+
+/* cam */
+.meet__cam-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+}
+
+.meet__cam {
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* info */
+
+.meet__info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    max-height: 500px;
+    align-items: center;
+    gap: 3rem;
+}
+
+.meet__options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.meet__button {
+    min-width: 100px;
+    min-height: 40px;
+    border-radius: 20px;
+    border: none;
+    -webkit-box-shadow: 0px 0px 7px -1px rgba(128,128,128,1);
+    -moz-box-shadow: 0px 0px 7px -1px rgba(128,128,128,1);
+    box-shadow: 0px 0px 7px -1px rgba(128,128,128,1);
+}
+
+.meet__button:hover {
+    cursor: pointer;
+}
+.meet__present-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    background-color: white;
+}
+
+.meet__join-container {
+    color: white;
+    background-color: rgb(18, 136, 110);
+}
+
+.fa-desktop {
+    color: rgb(18, 136, 110);
+}
