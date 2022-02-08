@@ -1,6 +1,9 @@
 
 
 
+
+
+
 let mystream = document.querySelector('video')
 
 
@@ -8,7 +11,27 @@ const btnMic = document.querySelector('.btnMic')
 const btnShare = document.querySelector('.share')
 
 
+function displayScreen(){
+    const share = document.querySelector('.share')
+    share.addEventListener('click', e=>{
+        if(navigator.mediaDevices){
+        navigator.mediaDevices.getDisplayMedia({
+        video: {
+            mediaSource:'screen'
+        }
+       
+    })
 
+    .then(function(s){
+        mystream.srcObject = s;
+    })
+    }
+    
+ })
+    
+}
+
+displayScreen()
 
 
 
@@ -136,35 +159,13 @@ unMute.addEventListener('click', e => {
 
 })
 
+// FUNCION Picture In Picture
 
 
-
-function displayScreen(){
-    const share = document.querySelector('.share')
-    share.addEventListener('click', e=>{
-        if(navigator.mediaDevices){
-        navigator.mediaDevices.getDisplayMedia({
-        video: {
-            mediaSource:'screen'
-        }
-       
+video.addEventListener('click', e => {
+    mystream.requestPictureInPicture().then(share => {
+        console.log(share)
     })
-
-    .then(function(s){
-        mystream.srcObject = s;
-    })
-    }
-    
- })
-    
-}
-
-displayScreen()
-
-// APRENDER Y LEER MAS SOBRE ESTAS APIS
-
-
-
-
+});
 
 
