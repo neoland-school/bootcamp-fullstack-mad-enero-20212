@@ -163,7 +163,7 @@ const pluggedOrNot = new Promise((resolve,rejeact) => {
 */
 
 
-let intervalo2;
+
 
 
 // FUNCION QUE TE CREA LA CARD DE LA BATERIA //
@@ -223,144 +223,83 @@ function HtmlOutputDivBatery(){
 // INTEVALO QUE TE CREA LA ANIMACION//
 function chargeBattery(){
 
-    let intervalo1 = setInterval(() => {
+    let intervalo = setInterval(() => {
     HtmlOutputDivBatery();
-    }, 200);
+    }, 500);
     setTimeout(() => {
-    window.clearInterval(intervalo1)
-    }, 1000);
-
+    window.clearInterval(intervalo)
+    }, 2500);
 };
 // FUNCION QUE REPITE LA RECARGA DE DIVS //
 function regenerate() {
-    
-  intervalo2 = setInterval(() => {
+    let intervalo = setInterval(() => {
         chargeBattery();
        const array = document.querySelectorAll('.level_batery');
        array.forEach(e => {
            e.remove();
        })
-    
-    },1000);
-
-
-
-
-    
-
+        
+    },2500);
 }
+
+function chargingChange() {
+    console.log('evento')
+ }
+
+
+
+
 
 let OnorNot = navigator.getBattery()
 
 // CREACION DE LAS TARJETAS PARA LAS DIFERENTES CARGAS //
-
-let batteryIsCharging = false;
-    
-
-navigator.getBattery().then(function(battery) { // lo mismo seria then.((battery) => { xxxx })
-  batteryIsCharging = battery.charging;
-    console.log(batteryIsCharging);
-    htmlOutputCard();
-    let pLevel = document.getElementById('p_level');
-    pLevel.textContent = `${(battery.level.toFixed(2))*100}%`;
-   
-    
-    if(batteryIsCharging === true){
-        
+ OnorNot.then(
+     (x) => {
+         x.onchargingchange = chargingChange()},
+/*
+     {if(x.charging === true){
+        htmlOutputCard();
+        let pLevel = document.getElementById('p_level');
+        pLevel.textContent = `${(x.level.toFixed(2))*100}%`;
         let pText = document.getElementById('text_level');
         pText.textContent = 'CHARGING BATERY'
         let colorCard = document.getElementById('animacion_card');
         colorCard.classList.add('green');
-        regenerate();
 
-    } else {
-        if(battery.level >= 0.2){
-            console.log(battery.level)
+        regenerate();
+     } else {
+        if(x.level >= 0.2){
+            htmlOutputCard();
+        let pLevel = document.getElementById('p_level');
+        pLevel.textContent = `${(x.level.toFixed(2))*100}%`;
         let pText = document.getElementById('text_level');
         pText.textContent = 'GOOD BATERY'
         let colorCard = document.getElementById('animacion_card');
         colorCard.classList.add('green');
-            if(battery.level>20 && battery.level < 50){
-               
+            if(x.level>20 && x.level < 50){
                 for(let i = 0; i < 1; i++){
-                    
                     HtmlOutputDivBatery();
                 }
-            } else if (battery.level>=50 && battery.level <80){
-                
+            } else if (x.level>=50 && x.level <80){
                 for(let i = 0; i < 2; i++){
                     HtmlOutputDivBatery();
-                  
                 }
             } else {
-            
                 for(let i = 0; i < 4; i++){
                     HtmlOutputDivBatery();
             }}
         } else {
+            htmlOutputCard();
+            let pLevel = document.getElementById('p_level');
+            pLevel.textContent = `${x.level.toFixed(2)*100}%`;
             let pText = document.getElementById('text_level');
             pText.textContent = 'LOW BATERY'
             let colorCard = document.getElementById('animacion_card');
             colorCard.classList.add('red');
             HtmlOutputDivBatery();
-        }};
+        }
+     }},
+*/
+     (y) => console.log(y.charging)
+ )
 
-
-battery.addEventListener('chargingchange', function() {
-     batteryIsCharging = battery.charging;
-     console.log(batteryIsCharging);
-     console.log('evento');
-    
-     window.clearInterval(intervalo2);
-    
-   
-     if(batteryIsCharging === true){
-        let pText = document.getElementById('text_level');
-        pText.textContent = 'CHARGING BATERY'
-        let colorCard = document.getElementById('animacion_card');
-        colorCard.classList.add('green');
-        regenerate();
-
-    } else if(batteryIsCharging === false){
-
-        if(battery.level >= 0.2){
-            console.log(battery.level)
-        let pText = document.getElementById('text_level');
-        pText.textContent = 'GOOD BATERY'
-        let colorCard = document.getElementById('animacion_card');
-        colorCard.classList.add('green');
-
-        if(battery.level>20 && battery.level < 50){
-            const array = document.querySelectorAll('.level_batery');
-            array.forEach(e => {
-           e.remove();
-       })
-            for(let i = 0; i < 1; i++){
-                
-                HtmlOutputDivBatery();
-            }
-        } else if (battery.level>=50 && battery.level <80){
-            const array = document.querySelectorAll('.level_batery');
-       array.forEach(e => {
-           e.remove();
-       })
-            for(let i = 0; i < 2; i++){
-                HtmlOutputDivBatery();
-            }
-        } else {
-            const array = document.querySelectorAll('.level_batery');
-       array.forEach(e => {
-           e.remove();
-       })
-            for(let i = 0; i < 4; i++){
-                HtmlOutputDivBatery();
-        }}
-    } else {
-        let pLevel = document.getElementById('p_level');
-        pText.textContent = 'LOW BATERY'
-        let colorCard = document.getElementById('animacion_card');
-        colorCard.classList.add('red');
-        HtmlOutputDivBatery();
-    }};
-});
-});
