@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/4b4736c94b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header class="meet__header">
         <div class="meet__icon-container">
@@ -18,15 +20,18 @@
     </header>
     <main class="meet__meeting-container">
         <div class="meet__cam-container">
-            <div class="meet__cam"></div>
+            <video autoplay autopictureinpicture class="meet__cam">
+
+            </video>
         </div>
         <div class="meet__info-container">
             <h2 class="meet__title">Q3 Milestones and Goals</h2>
             <div class="meet__options">
-                <button class="meet__join-container meet__button">
+                <div class="meet__invisible-button disabled"></div>
+                <button class="meet__join-button meet__button">
                     <p class="meet_text-join">Join now</p>
                 </button>
-                <button class="meet__present-container meet__button">
+                <button class="meet__present-button meet__button">
                     <i class="fas fa-desktop meet__icon-sharing"></i>
                     <p class="meet_text-present">Present</p>
                 </button>
@@ -35,4 +40,5 @@
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
