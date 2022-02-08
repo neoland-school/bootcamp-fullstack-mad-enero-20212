@@ -166,7 +166,7 @@ const pluggedOrNot = new Promise((resolve,rejeact) => {
 
 
 
-
+// FUNCION QUE TE CREA LA CARD DE LA BATERIA //
 function htmlOutputCard(){
 
     // CONTAINER CARD //
@@ -212,19 +212,15 @@ function htmlOutputCard(){
 
 }
 
-
-
-
-
-
 // FUNCIONES DE CARGAR BATERIA (3 siguientes) //
-
+// DIV ANIMACION BATERIA //
 function HtmlOutputDivBatery(){
     const batery = document.getElementById('batery');
     const div_batery = document.createElement('div');
     div_batery.classList.add('level_batery');
     batery.appendChild(div_batery);
 }
+// INTEVALO QUE TE CREA LA ANIMACION//
 function chargeBattery(){
 
     let intervalo = setInterval(() => {
@@ -234,7 +230,7 @@ function chargeBattery(){
     window.clearInterval(intervalo)
     }, 2500);
 };
-
+// FUNCION QUE REPITE LA RECARGA DE DIVS //
 function regenerate() {
     let intervalo = setInterval(() => {
         chargeBattery();
@@ -246,6 +242,9 @@ function regenerate() {
     },2500);
 }
 
+function chargingChange() {
+    console.log('evento')
+ }
 
 
 
@@ -253,22 +252,26 @@ function regenerate() {
 
 let OnorNot = navigator.getBattery()
 
-
+// CREACION DE LAS TARJETAS PARA LAS DIFERENTES CARGAS //
  OnorNot.then(
-     (x) => {if(x.charging === true){
+     (x) => {
+         x.onchargingchange = chargingChange()},
+/*
+     {if(x.charging === true){
         htmlOutputCard();
         let pLevel = document.getElementById('p_level');
-        pLevel.textContent = `${x.level*100}%`;
+        pLevel.textContent = `${(x.level.toFixed(2))*100}%`;
         let pText = document.getElementById('text_level');
         pText.textContent = 'CHARGING BATERY'
         let colorCard = document.getElementById('animacion_card');
         colorCard.classList.add('green');
+
         regenerate();
      } else {
         if(x.level >= 0.2){
             htmlOutputCard();
         let pLevel = document.getElementById('p_level');
-        pLevel.textContent = `${x.level*100}%`;
+        pLevel.textContent = `${(x.level.toFixed(2))*100}%`;
         let pText = document.getElementById('text_level');
         pText.textContent = 'GOOD BATERY'
         let colorCard = document.getElementById('animacion_card');
@@ -288,7 +291,7 @@ let OnorNot = navigator.getBattery()
         } else {
             htmlOutputCard();
             let pLevel = document.getElementById('p_level');
-            pLevel.textContent = `${x.level*100}%`;
+            pLevel.textContent = `${x.level.toFixed(2)*100}%`;
             let pText = document.getElementById('text_level');
             pText.textContent = 'LOW BATERY'
             let colorCard = document.getElementById('animacion_card');
@@ -296,6 +299,7 @@ let OnorNot = navigator.getBattery()
             HtmlOutputDivBatery();
         }
      }},
-
+*/
      (y) => console.log(y.charging)
  )
+

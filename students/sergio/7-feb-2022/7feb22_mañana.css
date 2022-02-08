@@ -34,10 +34,10 @@ body{
     flex-direction: column;
 }
 .green {
-    background-color: rgb(212, 248, 158);
+    background-color: rgb(97,205,114);
 }
 .red {
-    background-color: rgb(247, 89, 89);
+    background-color: rgb(231,75,59);
 }
 
 .parte_batery{
