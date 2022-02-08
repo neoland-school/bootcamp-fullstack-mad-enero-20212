@@ -2,7 +2,9 @@
 
 
 let mystream = document.querySelector('video')
-const btn = document.querySelector('.btnVid')
+
+
+const btnMic = document.querySelector('.btnMic')
 const btnShare = document.querySelector('.share')
 
 
@@ -35,15 +37,22 @@ displayCamera()
 
 const video = document.querySelector('#join')
 
+/*
+
 video.addEventListener('click', e => {
-    mystream.requestPictureInPicture().catch(err => {
-        console.log(err)
+    mystream.requestPictureInPicture().then(share => {
+        console.log(share)
     })
 });
+
+*/
 
 const btnDiv = document.querySelector('.btnVid')
 
 btnDiv.addEventListener('click', e => {
+    btnDiv.style.display = 'none';
+    const btnDivBack = document.querySelector('.btnVidBack')
+    btnDivBack.style.display = 'flex'
     if(e){
         navigator.mediaDevices
         navigator.mediaDevices.getUserMedia({
@@ -56,14 +65,75 @@ btnDiv.addEventListener('click', e => {
         })
        
     }
+
+})
+
+
+// VIDEO DE VUELTA
+
+const btnDivBack = document.querySelector('.btnVidBack')
+btnDivBack.addEventListener('click',e => {
+    btnDivBack.style.display = 'none';
+    btnDiv.style.display= 'flex';
+    
+    navigator.mediaDevices
+        navigator.mediaDevices.getUserMedia({
+            audio:true,
+            video: {
+                width:1280,
+                height:720
+            }
+        })
+    
+        .then(function(s){
+            mystream.srcObject = s;
+        })
+       
+    
+    
 })
 
 
 
-btn.addEventListener('click', () => {
-    const icon = document.querySelector('.fa-video-slash')
-    icon.classList.replace('fa-video-slash','fa-video')
-   
+btnMic.addEventListener('click', e => {
+    btnMic.style.display = 'none';
+    const unMute = document.querySelector('.unMute')
+    unMute.style.display= 'flex'
+
+    navigator.mediaDevices
+        navigator.mediaDevices.getUserMedia({
+            audio:false,
+            video: {
+                width:1280,
+                height:720
+            }
+        })
+    
+        .then(function(s){
+            mystream.srcObject = s;
+        })
+
+    
+})
+
+const unMute = document.querySelector('.unMute')
+unMute.addEventListener('click', e => {
+    unMute.style.display = 'none';
+    btnMic.style.display = 'flex';
+
+    navigator.mediaDevices
+        navigator.mediaDevices.getUserMedia({
+            audio:true,
+            video: {
+                width:1280,
+                height:720
+            }
+        })
+    
+        .then(function(s){
+            mystream.srcObject = s;
+        })
+
 })
 
 
@@ -77,6 +147,7 @@ function displayScreen(){
         video: {
             mediaSource:'screen'
         }
+       
     })
 
     .then(function(s){
@@ -90,8 +161,7 @@ function displayScreen(){
 
 displayScreen()
 
-//APRENDER COMO VOLVER A LA CAMARA Y COMO ACTIVAR Y DESACTIVAR CAMARA CAMBIANDO EL ICONO, EL ICONO LO PUEDO CAMBIAR PERO NO PUEDO VOLVER ACTIVAR CAMARA
-
+// APRENDER Y LEER MAS SOBRE ESTAS APIS
 
 
 
