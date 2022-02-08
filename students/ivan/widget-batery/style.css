@@ -21,7 +21,7 @@ body{
 }
 
 
-.battery-charging{
+.battery_body{
     height: 17vh;
     width: 20vh;
     background-color: #00C853;
@@ -32,22 +32,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.battery-low{
-    
-
-    height: 17vh;
-    width: 20vh;
-    background-color: #F44336;
-    position: relative;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
 }
 
 
@@ -94,19 +78,12 @@ body{
 }
 
 
-.alert_icon{
-    position: absolute;
-    bottom: -0.6rem;
-    right: 1rem;
-    width: 2rem;
-    height: 2rem;
-    border: solid 2px #ffffff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F44336;
-    color: #ffffff;
+.battery_body-low{
+    background-color: #F44336; 
+}
+
+.battery_body-half{
+    background-color: #f4b136; 
 }
 
 .battery_info{
