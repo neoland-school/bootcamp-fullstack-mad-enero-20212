@@ -12,6 +12,7 @@ function updateInterface(battery) {
     } if (battery.charging === false) {
         batteryStatus.textContet = 'Battery not charging'
         if (battery.dischargingTime === Infinity) {
+            batteryStatus.textContet = 'Battery not charging'
             printBatteryWhenNotCharging(batteryLevel);
         } else {
             const secondsReimaining = battery.dischargingTime;
@@ -50,14 +51,20 @@ function printBatteryWhenNotCharging(batteryLevel) {
     }
     if (batteryLevel < 25) {
         batteryInfo.textContent = 'Low battery!'
-        document.querySelector('.battery__img-container').style = `background-color: red`;
+        document.querySelector('.battery__img-container').style = `background-color: rgb(211, 61, 61);`
+        document.querySelectorAll('.battery__bar').forEach(b => b.style = style = `border: 1px solid rgb(211, 61, 61);`)
         document.querySelector('.battery__bar-1').style.display = 'none';
         document.querySelector('.battery__bar-2').style.display = 'none';
         document.querySelector('.battery__bar-3').style.display = 'none';
+        document.querySelector('.battery__bar-4').style.display = 'none';
     } else if (batteryLevel < 49) {
         document.querySelector('.battery__bar-1').style.display = 'none';
         document.querySelector('.battery__bar-2').style.display = 'none';
+        document.querySelector('.battery__bar-3').style.display = 'none';
     } else if (batteryLevel < 75) {
+        document.querySelector('.battery__bar-1').style.display = 'none';
+        document.querySelector('.battery__bar-2').style.display = 'none';
+    } else if (batteryLevel < 85) {
         document.querySelector('.battery__bar-1').style.display = 'none';
     }
 }

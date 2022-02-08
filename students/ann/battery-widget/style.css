@@ -21,15 +21,15 @@ body {
 }
 
 .battery__container {
-  width: 10rem;
-  height: 14rem;
+  width: 12rem;
+  height: 16rem;
   background-color: #dadada;
   border-radius: 5px;
 }
 
 .battery__img-container {
-  width: 10rem;
-  height: 7rem;
+  width: auto;
+  height: 8rem;
   background-color: rgb(75, 211, 75);
   border-radius: 5px;
   display: flex;
