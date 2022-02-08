@@ -1,30 +1,28 @@
 const joinButton = document.querySelector('.meet__join-button')
 const shareButton = document.querySelector('.meet__present-button')
 const camVideo = document.querySelector('video');
-const invisibleButton = document.querySelector('.meet__invisible-button')
+const quitVideo = document.querySelector('.meet__x-button')
 
 const constraints = {
     audio: false,
     video: {
-        width: 400, height: 250
+        width: 540, height: 350
     }
 }
 
 joinButton.addEventListener('click', (e) => {
-    joinButton.classList.add('btn');
     startCam();
 })
 
 shareButton.addEventListener('click', () => startSharingScreen())
-let cam
 
 function startCam() {
-    cam = navigator.mediaDevices.getUserMedia(constraints);
+    const cam = navigator.mediaDevices.getUserMedia(constraints);
     cam.then((stream) => {
         camVideo.srcObject = stream;
-        joinButton.textContent = 'Stop sharing';
-        joinButton.style = `background-color: rgb(189, 97, 97); color: white;`;
-        joinButton.disabled = true;
+        joinButton.style = `background-color: rgb(110, 110, 110);`
+        quitVideo.style.display = 'block';
+        showStopCamButton(stream);
     })
 
     setTimeout(() => {
@@ -33,14 +31,13 @@ function startCam() {
 
 }
 
-invisibleButton.addEventListener('click', (e) => {
-    console.log(e);
-})
-
-
-function turnCameraOff(stream) {
-    let tracks = stream.getVideoTracks();
-    tracks.forEach(track => track.enabled = false);
+function showStopCamButton(stream) {
+    quitVideo.addEventListener('click', (e) => {
+        stream.getTracks()[0].enabled = false;
+        document.exitPictureInPicture();
+        quitVideo.style.display = 'none';
+        joinButton.style = `background-color: rgb(18, 136, 110);`
+    })
 }
 
 function muteMic(stream) {
@@ -58,15 +55,16 @@ function pipWindow() {
 function startSharingScreen() {
     const screenSharing = navigator.mediaDevices.getDisplayMedia(constraints)
     screenSharing.then((stream) => {
+        console.log(stream);
         camVideo.srcObject = stream;
     })
 }
 
-function stopSharingCam(stream) {
-    if (joinButton.disabled === true) {
-        joinButton.addEventListener('click', (e) => {
-            console.log(e);
-            stream.removeTrack()
-        })
-    }
-}
+// function stopSharingCam(stream) {
+//     if (joinButton.disabled === true) {
+//         joinButton.addEventListener('click', (e) => {
+//             console.log(e);
+//             stream.removeTrack()
+//         })
+//     }
+// }
