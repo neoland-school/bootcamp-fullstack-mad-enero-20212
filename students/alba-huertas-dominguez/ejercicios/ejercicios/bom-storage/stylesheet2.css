@@ -1,0 +1,47 @@
+
+
+
+.titulo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+}
+
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    color: black;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(161, 219, 223);
+    
+}
+
+.combo1{
+   
+    justify-content: center;
+    min-width:30%;
+    min-height: 20px;
+    border-radius: 4px;
+    text-align:justify;
+    margin: 5px;
+}
+
+.combo2{
+   
+    justify-content: center;
+    min-width:30%;
+    min-height: 20px;
+    border-radius: 4px;
+    text-align:justify;
+    margin: 5px;
+}
+.boton{
+   background-color:rgb(245, 234, 234);
+   min-width: 10%;
+   margin: 15px;
+
+}
