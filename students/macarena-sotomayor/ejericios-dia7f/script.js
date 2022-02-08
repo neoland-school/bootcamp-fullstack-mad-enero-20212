@@ -199,7 +199,6 @@ divGreenA.appendChild(topGreen)
 topGreen.classList.add('topGreen')
 
 
-
 let divGreenB= document.createElement ('div');
 divGreen.appendChild(divGreenB);
 divGreenB.classList.add('classGreenB')
@@ -225,16 +224,45 @@ bateryRed.appendChild(divCargaR)
 divCargaR.classList.add('divcargaRed')
 
 let contador= 0
-let int =  setInterval(() => {
-    let divCarga= document.createElement('div')
-    bateryGreen.appendChild(divCarga)
-    divCarga.classList.add('divcargaGreen')
-    contador++
-    if(contador===6) {
-        document.querySelectorAll('.divcargaGreen').forEach(e=> e.remove())
-       contador=0
+let batteryManager = null
+
+const onBatteryChargingChange = () => {
+    if(batteryManager.charging){
+        id =  setInterval(() => {
+           
+            let divCarga= document.createElement('div')
+            bateryGreen.appendChild(divCarga)
+            divCarga.classList.add('divcargaGreen')
+            contador++
+            if(contador===6) {
+                document.querySelectorAll('.divcargaGreen').forEach(e=> e.remove())
+               contador=0
+            }
+           
+        }, 300);
+    }else {
+        clearInterval(id)
     }
-}, 300);
+};
+
+
+// navigator.getBattery().then(
+//     (battery) => {
+
+//     },
+//     () => {}
+// )
+
+// let int =  setInterval(() => {
+//     let divCarga= document.createElement('div')
+//     bateryGreen.appendChild(divCarga)
+//     divCarga.classList.add('divcargaGreen')
+//     contador++
+//     if(contador===6) {
+//         document.querySelectorAll('.divcargaGreen').forEach(e=> e.remove())
+//        contador=0
+//     }
+// }, 300);
 
 
 
