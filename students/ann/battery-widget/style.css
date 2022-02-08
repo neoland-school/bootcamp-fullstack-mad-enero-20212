@@ -22,7 +22,7 @@ body {
 
 .battery__container {
   width: 10rem;
-  height: 15rem;
+  height: 14rem;
   background-color: #dadada;
   border-radius: 5px;
 }
@@ -30,12 +30,13 @@ body {
 .battery__img-container {
   width: 10rem;
   height: 7rem;
-  background-color: green;
+  background-color: rgb(75, 211, 75);
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   transform: rotate(180deg);
+  position: relative;
 }
 
 .battery__icon {
@@ -56,7 +57,7 @@ body {
   width: 1.75rem;
   height: 0.77rem;
   background-color: white;
-  border: 1px solid green;
+  border: 1px solid rgb(75, 211, 75);
 }
 
 .battery__info-charge {
@@ -64,13 +65,17 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  height: 10rem;
   text-align: center;
 }
 
 .battery__percentage {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  color: rgb(43, 43, 43);
 }
 
 .battery__charge-status {
-  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: rgb(138, 138, 138);
 }

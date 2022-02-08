@@ -2,8 +2,6 @@ const batteryPercentage = document.querySelector('.battery__percentage');;
 const batteryStatus = document.querySelector('.battery__charge-status');
 const batteryInfo = document.querySelector('.battery__charge-info');
 
-navigator.getBattery();
-
 function updateInterface(battery) {
     const batteryLevel = battery.level * 100;
     batteryPercentage.textContent = `${batteryLevel}%`;
@@ -11,21 +9,24 @@ function updateInterface(battery) {
     if (battery.charging === true) {
         batteryStatus.textContent = 'Battery charging';
         printBatteryWhenCharging();
-    } else if (battery.charging === false) {
+    } if (battery.charging === false) {
+        batteryStatus.textContet = 'Battery not charging'
         if (battery.dischargingTime === Infinity) {
             batteryStatus.textContet = 'Battery not charging'
-            printBatteryWhenDischarging(batteryLevel);
+            printBatteryWhenNotCharging(batteryLevel);
         } else {
             const secondsReimaining = battery.dischargingTime;
             const hours = Math.floor(secondsReimaining / 3600);
             const minutes = Math.floor((secondsReimaining - (hours * 3600)) / 60);
             batteryStatus.textContent = `${hours} hours and ${minutes} minutes of battery left`;
-            printBatteryWhenDischarging(batteryLevel);
+            printBatteryWhenNotCharging(batteryLevel);
         }
     }
 }
 
 function printBatteryWhenCharging() {
+    const divs = document.querySelectorAll('.battery__bar');
+    divs.forEach(d => d.remove());
     let batteryNum = 1;
     setInterval(() => {
         const batteryBar = document.createElement('div');
@@ -34,14 +35,15 @@ function printBatteryWhenCharging() {
         batteryNum++;
         if (batteryNum > 6) {
             const divs = document.querySelectorAll('.battery__bar');
-            console.log(divs);
             divs.forEach(d => d.remove());
             batteryNum = 1;
         }
     }, 500)
 }
 
-function printBatteryWhenDischarging(batteryLevel) {
+function printBatteryWhenNotCharging(batteryLevel) {
+    const divs = document.querySelectorAll('.battery__bar');
+    divs.forEach(d => d.remove());
     for (let i = 1; i < 6; i++) {
         const batteryBar = document.createElement('div');
         batteryBar.classList.add('battery__bar', `battery__bar-${i}`);
@@ -62,5 +64,8 @@ function printBatteryWhenDischarging(batteryLevel) {
 }
 
 navigator.getBattery().then((battery) => {
+    console.log(battery.charging);
     updateInterface(battery);
+    battery.addEventListener('chargingchange', () => updateInterface(battery));
+    battery.addEventListener('levelchange', () => updateInterface(battery));
 })
