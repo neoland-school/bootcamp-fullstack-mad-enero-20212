@@ -8,9 +8,43 @@ async function getData() {
     return countries;
 }
 
+
+
+const inputSearch = document.querySelector('#search');
+// const submit = document.querySelector('#submit');
+
+
 getData().then( country => {
     printCountriesInSpanish(country)
+
+    const countriesHTML = document.querySelectorAll('.country')
+    let string = []
+    
+    inputSearch.addEventListener('keydown', (e) => {
+        console.log(e.key);
+           
+            if (e.key === 'Backspace') {
+                string.pop();
+            } else {
+                string.push(e.key.toLowerCase());
+                console.log(string);
+            }
+        
+            countriesHTML.forEach(c => {
+                if (!c.children[0].textContent.toLowerCase().startsWith(string.join(''))) {
+                    c.style = `display: none`;
+                } else {
+                    c.style = `display: block`;
+                }
+            })
+
+        console.log(string);
+    })
+    
 })
+
+
+
 
 function printCountriesWithMoreThan4Letters(country) {
     const countriesList = country.countries;
@@ -60,6 +94,7 @@ translateButton.addEventListener('click', (e) => {
     })
 })
 
+
 // function createButtonToTranslate() {
 //     const buttonEN = document.createElement('button')
 //     buttonEN.classList.add('button-EN')
@@ -81,21 +116,21 @@ translateButton.addEventListener('click', (e) => {
 // }, 1000)
 
 
-function translateCountryName() {
-    getData().then(country => {
-        const countries = country.countries;
-        const buttons = document.querySelectorAll('.button-EN');
-        buttons.forEach( button => {
-            button.addEventListener('click', (e) => {
-                const country = e.target.parentElement.children[0]
-                const countryNameHTML = e.target.parentElement.children[0].textContent
-                const found = countries.find(country => country.name_es === countryNameHTML)
-                country.textContent = found.name_en
-            })
-        })
-    })
+// function translateCountryName() {
+//     getData().then(country => {
+//         const countries = country.countries;
+//         const buttons = document.querySelectorAll('.button-EN');
+//         buttons.forEach( button => {
+//             button.addEventListener('click', (e) => {
+//                 const country = e.target.parentElement.children[0]
+//                 const countryNameHTML = e.target.parentElement.children[0].textContent
+//                 const found = countries.find(country => country.name_es === countryNameHTML)
+//                 country.textContent = found.name_en
+//             })
+//         })
+//     })
    
-}
+// }
 
 // setTimeout(() =>{
 //     translateCountryName()
