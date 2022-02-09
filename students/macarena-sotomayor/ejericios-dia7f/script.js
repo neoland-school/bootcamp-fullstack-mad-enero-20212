@@ -77,7 +77,7 @@
 
 
 
-// 5. Crear una promesa que se resuelva a los 2 segundos con el texto 'Resuelta cuando pasaron 2 segundos'
+// 5. Crear una promesa que se resuelva battery los 2 segundos con el texto 'Resuelta cuando pasaron 2 segundos'
 // const myPromise = new Promise((resolve, reject) => {
 //     setTimeout(() => {
         
@@ -95,13 +95,13 @@
 
 // 11:36
 // Timers:
-// 1. crear una página que pinte un P con el texto 'hello timeout' a los 8 segundos.
+// 1. crear una página que pinte un P con el texto 'hello timeout' battery los 8 segundos.
 
 
 
 // const myPromise = new Promise((resolve, reject) => {
 //     setTimeout(() => {
-//         resolve('hello timeout and hello to kokito, who is still fatter than a manatee. ');
+//         resolve('hello timeout and hello to kokito, who is still fatter than battery manatee. ');
 //     }, 8000);
 // });
 
@@ -178,7 +178,7 @@
 
 
 // 5.Apps:
-// Widget de estado de bateria. Vamos a crear un widget que nos indique el estado de la batería. Las imágenes de los diseños deben quedar así. Para poder obtener la información de la batería necesitamos la función navigator.getBattery (https://developer.mozilla.org/en-US/docs/Web/API/Navigator/getBattery):
+// Widget de estado de bateria. Vamos battery crear un widget que nos indique el estado de la batería. Las imágenes de los diseños deben quedar así. Para poder obtener la información de la batería necesitamos la función navigator.getBattery (https://developer.mozilla.org/en-US/docs/Web/API/Navigator/getBattery):
 // https://dribbble.com/shots/5007024-Flash-Message-Battery-Status-Daily-UI-16
 
 
@@ -203,66 +203,110 @@ let divGreenB= document.createElement ('div');
 divGreen.appendChild(divGreenB);
 divGreenB.classList.add('classGreenB')
 
-let divRed= document.createElement ('div'); 
-document.body.appendChild(divRed);
-divRed.classList.add('classRed')
+let batteryLevel= document.createElement('h2')
+divGreenB.appendChild(batteryLevel)
+batteryLevel.classList.add('batteryLevel')
+// bateryLavel.textContent= ' X %'
 
-let divRedA= document.createElement ('div'); 
-divRed.appendChild(divRedA);
-divRedA.classList.add('classRedA')
+let batteryStatus= document.createElement('p')
+divGreenB.appendChild(batteryStatus)
+batteryStatus.classList.add('batteryStatus')
+// batteryStatus.textContent= ' cargando o no'
 
-let divRedB= document.createElement ('div'); 
-divRed.appendChild(divRedB);
-divRedB.classList.add('classRedB')
 
-let bateryRed=document.createElement('div')
-divRedA.appendChild(bateryRed);
-bateryRed.classList.add('bateryRed')
 
-let divCargaR= document.createElement('div')
-bateryRed.appendChild(divCargaR)
-divCargaR.classList.add('divcargaRed')
+//
 
 let contador= 0
-let batteryManager = null
 
-const onBatteryChargingChange = () => {
-    if(batteryManager.charging){
-        id =  setInterval(() => {
-           
-            let divCarga= document.createElement('div')
-            bateryGreen.appendChild(divCarga)
-            divCarga.classList.add('divcargaGreen')
-            contador++
-            if(contador===6) {
-                document.querySelectorAll('.divcargaGreen').forEach(e=> e.remove())
-               contador=0
+function crearRayitas(){
+    let divCarga= document.createElement('div')
+    bateryGreen.appendChild(divCarga)
+    divCarga.classList.add('divcargaGreen')
+}
+function bateryAnimation (){
+    let int =  setInterval(() => {
+        crearRayitas()
+        contador++
+        if(contador===6) {
+            document.querySelectorAll('.divcargaGreen').forEach(e=> e.remove())
+            contador=0
+        }
+    }, 300);
+
+}
+
+navigator.getBattery().then(battery => {
+    batteryLevel.textContent=`${battery.level*100}%`;
+    battery.addEventListener('levelchange',() => {
+        batteryLevel.textContent=`${battery.level*100}%`;
+
+    })
+
+    battery.addEventListener('chargingchange', () => {
+        
+    })
+    if(battery.charging){
+        batteryStatus.textContent='Estas cargando las pilas Reina';
+        bateryAnimation()
+    }else{
+        batteryStatus.textContent='No estas cargando tu PC Guapa';
+        
+        if(battery.level<=0.2) {
+            crearRayitas()
+        }else if (battery.level <= 0.4){
+            for(i=0; i<=1;i++){
+                crearRayitas()
             }
-           
-        }, 300);
-    }else {
-        clearInterval(id)
+        }else if (battery.level <= 0.6){
+            for(i=0; i<=2;i++){
+                crearRayitas()
+            }
+        }else if (battery.level <= 0.8){
+            for(i=0; i<=3;i++){
+                crearRayitas()
+            }
+        }else{
+            for(i=0; i<=4;i++){
+                crearRayitas()
+            }
+        }
+
+        
+
+
     }
-};
+
+})
 
 
-// navigator.getBattery().then(
-//     (battery) => {
+function carga(){
+    
+}
 
-//     },
-//     () => {}
-// )
+// function cerateRedCard(){
+//     let divRed= document.createElement ('div'); 
+//     document.body.appendChild(divRed);
+//     divRed.classList.add('classRed')
+    
+//     let divRedA= document.createElement ('div'); 
+//     divRed.appendChild(divRedA);
+//     divRedA.classList.add('classRedA')
+    
+//     let divRedB= document.createElement ('div'); 
+//     divRed.appendChild(divRedB);
+//     divRedB.classList.add('classRedB')
+    
+//     let bateryRed=document.createElement('div')
+//     divRedA.appendChild(bateryRed);
+//     bateryRed.classList.add('bateryRed')
+    
+//     let divCargaR= document.createElement('div')
+//     bateryRed.appendChild(divCargaR)
+//     divCargaR.classList.add('divcargaRed')
 
-// let int =  setInterval(() => {
-//     let divCarga= document.createElement('div')
-//     bateryGreen.appendChild(divCarga)
-//     divCarga.classList.add('divcargaGreen')
-//     contador++
-//     if(contador===6) {
-//         document.querySelectorAll('.divcargaGreen').forEach(e=> e.remove())
-//        contador=0
-//     }
-// }, 300);
+// }
+
 
 
 

@@ -108,8 +108,24 @@ body{
     border-color: black;
     border: solid; */
     border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    gap: 20px;
 }
 
+.batteryLevel{
+    font-size: 50px;
+     
+}
+.batteryStatus{
+    font-size: large;
+    color: grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
 
 .classRed{
     display: flex;
