@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(https://img.freepik.com/foto-gratis/desenfoque-lujo-abstracto-degradado-gris-oscuro-negro-utilizado-como-pared-estudio-fondo-exhibir-sus-productos_1258-48265.jpg?size=626&ext=jpg&ga=GA1.2.1483501058.1641427200) ;
+    background-size: contain;
+    background-size: cover;
+    
+}
+
+h1 {
+    text-align: center;
+    margin: 40px;
+    color: white;
+}
+
+div > h1 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 1px;
+    border-bottom: 1px solid black;
+    color: #000;
+    
+}
+.cards {
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    background: white;
+    flex-direction: column;
+    border:none;
+    box-shadow: 5px 7px 17px 2px #000000;
+    justify-content: space-between;
+
+}
+
+.info {
+   
+    padding: 40px 10px;
+}
+
+i {
+    font-size: 20px;
+    color: white;
+  
+   
+}
+
+.divIcon {
+    background: red;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    align-content: center;
+    
+}
+
+.input-movil{
+    margin-right: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#btnAdd {
+    padding: 0px 20px;
+    width: 80px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: inset 1px -10px 15px -11px #000000;
+    background-color: #71ce73;
+    color: white;
+    font-weight: bold;
+}
+
+#btnAdd:hover{
+    box-shadow: none;
+}
+
+.footer {
+    background-color: 	#ff4913;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+ 
+}
+
+.divIcon{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.filtro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.filtro > select {
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.fa-thumbs-up {
+    cursor: pointer;
+}
+
+.fa-thumbs-down{
+    cursor: pointer;
+}
+
+.fa-times{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.fa-microphone{
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+.fa-microphone-alt-slash{
+    font-size: 50px;
+    margin-left: 20px;
+    color: red;
+}

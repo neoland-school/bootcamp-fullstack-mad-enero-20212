@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(182, 182, 182);
+}
+
+.header{
+    background-color: rgb(61, 61, 61);
+    height: 10vh;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main__container{
+    background-color: rgb(182, 182, 182);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tittle{
+    color: rgb(39, 39, 39);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.products{
+    background-color: rgb(236, 236, 236);
+    width: 80%;
+    height: 20vh;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-info{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.product-image{
+    background-image: url(./src/bike.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    border-radius: 10px;
+}
+.name-product{
+    margin-top: 5vh;
+    font-weight: bold;
+}
+
+.name-product > p{
+    margin-top: 0.2rem;
+}
+.add-product{
+    
+    display: flex;
+    align-items: baseline;
+    padding: 1.5rem;
+}
+
+.add-product > p:nth-child(even){
+
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.add-product > button:nth-child(odd){
+    font-size: 1.5rem;
+    padding: 0.2rem 0.5rem;
+    font-weight: bold;
+    background-color: rgb(92, 92, 92);
+    border-radius: 5px;
+    color: white;
+}
+
+.add-product > button:nth-child(odd):hover{
+    cursor: pointer;
+}
+
+.add-product > p:nth-child(odd):hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.payment_info{
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    background-color: beige;
+    text-align: end;
+    width: 80%;
+    margin-left: 10vw;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.payment_info > div{
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.subtotal, .shipping, .total-price {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 90%;
+    text-align: end;
+    font-weight: lighter;
+}
+
+.subtotal-value, .shipping-value, .total-price-value{
+    font-size: 1.4rem;
+}
+
+.total-price{
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.button{
+    width: 20%;
+    text-align: center;
+    margin-right: 5vw;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    border-radius: 5px;
+}
+
+.button:hover{
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: rgb(228, 191, 147);
+    color: black;
+}
+
+
+
+
+.footer{
+    background-color: rgb(61, 61, 61);
+    color: white;
+    height: 5vh;
+}

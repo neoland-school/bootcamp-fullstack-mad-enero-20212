@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cdb5ac5887.js" ></script>
+</head>
+
+<body>
+
+    <h1>Votacion de moviles</h1>
+    
+    <div class="filtro">
+
+    <select >
+        <option>De mayor a menor</option>
+        <option>De menor a mayor</option>
+    </select>
+
+    </div>
+    
+    <form class="inputs" onsubmit="return enviarMensaje()">
+        <input type="text" name="movil" id="model" class="input-movil" placeholder="Introduzca un movil" required>
+        <input type="text" name="info-movil" id="description" class="input-movil" placeholder="Critica el movil" required>
+        <button id="btnAdd">Añadir</button>
+        <i class="fas fa-microphone" id="micro"></i>
+        <i class="fas fa-microphone-alt-slash" id="microOff"></i>
+    </form>  
+    
+
+    <main class="cards">
+
+        <!--
+
+        <article class="card">
+
+        
+            
+            
+            <div>
+            <h1>Iphone 10</h1>
+            </div>
+            
+            <div class="info">
+                <p>diseño:es bonito, solo que el notch es grande y se pega las huellas
+                    potencia:el a11 bionic es bueno, algo viejo pero con 3 gigas es mejor que el 8 con solo 2
+                    Camara:Ni que hablar, es exelente, muy buena en noche y en dia
+                    Pantalla:Super retina HD, Oled 60Hz que es buena, lo malo son que no es ProMotion 120Hz</p>
+            </div>
+
+            <footer class="footer">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="fas fa-thumbs-down"></i>
+            </footer>
+       
+
+        </article>
+
+         -->  
+ 
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
