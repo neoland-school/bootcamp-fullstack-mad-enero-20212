@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: 	#dfdad2;
+}
+
+/* HEADER CARD */
+
+.container {
+    width: 500px;
+    height: 190px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: white;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo p {
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+
+.fa-terminal{
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cmdBox {
+    border: 2.5px solid black;
+    margin-right: 20px;
+    padding: 3px 5px;
+    border-radius: 4px;
+}
+
+.fa-question{
+    font-size: 12px;
+}
+
+.question-box {
+    border: 1px solid black;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* BODY CARD */
+
+.header-body {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.pages {
+    display: flex;
+}
+
+.pages > a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.pages > a:hover {
+    text-decoration: underline;
+}
+
+.clone {
+   
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.clone-url {
+    border: 1px solid black;
+    width: 90%;
+    padding: 7px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: 	#f3f3f3;
+}
+
+#copy {
+    width: 85%;
+    border: none;
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.clone-url > input {
+    margin-left: 7px;
+    background-color: #f3f3f3;
+    
+}
+
+
+
+.copy-box {
+
+    width: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.fa-copy {
+    font-size: 19px;
+}
+
+.footer {
+   padding: 10px;
+   margin-top: 5px;
+   margin-left: 11px;
+}
+
+#paste {
+    margin-top: 40px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: 	#f7a072;
+    color: white;
+    cursor: pointer;
+}
+
+.tick-box {
+    width: 40px;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    display: none;
+}
+
+#article {
+    margin-top: 30px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cdb5ac5887.js"></script>
+</head>
+<body>
+
+    <section class="container">
+        <header class="main-header">
+            <div class="logo">
+                <div class="cmdBox">
+                    <i class="fas fa-terminal"></i>
+                </div>
+                <p>Clone</p>
+            </div>
+
+            <div class="question-box">
+                <i class="fas fa-question"></i>
+            </div>
+
+        </header>
+
+        <main>
+            <header class="header-body">
+                <ul class="pages">
+                    <a href=""><li>HTTPS</li></a>
+                    <a href=""><li>SSH</li></a>
+                    <a href=""><li>GitHubCLI</li></a>
+                </ul>
+            </header>
+
+            <article class="clone">
+                <div class="clone-url">
+                    <input id="copy" value="https://github.com/neoland-school/bootcamp-fullstack-mad-enero-2022.git" >
+                    <button class="copy-box" id="btn-copy"> 
+                        <i class="fas fa-copy"></i>
+                       
+                    </button>
+                    <button class="tick-box" id="tickBtn">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </article>
+            
+            <footer class="footer">
+                <p>Use Git or checkoout with SVN using the web URL</p>
+            </footer>
+
+
+            <article id="article">
+                <button id="paste">Paste</button>
+                <p id="text-copied"></p>
+            </article>
+        </main>
+
+    </section>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
