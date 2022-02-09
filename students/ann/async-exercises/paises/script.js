@@ -11,24 +11,15 @@ const inputSearch = document.querySelector('#search');
 
 getData().then( country => {
     printCountriesInSpanish(country)
-
+    
     const countriesHTML = document.querySelectorAll('.country')
-    // const regex = /([A-Z])/gi;
     let string = []
     
     inputSearch.addEventListener('keydown', (e) => {
         let key = e.key
-        console.log(key);
-        console.log(key.length);
 
-        if (key === 'Backspace') {
-            string.pop();
-        }
-
-        if (key.length === 1) {
-            string.push(key.toLowerCase());
-            console.log(string);
-        }  
+        if (key === 'Backspace') string.pop();
+        if (key.length === 1) string.push(key.toLowerCase());
 
         countriesHTML.forEach(c => {
             if (!c.children[0].textContent.toLowerCase().startsWith(string.join(''))) {
@@ -37,10 +28,7 @@ getData().then( country => {
                 c.style = `display: block`;
             }
         })
-    console.log(string);
-})
-
-    
+    })  
 })
 
 function printCountriesWithMoreThan4Letters(country) {
