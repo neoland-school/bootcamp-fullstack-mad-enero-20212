@@ -1,0 +1,51 @@
+body { 
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: gainsboro;
+}
+p {
+    color: white;
+}
+
+#card {
+    background: linear-gradient(45deg, rgba(43,119,87,1) 25%, rgba(28,95,175,1) 100%);
+    width: 430px;
+    height: 240px;
+    border-radius: 20px;
+    
+}
+
+#pattern {
+    width: 430px;
+    height: 240px;
+    background-image: url('pattern-geometry.png');
+    background-size: 430px;
+    margin-top: 5px;
+    position: fixed;
+    top: 0;
+    opacity: 0.1;
+}
+
+#visa-credit {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 60px 0px 60px;
+    align-items: center;
+}
+
+#credit-text {
+    font-size: 20px;
+}
+
+#visa-text {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#visa-data {
+    display: block;
+    justify-content: space-between;
+    padding-left: 60px;
+    align-items: center;
+}

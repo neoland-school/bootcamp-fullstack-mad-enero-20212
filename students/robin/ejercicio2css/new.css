@@ -1,0 +1,85 @@
+
+div {
+    width: 350px;
+    height: 350px;
+    border: solid 1px black;
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+
+section {
+    flex-wrap: wrap;
+    display: flex;
+
+}
+
+#primero {
+    background:	#f97343 ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#segundo {
+    background: #e01b52;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#tercero {
+    background: #433451;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#cuarto {
+    background:#699e89 ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#quinto {
+    background:#e5cbb0 ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#sexto {
+    background: rgb(143,206,0);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#septimo {
+    background: rgb(147,196,125);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#octavo {
+    background: rgb(39,78,19);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#noveno {
+    background: rgb(106,168,79);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#decimo {
+    background: rgb(53,28,117);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
