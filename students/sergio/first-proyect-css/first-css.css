@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+div p {
+    color: darkred;
+    border: 1px white;
+}
+
+p {
+    width: 350px; 
+    display: block;
+}
+
+div:hover {
+    cursor: pointer;
+}
+

@@ -39,11 +39,11 @@
 
 
 
-// let e= prompt('intoduce tu edad, chati')
+let e= prompt('intoduce tu edad, chati')
 
-// let años= e >= 18 ?  'Adelante, puedes pasar a nuestro garito' : 'Perdon, baby, vuleve en unos años'; 
-// // document.write(años +' '+ 'pasar a nuestro garito')
-// alert(años )
+let años= e >= 18 ?  'Adelante, puedes pasar a nuestro garito' : 'Perdon, baby, vuleve en unos años'; 
+// document.write(años +' '+ 'pasar a nuestro garito')
+alert(años )
 
 
 //ejercicio 4 
@@ -60,15 +60,15 @@
 
 
 
-let luces= prompt ('¿De qué color esta el semaforo?');
+// let luces= prompt ('¿De qué color esta el semaforo?');
 
-if (luces === 'verde') {document.write('Adelante, puedes pasar')
+// if (luces === 'verde') {document.write('Adelante, puedes pasar')
     
-} else if (luces === 'ambar') { document.write('esta en ambar, pasa si no es seguro parar')
+// } else if (luces === 'ambar') { document.write('esta en ambar, pasa si no es seguro parar')
     
-}else  { document.write('quieto parao')
+// }else  { document.write('quieto parao')
 
-}
+// }
 
 //ejercicio 6
 
@@ -125,22 +125,22 @@ let dato2=prompt('segundo numero')
 
 
 
-switch(operacion){
-    case 'suma': {
-        document.write(parseFloat(dato1)+parseFloat(dato2));break;
-    }
-    case 'resta' :{
-        document.write(parseFloat(dato1)-parseFloat(dato2));break;
+// switch(operacion){
+//     case 'suma': {
+//         document.write(parseFloat(dato1)+parseFloat(dato2));break;
+//     }
+//     case 'resta' :{
+//         document.write(parseFloat(dato1)-parseFloat(dato2));break;
     
-    }
-    case 'multiplicacion':{
-        document.write(parseFloat(dato1)*parseFloat(dato2));break;
-    }
-    case 'division':{
-        document.write(parseFloat(dato1)/parseFloat(dato2));break;
-    }
+//     }
+//     case 'multiplicacion':{
+//         document.write(parseFloat(dato1)*parseFloat(dato2));break;
+//     }
+//     case 'division':{
+//         document.write(parseFloat(dato1)/parseFloat(dato2));break;
+//     }
 
-}
+// }
 
 
 
