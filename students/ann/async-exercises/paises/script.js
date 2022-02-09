@@ -18,30 +18,41 @@ getData().then( country => {
     printCountriesInSpanish(country)
 
     const countriesHTML = document.querySelectorAll('.country')
+    // const regex = /([A-Z])/gi;
     let string = []
     
     inputSearch.addEventListener('keydown', (e) => {
-        console.log(e.key);
-           
-            if (e.key === 'Backspace') {
-                string.pop();
-            } else {
-                string.push(e.key.toLowerCase());
-                console.log(string);
-            }
-        
-            countriesHTML.forEach(c => {
-                if (!c.children[0].textContent.toLowerCase().startsWith(string.join(''))) {
-                    c.style = `display: none`;
-                } else {
-                    c.style = `display: block`;
-                }
-            })
+        let key = e.key
+        console.log(key);
+        console.log(key.length);
 
-        console.log(string);
-    })
+        if (key === 'Backspace') {
+            string.pop();
+        }
+
+        if (key.length === 1) {
+            string.push(key.toLowerCase());
+            console.log(string);
+        }  
+
+        countriesHTML.forEach(c => {
+            if (!c.children[0].textContent.toLowerCase().startsWith(string.join(''))) {
+                c.style = `display: none`;
+            } else {
+                c.style = `display: block`;
+            }
+        })
+    console.log(string);
+})
+
     
 })
+
+
+
+
+
+
 
 
 
