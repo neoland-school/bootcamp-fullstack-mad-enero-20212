@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.div1{
+    width: 220px;
+    height: 320px;
+    /* border: solid 2px black; */
+    box-shadow: 5px 5px 10px 5px #000000;
+    border-radius: 10%;
+    margin:50px;
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+}
+
+/* .div2{
+    width: fit-content;
+    height: 220px;
+    border: solid 2px black;
+    border-radius: 10%;
+    margin:50px;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+} */
+
+.div1img{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .div2img{
+    width: 116px;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.div1info{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    border-bottom-left-radius: 12%;
+    border-bottom-right-radius: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2info{
+    width: 116px;
+    height: 108px;
+    background-color: white;
+    border-bottom-left-radius: 12%;
+    border-bottom-right-radius: 12%;
+}
+
+.divBatery1{
+    width: 25%;
+    height: 50%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2px;
+    padding: 2px;
+}
+
+.rayita{
+    width: 100%;
+    height: 21%;
+    background-color: white;
+}
+
+
+
+/* EJERCICIO DE GOOGLE MEET */
+
+.body__meet{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__meet{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.imgmeet{
+    width: 120px;
+    height: 50px;
+}
+
+
+
+
+
+
+
