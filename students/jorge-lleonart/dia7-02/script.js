@@ -107,16 +107,16 @@
 // 2. En la página anterior crear un intervalo que pinte un p cada 500 ms con el texto 'conectando...'
 
 // const myPromise = new Promise((resolve, reject) => {
-    // setInterval(() => {
-    //     resolve('conectando...');
-    // },500)
+// setInterval(() => {
+//     resolve('conectando...');
+// },500)
 // });
 
 // myPromise.then(
 //     data => {
-        // let p1 = document.createElement('p');
-        // document.body.appendChild(p1);
-        // p1.textContent = data},
+// let p1 = document.createElement('p');
+// document.body.appendChild(p1);
+// p1.textContent = data},
 //     () => {console.log('Hello world rejected')}
 // ); 
 
@@ -128,16 +128,16 @@
 // but.textContent = 'pulsar';
 
 // but.addEventListener('click', () => {
-    // let counter = 0
-    // let interval = setInterval(() => {
-    //     let p1 = document.createElement('p');
-    //     document.body.appendChild(p1);
-    //     p1.textContent = counter;
-    //     counter++
-    //     if (counter===11){
-    //         clearInterval(interval)
-    //     }
-    // }, 500)
+// let counter = 0
+// let interval = setInterval(() => {
+//     let p1 = document.createElement('p');
+//     document.body.appendChild(p1);
+//     p1.textContent = counter;
+//     counter++
+//     if (counter===11){
+//         clearInterval(interval)
+//     }
+// }, 500)
 // });
 
 
@@ -172,62 +172,115 @@
 // Widget de estado de bateria. Vamos a crear un widget que nos indique el estado de la batería. Las imágenes de los diseños deben quedar así. Para poder obtener la información de la batería necesitamos la función navigator.getBattery
 
 
-let div1 = document.createElement('div');
-document.body.appendChild(div1);
-div1.classList.add('div1')
+// let div1 = document.createElement('div');
+// document.body.appendChild(div1);
+// div1.classList.add('div1')
 
-let div1img = document.createElement('div');
-div1.appendChild(div1img);
-div1img.classList.add('div1img')
+// let div1img = document.createElement('div');
+// div1.appendChild(div1img);
+// div1img.classList.add('div1img')
 
-let div1info = document.createElement('div');
-div1.appendChild(div1info);
-div1info.classList.add('div1info')
+// let div1info = document.createElement('div');
+// div1.appendChild(div1info);
+// div1info.classList.add('div1info')
 
-let divBatery1 = document.createElement('div');
-div1img.appendChild(divBatery1);
-divBatery1.classList.add('divBatery1')
+// let divBatery1 = document.createElement('div');
+// div1img.appendChild(divBatery1);
+// divBatery1.classList.add('divBatery1')
 
-let divBatery1top = document.createElement('div');
-div1img.appendChild(divBatery1top);
-divBatery1top.classList.add('divBatery1top')
+// let divBatery1top = document.createElement('div');
+// div1img.appendChild(divBatery1top);
+// divBatery1top.classList.add('divBatery1top')
 
-let div2 = document.createElement('div');
-document.body.appendChild(div2);
-div2.classList.add('div2')
+// // let div2 = document.createElement('div');
+// // document.body.appendChild(div2);
+// // div2.classList.add('div2')
 
-let div2img = document.createElement('div');
-div2.appendChild(div2img);
-div2img.classList.add('div2img')
+// // let div2img = document.createElement('div');
+// // div2.appendChild(div2img);
+// // div2img.classList.add('div2img')
 
-let div2info = document.createElement('div');
-div2.appendChild(div2info);
-div2info.classList.add('div2info')
+// // let div2info = document.createElement('div');
+// // div2.appendChild(div2info);
+// // div2info.classList.add('div2info')
 
-let divBatery2 = document.createElement('div');
-div2img.appendChild(divBatery2);
-divBatery2.classList.add('divBatery1')
+// // let divBatery2 = document.createElement('div');
+// // div2img.appendChild(divBatery2);
+// // divBatery2.classList.add('divBatery1')
 
-let divBatery2top = document.createElement('div');
-div2img.appendChild(divBatery2top);
-divBatery2top.classList.add('divBatery2top')
+// // let divBatery2top = document.createElement('div');
+// // div2img.appendChild(divBatery2top);
+// // divBatery2top.classList.add('divBatery2top')
 
-let rayitaRoja = document.createElement('div');
-divBatery2.appendChild(rayitaRoja);
-rayitaRoja.classList.add('rayitaRoja');
+// // let rayitaRoja = document.createElement('div');
+// // divBatery2.appendChild(rayitaRoja);
+// // rayitaRoja.classList.add('rayitaRoja');
 
-let counter = 0
-let interval = setInterval(() => {
-    let rayita = document.createElement('div');
-    divBatery1.appendChild(rayita);
-    rayita.classList.add('rayita')
-    counter++
-    if (counter===5){
-        document.querySelectorAll('.rayita').forEach(e => e.remove());    
-        counter = 0;
-    }
-}, 500)
+// let batteryManager = null // info de la bateria
+// function crearRayita() {
+//     let rayita = document.createElement('div');
+//     divBatery1.appendChild(rayita);
+//     rayita.classList.add('rayita')
+// }
 
+// let interval
+
+// function bateryAnimation(a = 0) {
+//     let counter = a
+//     interval = setInterval(() => {
+//         crearRayita()
+//         counter++
+//         if (counter === 5) {
+//             document.querySelectorAll('.rayita').forEach(e => e.remove());
+//             counter = a;
+//         }
+//     }, 500)
+// }
+
+
+// // 1 Level de bateria en el div dea abajo 
+// // 2 Estado de si estoy enchufado o no
+
+// let batteryLevel = document.createElement('h2');
+// div1info.appendChild(batteryLevel);
+// batteryLevel.classList.add('batteryLevel');
+// batteryLevel.textContent = '60%';
+
+// let batteryStatus = document.createElement('p');
+// div1info.appendChild(batteryStatus);
+// batteryStatus.classList.add('batteryStatus');
+
+
+// navigator.getBattery().then(a => {
+//     batteryLevel.textContent = `${a.level * 100}%`;
+//     for (i = 1; i <= Math.ceil(a.level / 0.25); i++) {
+//         crearRayita()
+//     }
+//     batteryStatus.textContent = 'No esta conectado al cargador';
+
+// });
+
+// navigator.getBattery().then(a => {
+//     a.onlevelchange = () => {
+//         for (i = 1; i <= Math.ceil(a.level / 0.25); i++) {
+//             crearRayita()
+//         }
+//         batteryLevel.textContent = `${a.level * 100}%`
+//     }
+//     a.onchargingchange = () => {
+//         if (a.charging) {
+//             bateryAnimation()
+//             batteryStatus.textContent = 'Esta conectado al cargador';
+//         } else {
+//             for (i = 1; i <= Math.ceil(a.level / 0.25); i++) {
+//                 crearRayita()
+//             }
+//             batteryStatus.textContent = 'No esta conectado al cargador';
+//         }
+//     }
+// })
+
+// FALTA RETOCAR EL EJERCICIO DE LA BATERIA 
 
 
 
