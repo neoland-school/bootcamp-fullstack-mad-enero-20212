@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/cdb5ac5887.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-title">
+            <p class="name">proyecto-final</p>
+            <p class="date">Updated on 02/02/2022</p>
+        </div>
+        
+        <div class="header-options">
+            <input type="text" class="filter" placeholder="Filter cards"><i class="fas fa-search"></i></input>
+            <i class="fas fa-plus"> Add cards</i>
+            <i class="fas fa-expand">Full screen</i>
+            <i class="fas fa-bars">Menu</i>
+        </div>
+    </header>
+
+    <main class="cards-container">
+
+        <section class="cards">
+            <header class="card-header">
+                <p>Para hacer</p>
+                <div>
+                    <i class="fas fa-plus " ></i>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </header>
+
+            <div class="añadir-tarea">
+
+                <form class="tarea"> 
+                    <input type="text"  id="tarea-text" placeholder="Nueva tarea..." required>
+                    
+                </form>
+
+            </div>
+
+            <div class="btn-añadir">
+
+                <button id="btnAdd">Add</button>
+                <button>Canel</button>
+
+            </div>
+
+            <div class="cards-div"  id= "card1">
+                <!--
+                <article class="card-info" >
+                    <p>Me gustaria ir a pasear el perro a una montaña de un lugar que no se</p>
+               
+                    -->
+             </div>
+
+
+
+        </section>
+
+        <section class="cards" >
+            <header class="card-header">
+                <p>En proceso</p>
+                <div>
+                    <i class="fas fa-plus add"  ></i>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </header>
+
+            <div class="cards-div" id= "card2">
+                
+               
+        
+            </div>
+
+
+
+        </section>
+
+        <section class="cards">
+            <header class="card-header">
+                <p>Acabado</p>
+                <div>
+                    <i class="fas fa-plus add"></i>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </header>
+
+            <div class="cards-div" id="card3">
+                <!--
+                <article class="card-info">
+                    <p>Como usuario se ha aprendido html</p>
+                </article>
+                -->
+
+        
+             </div>
+
+
+
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

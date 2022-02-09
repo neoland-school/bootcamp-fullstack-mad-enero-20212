@@ -1,0 +1,151 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header-title > p{
+    padding: 3px;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.date {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.header-options > i {
+    padding: 10px;
+}
+
+.filter {
+    padding: 9px;
+    width:270px;
+    border-radius: 5px;
+}
+
+/* CARDS */
+
+.cards {
+    width: 350px;
+    border: 1px solid black;
+    height: 350px;
+    background-color: 	#f5edf5;
+    border-radius: 5px;
+    border: none;
+    margin-left: 20px;
+    overflow: auto;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding-top: 15px;
+}
+
+.card-header > p{
+    font-weight: bold;
+}
+
+.card-info {
+    margin-bottom: 10px;
+    border: 1px solid;
+    width: 90%;
+    padding: 10px;
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none
+
+
+}
+
+.cards-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px ;
+
+}
+
+.add{
+    cursor: pointer;
+}
+
+.btn-añadir{
+    margin-left: 20px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.btn-añadir > button {
+    width: 45%;
+    padding: 5px 30px;
+    border-radius: 5px;
+    
+}
+
+.btn-añadir > input {
+    width: 45%;
+    padding: 5px 30px;
+    border-radius: 5px;
+    
+}
+
+
+.añadir-tarea {
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+#tarea-text {
+    padding: 20px;
+    width: 94%;
+    border-radius: 5px;
+}
+
+#card-info1{
+    margin-bottom: 10px;
+    border: 1px solid;
+    width: 90%;
+    padding: 10px;
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none
+}
+
+#btnAdd {
+    cursor: pointer;
+    background-color: #6bb120;
+    color: white;
+}
