@@ -1,18 +1,13 @@
 const dataSrc = `https://gist.githubusercontent.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/raw/107e0bdf27918adea625410af0d340e8fc1cd5bf/countries.json`
 const translateButton = document.querySelector('.button-translate')
 
-//get data
 async function getData() {
     const result = await fetch(dataSrc)
     const countries = await result.json()
     return countries;
 }
 
-
-
 const inputSearch = document.querySelector('#search');
-// const submit = document.querySelector('#submit');
-
 
 getData().then( country => {
     printCountriesInSpanish(country)
@@ -47,15 +42,6 @@ getData().then( country => {
 
     
 })
-
-
-
-
-
-
-
-
-
 
 function printCountriesWithMoreThan4Letters(country) {
     const countriesList = country.countries;
@@ -104,53 +90,4 @@ translateButton.addEventListener('click', (e) => {
         })
     })
 })
-
-
-// function createButtonToTranslate() {
-//     const buttonEN = document.createElement('button')
-//     buttonEN.classList.add('button-EN')
-//     buttonEN.textContent = 'Translate name to English'
-//     return buttonEN
-// }
-
-// function addButtonToTranslate() {
-//     const divs = document.querySelectorAll('.country')
-//     divs.forEach(div => {
-//         const button = createButtonToTranslate();
-//         div.appendChild(button)
-//     })
-// }
-
-// setTimeout(() => {
-//     addButtonToTranslate();
-//     translateCountryName()
-// }, 1000)
-
-
-// function translateCountryName() {
-//     getData().then(country => {
-//         const countries = country.countries;
-//         const buttons = document.querySelectorAll('.button-EN');
-//         buttons.forEach( button => {
-//             button.addEventListener('click', (e) => {
-//                 const country = e.target.parentElement.children[0]
-//                 const countryNameHTML = e.target.parentElement.children[0].textContent
-//                 const found = countries.find(country => country.name_es === countryNameHTML)
-//                 country.textContent = found.name_en
-//             })
-//         })
-//     })
-   
-// }
-
-// setTimeout(() =>{
-//     translateCountryName()
-// }, 2000)
-
-
-/*
-buttonEN.addEventListener('click', () => {
-        countryName.textContent = countryNameEN
-    })
-    */
 
