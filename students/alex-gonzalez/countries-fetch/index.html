@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+  </head>
+  <body>
+    <input id="INPUT_FILTER" type="text" placeholder="filtra por nombre" />
+    <button id="CHANGE_LANGUAGE">EN</button>
+    <script>
+      let countries = []; // variable global donde guardaré los países
+
+      async function getCountries() {
+        const r = await fetch(
+          "https://gist.githubusercontent.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/raw/107e0bdf27918adea625410af0d340e8fc1cd5bf/countries.json"
+        );
+        const data = await r.json();
+        countries = data.countries;
+        return data.countries;
+      }
+
+      function printCountryES(country) {
+        const p = document.createElement("p");
+        p.textContent = `${country.name_es} ${country.code} ${country.dial_code}`;
+        document.body.appendChild(p);
+      }
+
+      function printCountryEN(country) {
+        const p = document.createElement("p");
+        p.textContent = `${country.name_en} ${country.code} ${country.dial_code}`;
+        document.body.appendChild(p);
+      }
+
+      function deleteCountries() {
+        const countriesDOM = document.querySelectorAll("p"); // selecciono todos los p's
+        countriesDOM.forEach((c) => c.remove()); // por cada p lo elimino del DOM
+      }
+
+      async function printOnlyFive() {
+        /*
+         * Tenemos 242 paises, es decir, un array de objetos
+         * 1. Obtengo los países
+         * 2. Aplico un filter buscando los que tiene el nombre en ingles > 5 characteres
+         *   name_en.length > 5
+         * 3. Pinto el array en el HTML
+         */
+        // const countries = await getCountries(); // necesito el await porque getCountries es async
+        const filteredCountries = countries.filter((c) => c.name_en.length > 5); // paso 2
+        filteredCountries.forEach((c) => printCountryES(c));
+      }
+
+      async function printAllCountries() {
+        const countries = await getCountries();
+        countries.forEach((c) => printCountryES(c));
+      }
+
+      document
+        .querySelector("#CHANGE_LANGUAGE")
+        .addEventListener("click", () => {
+          // Esto es lo que tiene que hacer al pulsar el evento
+          /* PROBLEMA: Cambiar las p's al nombre en ingles
+                 1. Borro lo actual
+                 2. Pinto de nuevo con el nombre en ingles
+            */
+          deleteCountries(); // paso 1
+          countries.forEach((c) => printCountryEN(c)); // paso 2
+        });
+
+      document.querySelector("#INPUT_FILTER").addEventListener("keyup", (e) => {
+        /*
+            * PROBLEMA: Filtrar los paises por el valor que tenga el input y pintarlos en el HTML
+                1. Borrar todo
+                2. Obtener el valor por el que tengo que filtrar. (e.target.value)
+                3. Recorro el array filtrando por el valor del paso 2
+                4. pìntarlo
+            */
+        deleteCountries(); //paso 1
+        const currentValue = e.target.value.toLowerCase(); // paso 2 === string
+        const filteredCountries = countries.filter( // paso 3
+          (c) =>
+            c.name_en.toLowerCase().startsWith(currentValue) ||
+            c.name_es.toLowerCase().startsWith(currentValue)
+        );
+        filteredCountries.forEach(c => printCountryES(c)); // paso 4
+      });
+
+
+      async function printCountriesPrefix(){
+          /*
+          * PROBLEMA: pintar paises cuyo prefijo esté entr 20 y 600
+                1. filter de la lista
+          */
+          const countries = await getCountries();
+          const filteredCountries = countries.filter(c => {
+            const prefix = parseInt(c.dial_code.substr(1));
+            return prefix >=20 && prefix <=600;
+          });
+          const totalDOM = document.createElement('h1');
+          totalDOM.textContent = `El total de paises con prefijo entre 20 y 600 es: ${filteredCountries.length}`
+          document.body.appendChild(totalDOM);
+          filteredCountries.forEach(c => printCountryES(c));
+      }
+
+      printCountriesPrefix();
+
+    </script>
+  </body>
+</html>
