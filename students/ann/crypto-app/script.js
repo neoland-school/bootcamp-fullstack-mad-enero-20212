@@ -3,8 +3,8 @@ const coinTableHTML = document.querySelector('.coin__table');
 const searchInput = document.querySelector('.search');
 
 async function getCoinsData() {
-    const result = await fetch(coinsDataApi)
-    const data = await result.json()
+    const result = await fetch(coinsDataApi);
+    const data = await result.json();
     return data;
 }
 
@@ -36,12 +36,12 @@ function generateCoinRow(id, logoSrc, name, symbol, price, priceChange) {
     coinPriceChange.textContent = priceChange;
     coinPriceChange.classList.add('coin-price-change');
 
-    tableRow.appendChild(nameDiv)
-    nameDiv.appendChild(imgLogo)
-    nameDiv.appendChild(coinName)
-    nameDiv.appendChild(coinSymbol)
-    tableRow.appendChild(coinPrice)
-    tableRow.appendChild(coinPriceChange)
+    tableRow.appendChild(nameDiv);
+    nameDiv.appendChild(imgLogo);
+    nameDiv.appendChild(coinName);
+    nameDiv.appendChild(coinSymbol);
+    tableRow.appendChild(coinPrice);
+    tableRow.appendChild(coinPriceChange);
 
     return tableRow;
 }
@@ -61,9 +61,10 @@ function colorPriceChange() {
 }
 
 function filterMatchedSearchedCoins(input) {
-    const coinsHTML = document.querySelectorAll('.coin')
+    const coinsHTML = document.querySelectorAll('.coin');
+    console.log(coinsHTML);
     Array.from(coinsHTML).forEach(c => {
-        if (c.children[1].textContent.toLowerCase().startsWith(input.value)) {
+        if (c.children[0].children[1].textContent.toLowerCase().startsWith(input.value)) {
             c.style.display = null;
         } else {
             c.style = `display: none`;
