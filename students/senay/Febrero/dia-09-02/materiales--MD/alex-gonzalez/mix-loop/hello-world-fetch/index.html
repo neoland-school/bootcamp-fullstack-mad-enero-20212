@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+  </head>
+  <body>
+    <script>
+      /*
+        * 1. Solicitar al servidor esos --> fetch --> function que devuelve promesa
+          2. fetch devuelve una promesa con la respuesta del server (pero no todavia el body)
+        * 3. para pasar a JSON el body de la respuesta tenemos que ejecutar su método .json() 
+             que a su vez es otra promesa
+          4. En el segundo then tendré el objeto de la respuesta --> es el que me piden
+        */
+      function getDataThen() {
+        return fetch("https://mocki.io/v1/e4b35a17-bbdd-481b-a673-174a1ff1be88")
+          .then((r) => r.json()) // indico que el formato del body es JSON
+          .then((data) => console.log(data));
+      }
+
+      getDataThen();
+
+      /*
+        ¿Qué tipo de datos tiene la respuesta? -> Objeto JS --- JSON
+        ¿Cuál es la ip y el puerto de la petición? -> 52.85.187.45:443
+        ¿Cuántos atributos tiene nuestra respuesta? -> 1
+        ¿Qué tipo de datos tiene esos atributos? -> String
+        ¿Qué código http de respuesta hemos recibido? -> 200
+      */
+
+      /*** VERSION ASYNC/AWAIT ***/
+      async function getDataAsync() { // function que pide datos a un servidor y me los devuelve
+        const r = await fetch(
+          "https://mocki.io/v1/e4b35a17-bbdd-481b-a673-174a1ff1be88"
+        );
+        const data = await r.json(); // especifico el formato
+        console.log(data);
+        return data;
+      }
+
+      function printData(data) { // funcion que dado un objeto con mis datos me los pinta en el HTML
+        const p = document.createElement("p");
+        p.textContent = data.hola;
+        document.body.appendChild(p);
+      }
+
+      async function startApp() { // funcion que junta la peticion del servidor mas el pintado en el HTML
+        const d = await getDataAsync();
+        printData(d);
+      }
+
+      startApp();
+    </script>
+  </body>
+</html>

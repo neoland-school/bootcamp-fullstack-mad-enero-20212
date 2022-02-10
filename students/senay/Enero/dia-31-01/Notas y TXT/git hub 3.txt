@@ -1,0 +1,8 @@
+Crea un repositorio git local, y agrega un commit incial con un archivo index.html con titulo h1 que diga hola mundo, ahora mediante comando crea una rama nueva.
+En la rama nueva altera el titulo h1 hola mundo por otra palabra, cambia de rama y haz un merge con las actualizaciones de la rama nueva al master (quedate con los cambios de la rama master).
+3. Crea un repositorio en remoto y agregalo a sourcetree.
+4. Preapara tu proyecto desde sourcetree para que tenga el modelo de trabajo git-flow.
+5. Desde  una rama feature realiza actualizaciones de tu proyecto, luego haz un merge con tu rama develops.
+6.  Crea una rama en la carpeta release y haz un merge de tu rama develops, crea un archivo desde esta rama y luego haz un merge para master y develops.
+7. Elimina la rama de feature y crea una nueva rama feature donde vas a crear otro archivo html, esta vez subelo a tu repositorio remoto y haz un pull request a tu rama develop.
+8. Traete los cambios a tu rama develop  local. (editado) 

@@ -1,0 +1,67 @@
+1. Crear una función que devuelva la resta de dos números. Llamad a la función 3 veces con valores distintos y pintar los resultados en un p cada uno
+Solucion
+
+// Con funciones tradicionales con nombre
+function substract(a,b){
+   return a-b;
+}
+
+// con arrow function
+const substract = (a,b) => a-b;
+
+document.write(`<p>${substract(3,4)}</p>`);
+document.write(`<p>${substract(6,1)}</p>`);
+document.write(`<p>${substract(88888,88888)}</p>`);
+(editado)
+13:28
+2. Crear una función que dado un string devuelva si el string tiene longitud par o impar. Solicitar 2 strings al usuario y pintar la longitud en p's
+SOLUCION
+// Con funciones tradicionales con nombre
+function isLengthEven(str){
+   return str.length%2 === 0;
+}
+
+// con arrow function
+const isLengthEven= str => str.length%2 === 0;
+
+let userString = prompt('Introduzca una frase o palabra');
+document.write(`<p>${isLengthEven(userString}</p>`);
+userString = prompt('Introduzca una frase o palabra');
+document.write(`<p>${isLengthEven(userString}</p>`); 
+// si nos pidiesen mas veces podríamos repetir esto en un bucle.
+ (editado) 
+13:31
+3. Crear una función que dado un número x devuelva un string con la estructura HTML que cree una lista ordenada con x items diciendo `hola`. Modificar el programa anterior para pedir al usuario el número y pintar una lista con ese número y otra lista con el doble de items del número que indico el usuario. Por ejemplo si el usuario ha puesto 4. El programa deberá pintar dos `ol` uno con 4 `li` y otro con 8 `li` 
+SOLUCION:
+function getOrderedList(itemsCount){
+      let htmlResult = '<ol>';
+     for(let i=0; i<itemsCount; i++){
+        htmlResult+= '<li>Hola</li>';
+     }
+     htmlResult+= '</ol>;
+     return htmlResult;
+}
+const count = parseInt(prompt('Introduzca el numero de elementos de la lista'));
+document.write(getOrderedList(count));
+document.write(getOrderedList(count*2));
+ (editado) 
+
+Jose Tovar  15:13
+Ejercicios 24/01/2022
+Crea una función que devuelva el tipo de parámetro de entrada y píntalo por pantalla , usar  arrow function function.
+Function que dado dos boleanos por prompt devuelva el AND de estos por pantalla, usar function declaration.
+Crea una función que dado un numero por prompt, devuelva el número al revés por pantalla, usar function expression.
+Escribir varias funciones que dada las medidas por prompt(radio, lados, etc) que calculen área y perímetro de diferentes figuras geométricas (Rectángulo, Cuadrado, triángulo y Círculo), para el rectangulo y cuadrado usaremos arrow function.
+Crear una función calculadora que reciba como parámetros: Dos operandos y la función que se quiera utilizar para calcular(+,-,*) y devuelva el resultado, los números y la función se pasaran por pormpt, usar function expression.
+Crear una función que dado una URL (Se representa con un string) por prompt, me diga o no si pertenece al dominio de github, usar function declaration.
+Crea una funcion que dado un número por prompt te pinte por pantalla todos los números desde ese numero  hasta el 0, de 8 en 8 ejmp:
+-- del nro 100 al nr 0 ---
+nr 100
+nr 92
+nr 84
+nr 76
+nro 68...etc hasta el nr 0
+8. Crear una función que calcule el Maximo Comun Divisor (Hint: Utilizar el algoritmo de euclides) y lo imprima por pantalla.
+9. Crea una función que dado un número por prompt pinte el siguiente cuadro por pantalla acorde a las medidas del número dado. (editado) 
+15:13
+10. Crear una función que dado un NIF o un NIE te indique si es válido o no. En la página del ministerio se explica como se valida (http://www.interior.gob.es/web/servicios-al-ciudadano/dni/calculo-del-digito-de-control-del-nif-nie)

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo events</title>
+    <style>
+      button {
+        background-color: brown;
+      }
+
+      .btn--primary {
+        background-color: cadetblue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Say Hello</button>
+    <script>
+      const btn = document.querySelector("button");
+      /** ESTE HANDLER SOLO SE EJECUTA UNA VEZ **/
+      const handlerClick = (e) => {
+        console.log("El usuario ha hecho click", e);
+        const p = document.createElement("p");
+        p.textContent = e.ctrlKey
+          ? "Hola con control, te saludamos"
+          : "Hola sin control";
+        document.body.appendChild(p);
+        btn.removeEventListener("click", handlerClick);
+      };
+      btn.addEventListener("click", handlerClick);
+      /** ESTE HANDLER SOLO SE EJECUTA UNA VEZ **/
+      let counter = 0;
+      btn.addEventListener("click", (e) => {
+        console.log(e.target);
+        /* 
+              e.target me contiene el elemento HTML que ha producido el botón
+            */
+        counter++;
+        e.target.classList.toggle("btn--primary");
+        console.log("conteo de clicks ", counter);
+      });
+
+      let str = "";
+      let keyCounter = 0;
+      document.body.addEventListener("keyup", (e) => {
+        console.log(e);
+        str += e.key;
+        keyCounter++;
+        console.log(str);
+        document.body.style.backgroundColor = `#${keyCounter%9}3${keyCounter%9}5${keyCounter%9}3`;
+      });
+    </script>
+  </body>
+</html>

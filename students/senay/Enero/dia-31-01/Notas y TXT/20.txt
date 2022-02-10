@@ -1,0 +1,13 @@
+ Solicitar al usuario un numero. Si el numero está entre el 1 y el 10 mostrarle por pantalla un div de 100x100px de color #8756F3
+2. Modificar el ejercicio anterior para que si el numero está entre 10 (sin incluir) y 50 mostrarle por pantalla un div de 100x100px de color #12F467
+3. Modificar el ejercicio anterior si el numero está entre 1 y 10 y además es par, el cuadrado que se pinte en vez de ser #8756F3, sea #007743
+
+Jose Tovar  15:12
+ejercicios 20/01/2022
+Crea  un programa que dado dos números mediante prompt  imprima el mayor de ellos por pantalla.
+Crea un programa que imprima por pantalla  un saludo en el idioma que le indiques, los idiomas seran ingles, español y frances,  el idioma debe ser pasado por prompt y el saludo por default será en ingles.
+Crea un algoritmo que te imprima por pantalla,  si tienes la edad suficiente para entrar a un local nocturno o no, el algoritmo debe usar operador ternario.
+Crea un algoritmo para determinar si un año es bisiesto o no, para esto el año que se pase por prompt debera ser divisible entre 4 y no divisible entre 100, o ser divisible entre 400, del resto seria un año común, para este algormitmo usaremos operador ternario, pinta por pantalla el resultado.
+La luz de trafico puede ser 'verde',  " ambar intermitente", "ambar"  o "rojo". Crea un algoritmo que dado la luz de tráfico actual por prompt, pinte por pantalla  un semaforo  con la luz indicada y que indique si el coche puede pasar o debe parar.
+Creemos un algoritmo para saber si un estudiante puede optar o no a una beca, para eso debera pasar  mediante prompt un total de 7 calificaciones, y se debara imprimir por pantalla la cantidad de asignaturas aprobadas, la nota media y si puede optar o no a la beca, para saber si un estudiante puede optar a la beca deberá tener el mínimo de asignaturas aprobadas( solo puede tener dos reprobadas,  usar operador de asignación para esta operación), y una nota media superior a 6, PD:" la nota mínima para aprobar una asignatura  es de 5".
+Vamos a crear una calculadora que haga las operaciones basicas de suma, resta, multiplicación y división, en este caso usaremos el condicional SWITCH,  el usuario debe ingrear mediante prompt el primer numero, el operador y el segundo numero y el algoritmo pintara por pantalla los dos numeros el operador y  el resultado ejmp= "2 + 2 = 4".

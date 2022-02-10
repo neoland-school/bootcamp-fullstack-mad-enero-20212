@@ -1,0 +1,47 @@
+ const n = parseInt(prompt('Introduzca un número'));
+        /**
+         * 1. pintar n filas y que cada una tenga n columnas
+         *  1.a Si la fila es la primera o la última el background será rojo
+         *  1.b Si la columna es la primera o la última el backgroun será rojo
+         * 
+         * <div class="row">
+         *  <div class="circle"></div>
+         *  <div class="circle"></div>
+         *  <div class="circle"></div>
+         * </div>
+         * */
+
+         function drawBoard(n){
+             let htmlOutput = `<div>`;
+             for(let i=0; i<n; i++){
+                htmlOutput+=`<div class="row">`
+                for(let j=0; j<n; j++){
+                    htmlOutput+=`<div class="circle"></div>`;
+                }
+                htmlOutput+=`</div>`
+             }
+             htmlOutput+='</div>';
+             document.write(htmlOutput);
+         }
+
+         drawBoard(n);
+
+
+.row {
+            display: flex;
+            margin-bottom: 5px;
+        }
+
+        .circle{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: greenyellow;
+        }
+
+        .row:first-child > .circle,
+        .row:last-child > .circle,
+        .circle:first-child,
+        .circle:last-child {
+            background-color: red;
+        }

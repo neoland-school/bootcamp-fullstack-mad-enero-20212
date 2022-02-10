@@ -1,0 +1,18 @@
+Ejercicios 19/01/2022:
+ument.write para pintar por pantalla y el metodo prompt para guardar variables que introduzca el usuario, empecemos:   Para los ejercicios de hoy usaremos el comandos que nos proporciona javascript doc
+Crear dos variables numéricas y realizar su suma, resta multiplicación y división, imprimir por pantalla los dos números con la operación, el igual y el resultado.
+Crear dos variables string y concatenarlas con el operador y luego repetir la operación con plantillas literales, imprimir por pantalla el resultado.
+Imprimir por pantalla la longitud del string resultante del ejercicio anterior.
+
+Ejercicio que guarde en una variable mediante el uso de prompt,  los grados Celsius (X) e imprima por pantalla sus correspondientes grados Farenheit, ejemplo "X ºC son YºF".
+Con el ejercicio de la calculadora de grados celsius, imprimir si una variable en ºC temperatura esta es mayor de 87 ºF.
+
+Crea una variable de tipo string que sea 55 y otra de tipo number que sea 55 con el uso de operadores de compracion pintar por pantalla true y luego false.
+Crea dos variables de tipo number distintas, ahora mediante uso de operadores de comparación y de operadores lógicos debe arrojar en una linea true y luego false.
+Mediante el uso de prompt, crea dos variables que representen el peso y la altura e indicar por pantalla si esa persona tiene "Obesidad de clase II" o no según la OMS.
+Crea  una variable mediante prompt y proporcionarle un valor numerico,  imprimir por pantalla si es par o impar.
+
+Jose Tovar  17:07
+Mediante prompt crear una variable que represente el numero de hijos e imprime por pantalla si es familia numerosa o no (revisar que se considera familia numerosa)
+17:09
+Mediante prompt crear Una variable que represente el saldo de tu cuenta, luego crea  4 variables numéricas que cada una represente un item de tu cesta (ej: tomates, pescado, etc) de la compra y dales un precio. Imprimir por pantalla si tienes saldo suficiente o no para pagar la compra.

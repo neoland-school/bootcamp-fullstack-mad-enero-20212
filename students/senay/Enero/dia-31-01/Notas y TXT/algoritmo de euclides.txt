@@ -1,0 +1,11 @@
+Algoritmo de euclides:
+
+function mdc(a,b){
+  
+   while(b>0){
+       const c = b;
+       b= a%b;
+       a=c;
+   }
+    return a;
+}
