@@ -1,4 +1,3 @@
-
 function startApp() {
     getCoinsData().then(data => {
         printCoinRows(data)
