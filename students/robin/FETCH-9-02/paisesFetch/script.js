@@ -3,10 +3,10 @@ async function start(){
     const r = await fetch('https://gist.githubusercontent.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/raw/107e0bdf27918adea625410af0d340e8fc1cd5bf/countries.json')
     const data = await r.json();
     
-   // drawCountryEng(data)
+    //drawCountryEng(data)
     drawCountryEs(data)
-    //changeToEn(data)
-    //removeChild(data)
+    changeToEn(data)
+    removeChild(data)
     //mostrar(data)
    
    
@@ -17,7 +17,6 @@ start()
 const body = document.querySelector('body')
 const container = document.querySelector('.container-es')
 
-/* FUNCION MOSTRAR PAISES EN INGLES
 
 function drawCountryEng (pais){
     console.log(pais.countries)
@@ -26,7 +25,7 @@ function drawCountryEng (pais){
         const paisesEn = c.name_en
         if(paisesEn.length > 5){
             const containerEN = document.querySelector('.container-en')
-            containerEN.classList.add('container-en')
+            
             const parrafo = document.createElement('p')
             parrafo.textContent = paisesEn
 
@@ -37,8 +36,10 @@ function drawCountryEng (pais){
 }
 
 
-*/
-// FUNCION MOSTRAR PAISES EN ESPAÑOL
+
+
+
+
 
 function drawCountryEs(pais){
    
@@ -57,7 +58,9 @@ function drawCountryEs(pais){
 
 }
 
-/*
+
+
+
 
 const btnChange = document.getElementById('changeEn')
 
@@ -65,9 +68,8 @@ btnChange.addEventListener('click', e => {
     removeChild(container)
 })
 
-/*
 
-/* FUNCION CAMBVIAR IDIOMA A INGLES
+
 
 
 function changeToEn(pais){
@@ -93,7 +95,7 @@ function removeChild (parent){
     }
 }
 
-*/
+
 
 /* FILTRO PAISES
 
