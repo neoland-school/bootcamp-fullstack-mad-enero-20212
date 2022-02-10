@@ -1,0 +1,24 @@
+.bar-nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem;
+    width: 100%;
+    background-color: #e2e2e2;
+}
+
+.bar-nav-tittle{
+    margin-left: 1rem;
+}
+
+.search-input{
+    padding: 0.3rem;
+    margin-right: 0.5rem;
+}
+
+.search-button{
+
+    padding: 0.3rem;
+    margin-right: 1rem;
+}
