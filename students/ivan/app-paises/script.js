@@ -223,7 +223,7 @@ function findPrefCountries (obj){
     
     const arrObj = obj.countries; //obtengo el array. 
 
-    const arrPref = arrObj.filter(country => country.dial_code>20 && country.dial_code<600);
+    const arrPref = arrObj.filter(country => parseInt(country.dial_code)>20 && parseInt(country.dial_code)<600);
     
     arrPref.forEach(country =>{
 
@@ -246,4 +246,4 @@ async function printPrefCountries(){
 
 };
 
-//printPrefCountries();
+printPrefCountries();
