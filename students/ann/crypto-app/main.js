@@ -1,6 +1,6 @@
 
 function startApp() {
-    getPrices().then(data => {
+    getCoinsData().then(data => {
         printCoinRows(data)
         colorPriceChange();
         enableSearchBar();

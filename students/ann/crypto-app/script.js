@@ -2,7 +2,7 @@ const priceDataApi = `https://api.coingecko.com/api/v3/coins/markets?vs_currency
 const coinTable = document.querySelector('.coin__table');
 const searchInput = document.querySelector('.search');
 
-async function getPrices() {
+async function getCoinsData() {
     const result = await fetch(priceDataApi)
     const data = await result.json()
     return data;
