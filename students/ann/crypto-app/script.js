@@ -59,20 +59,6 @@ function colorPriceChange() {
         price.textContent < 0 ? price.style = `color: red` : price.style = `color: green`;
     })
 }
-function styleCoinSymbol() {
-    const coinsNames = document.querySelectorAll('.coin-name');
-    console.log(coinsNames);
-    const ok = coinsNames.forEach(c => {
-        const coinName = c.textContent.split(' ')
-
-        const symbol = coinName.slice(coinName.length - 1).join('')
-        symbol.style = `color: red`
-        console.log(symbol);
-        // console.log(c.textContent.slice(0, c.textContent.length - 1));
-    })
-    console.log(ok);
-
-}
 
 function filterMatchedSearchedCoins(input) {
     const coinsHTML = document.querySelectorAll('.coin')
