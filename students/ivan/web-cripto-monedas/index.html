@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+      integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+      crossorigin="anonymous"
+    ></script>
+
     <title>API CRIPTO MONEDAS</title>
   </head>
   <body>
@@ -12,6 +18,15 @@
       <h2 class="header_tittle">MyCripto currecy</h2>
     </header>
     <main class="main_container">
+      <div class="search_container">
+        <input
+          type="text"
+          name="name"
+          id="search-coin"
+          placeholder="Search coin"
+        />
+        <i class="fas fa-search"></i>
+      </div>
       <div class="main_container-header">
         <h3 class="tittle-coin">Coin</h3>
         <div class="prices-coins">
@@ -19,7 +34,9 @@
           <h3 class="price-change">Price Change</h3>
         </div>
       </div>
+      <div class="container_coins"></div>
     </main>
+    <footer class="footer">By Iván Sánchez Pérez</footer>
     <script src="./script.js"></script>
   </body>
 </html>
