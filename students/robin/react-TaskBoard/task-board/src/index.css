@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#root {
+    padding: 4rem;
+  
+    
+}
+
+.App{
+    display: flex;
+    gap:0.6rem;   
+    justify-content: center;
+}
+
+
+body {
+    background-image: url(./assets/img/eve.jpg);
+}

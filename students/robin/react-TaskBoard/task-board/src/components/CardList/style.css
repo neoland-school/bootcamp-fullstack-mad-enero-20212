@@ -1,0 +1,35 @@
+
+
+
+.card-list {
+   
+    padding: 0.8rem;
+    background-color: white;
+    margin-bottom: 0.5rem;
+    width: 90%;
+    border-radius: 5px;
+    height: 50px;
+    
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.length-green {
+    width: 55px;
+    background-color: green;
+    border-radius: 5px;
+    height: 8px;
+    margin-bottom: 5px;
+}
+
+.length-orange {
+    width: 55px;
+    background-color: orange;
+    border-radius: 5px;
+    height: 8px;
+    margin-bottom: 5px;
+}
