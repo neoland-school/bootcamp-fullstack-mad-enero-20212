@@ -1,27 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import HelloWorld from './hello-world';
+import CardList from './components/card-list';
+import Header from './components/header';
+import Card from './components/card';
 
 function App() {
   return (
-    <div className="App">
-      <h2>Hola caracola</h2>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <HelloWorld></HelloWorld>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Header></Header>
+      <main className='main__container'>
+        <CardList></CardList>
+      </main>
+      <Card name="Bootcamp" code="bt" prefix="+69"></Card>
+    </React.Fragment>
   );
 }
 
