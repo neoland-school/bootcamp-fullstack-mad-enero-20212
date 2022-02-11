@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <input name="bootcamp" type="email" placeholder="Introduzca el email" required>
+      <input name="other" type="text" placeholder="Introduzca un texto email" required
+        minlength="4" maxlength="10">
+      <input name="num" type="number" placeholder="Introduzca number" required>
+      <input name="col" type="color" placeholder="Introduzca color" required>
+      <input name="box" type="checkbox" required>
+      <button type="submit">Enviar</button>
+    </form>
+    <script>
+      console.log('Empiezo a ejecutar por primera vez JS')
+      document.querySelector("form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        console.log(e);
+        console.log("Mandando los datos a validar a un servidor utilizando JS");
+        // ALGUNA LOGICA PARA ENVIAR LOS DATOS DEL FORMULARIO AL SERVIDOR
+      });
+    </script>
+  </body>
+</html>

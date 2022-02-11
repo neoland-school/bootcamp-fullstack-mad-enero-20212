@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.bar:hover {
+    transform: scale(1000, 1);
+    transform-origin: left;
+}
+
+.bar {
+    height: 12px;
+    width: 8px;
+    border-top: .5px solid gainsboro;
+    border-bottom: .5px solid gainsboro;
+}
+
+.green-bar {
+    background-color: rgb(59, 99, 0);
+}
+
+.red-bar {
+    background-color: rgb(235, 49, 49);
+}
+
+

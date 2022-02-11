@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container_model {
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen {
+    width: 280px;
+    height: 80px;
+    background-color: blue;
+    margin: 10px;
+}
+
+.text_marca {
+    justify-items: center;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}

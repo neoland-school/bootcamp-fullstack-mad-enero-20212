@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_meet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding-top: 50px;
+}
+.container_video_meet{
+    
+    background-color: rgb(194, 193, 192);
+    
+    background-size: 100% 100%;
+    position: absolute;
+    left: 100px;
+}
+.button_voice{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 20px;  
+    border: 1px solid white;
+    position: relative;
+    left: -285px;
+    top: 200px;
+    opacity: 0.5;
+}
+.button_video{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;  
+    margin: 20px;
+    border: 1px solid white;
+    position: relative;
+    left: -285px;
+    top: 200px;
+    opacity: 0.5;
+}
+.container_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:space-between ;
+
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 250px;
+}
+.box_button{
+    display: flex;
+    justify-content: center;
+}
+.title_meet{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+   text-align: center;
+   margin-bottom: 70px;
+
+}
+
+.button{
+    width: 90px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 11px;
+    border: transparent;
+    box-shadow: 10px 10px 5px -9px rgba(0,0,0,0.32);
+    margin: 2px;
+}
+.join_now{
+    background-color: rgb(32, 78, 32);
+    color: white
+}
+
+.present{
+    background-color: white;
+    color: rgb(32, 78, 32);;
+}

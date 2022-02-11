@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .card__container{
+      max-width: 200px;
+      box-shadow: 7px 17px 50px -2px rgba(0,0,0,1);
+      background-color: white;
+      height: 350px;
+
+
+  }
+  
+  .card__body{
+      padding: 20px;
+  }
+  
+  .card__header{
+      position: relative;
+      text-align: center;
+      display: flex;
+      align-items: center;
+  }
+
+  .card__container:hover {
+    max-width: 200px;
+    transform: rotate(-1.1deg) scale(1.1);
+    transition: transform 300ms ease-in-out;
+
+ }
+ 
+ 
+  
+  .card__image-container{
+    display: inline-flex;
+  }
+  
+  .card__details{
+      position: absolute;
+      width: 70%;
+      left: 10%;
+      padding: 0px;
+      font-weight: bold;
+      background-color: white;
+      border:40%;
+      border:2px solid grey;
+
+  }
+  
+  .card__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  
+  .card__product-title{
+      font-weight: 500;
+  }
+  
+  .card__particularidades {
+    display: flex;
+    list-style: none;
+    gap: 2px;
+  }
+  
+  .card__color_item{
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      
+  }
+  
+  .card__size-container{
+      margin-bottom: 5px;
+  }
+  
+  .text--regular{
+      color: lightgrey;
+      font-size: 10px;
+  }
+  
+  .text--primary{
+      color: #2F54FF;
+      font-weight: bold;
+  }
+  .bg_blue {
+    background-color: blue;
+  }
+  .bg_green {
+    background-color: green;
+  }
+  .bg_red {
+    background-color: red;
+  }
+
+  /* la misma card pero en grid */
+
+
+.card__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 7px;
+  grid-auto-rows: 360px;
+  box-shadow: 2px 4px 5px 0 #000;
+  margin: 2px;
+  
+  /* para mi yo de un par de dias ¿ buscar error en separacion lateral */
+
+  
+  
+}

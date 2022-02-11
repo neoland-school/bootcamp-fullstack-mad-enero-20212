@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Capabilities</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .webcam__container,
+      .screen_container {
+        width: 600px;
+        position: relative;
+      }
+
+      .toolbar {
+        position: absolute;
+        bottom: 0;
+        padding: 2rem;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+      }
+
+      video {
+        width: 100%;
+      }
+
+      .toolbar > button {
+        padding: 0.5rem;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="webcam__container">
+      <video id="webcam"></video>
+      <div class="toolbar">
+        <button id="cam">Toggle</button>
+      </div>
+    </div>
+
+    <div class="screen__container">
+      <video id="screen"></video>
+      <div class="toolbar">
+        <button id="sc">Toggle</button>
+      </div>
+    </div>
+    <script>
+      const videoCam = document.querySelector("#webcam");
+
+      const promiseAudio = navigator.mediaDevices.getUserMedia({
+        video: true,
+        audio: false,
+      });
+      promiseAudio.then(
+        (data) => {
+            videoCam.srcObject = data;
+            videoCam.play();
+        },
+        (err) => console.warn(err)
+      );
+
+      function openPInP(video){
+        if (document.pictureInPictureElement) {
+          document.exitPictureInPicture();
+        } else if (document.pictureInPictureEnabled) {
+          video.requestPictureInPicture();
+        }
+      }
+
+      document.querySelector("#cam").addEventListener("click", () => {
+        openPInP(videoCam)
+      });
+
+      const videoScreen = document.querySelector("#screen");
+      navigator.mediaDevices.getDisplayMedia().then(
+        (data) => {
+          videoScreen.srcObject = data;
+          videoScreen.play();
+        },
+        (err) => console.warn(err)
+      );
+      document.querySelector("#sc").addEventListener("click", () => {
+        openPInP(videoScreen)
+      });
+    </script>
+  </body>
+</html>

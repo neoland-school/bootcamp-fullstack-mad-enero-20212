@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container_card{
+    border: 1px solid grey;
+    width: 200px;
+    margin: 20px;
+
+}
+
+.imgen1{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+}
+.container_text{
+    padding: 10px;
+}
+.name{
+    height: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+.code{
+    height: 35px;
+    padding-top: 5px;
+    padding-left: 10px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+.dial{
+    height: 35px;
+    padding-top: 5px;
+    padding-left: 10px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+.button{
+    background-color: green;
+    color: white;
+}
