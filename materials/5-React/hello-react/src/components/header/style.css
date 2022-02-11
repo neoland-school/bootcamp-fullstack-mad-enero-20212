@@ -1,0 +1,22 @@
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F9FA;
+    padding: 1rem;
+}
+
+.search__input {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+
+.search__button {
+    padding: 0.5rem;
+    color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+}
