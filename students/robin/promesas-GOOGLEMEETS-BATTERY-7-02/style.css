@@ -1,0 +1,22 @@
+
+#btn {
+    background-color: 	#2f9744;
+    padding: 5px 30px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.time-main {
+    width: 350px;
+    height: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: 	#ce3035;
+    color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+}

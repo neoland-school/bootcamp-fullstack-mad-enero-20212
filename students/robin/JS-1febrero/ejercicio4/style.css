@@ -1,0 +1,61 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.header{
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+.container-info {
+    background-color:#f4e78c ;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    
+
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.inputss:focus{
+    background-color: 	#cfe2f3;
+}
+
+.inputs > input {
+    margin: 0.5rem;
+    width:80%;
+    border-radius: 5px;
+    padding: 4px;
+    
+}
+
+.enviar {
+    width: 350px;
+   
+    padding: 5px  ;
+    align-items: center;
+    background-color: #352a21;
+    color: white;
+    border-radius: 5px;
+}
