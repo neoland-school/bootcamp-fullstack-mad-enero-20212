@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import "./components/anime-card";
 import AnimeCard from "./components/anime-card";
-import Rank from "./components/rank";
 
 function App() {
   let animes = [
@@ -68,8 +67,7 @@ function App() {
     },
   ];
 
-  const animesRank = animes.map((anime) => <Rank rank={anime.rank}></Rank>)
-  const animesList = animes.map((anime) => <AnimeCard title={anime.title} image={anime.image}></AnimeCard>)
+  const animesList = animes.map((anime) => <AnimeCard title={anime.title} image={anime.image} rank={anime.rank}></AnimeCard>)
   return (
     <React.Fragment>
         <div className="animes__container">
