@@ -67,7 +67,7 @@ function App() {
     },
   ];
 
-  const animesList = animes.map((anime) => <AnimeCard title={anime.title} image={anime.image} rank={anime.rank}></AnimeCard>)
+  const animesList = animes.map((anime, i) => <AnimeCard index={i} title={anime.title} image={anime.image} rank={anime.rank}></AnimeCard>)
   return (
     <React.Fragment>
         <div className="animes__container">

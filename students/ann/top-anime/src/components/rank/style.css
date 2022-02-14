@@ -6,7 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1.5px solid white;
+    border: 2px solid white;
+    margin: 8px;
 }
 
 p {
