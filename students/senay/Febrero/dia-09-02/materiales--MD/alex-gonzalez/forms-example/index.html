@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms example</title>
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form method="GET" action="https://www.google.com">
+        <label for="DEMO">Query</label>
+        <input type="text" minlength="4" maxlength="8" id="DEMO" name="q" value="Esto es un valor inicial" placeholder="Introduzca su nombre" />
+        <input type="number" name="edad" required />
+        <input type="date" name="fecha" min="2022-01-01" max="2022-02-01" />
+        <input type="email" name="email" required />
+        <div>
+            <label for="CHECK">Haz click</label>
+            <input type="checkbox" id="CHECK">
+        </div>
+        <button type="submit">Guardar</button>
+    </form>
+  </body>
+</html>

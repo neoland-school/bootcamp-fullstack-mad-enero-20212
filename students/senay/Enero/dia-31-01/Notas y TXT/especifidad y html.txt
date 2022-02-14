@@ -1,0 +1,52 @@
+ Calcular la especificidad de los siguientes selectores:
+    - p.demo -> 11
+    - #MY_ELEM.hola -> 110
+    - #MY_ELEM .hola > input:hover -> 121
+    - .demo + * > *  -> 10
+    - p.class:not([type="text"]):invalid -> 31 (El :not es una pseudoclase que no añade especificidad)
+* Dado este HTML:
+<div class="container">
+  <p>Primer parrafo</p>
+  <div></div>
+  <p>Segundo Parrafo</p>
+  <a class="link">hola</a>
+  <p>Tercer Parrfo</a>
+</div>
+    Crear selectores para los siguientes casos:
+links con la clase link -> a.link
+Cualquier elemento HTML que tenga la clase link -> .link
+Enlaces que no tengan href -> a:not([href])
+hijos directos pares de los divs que tengan la clase container -> div.container > :nth-child(even)
+hermano adyacente directo de los enlaces -> a + *
+divs hijos de cualquier elemento que tenga la clase container -> .container div
+(editado)
+
+
+
+Alex González  13:16
+¿Qué significa este selector?
+.demo > * + *
+marca_de_verificación_blanca
+ojos
+manos_levantadas
+
+
+
+
+
+
+Iván Sánchez Pérez  13:21
+creo que lo tengo
+13:22
+Todos los elementos hermanos adyacentes de todos los elementos que sean hijos directos de la clase .demo
+
+Alex González  13:26
+.demo > :first-child ~ * (editado) 
+
+Sergio Tejeda  13:28
+<div class="demo">
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+</div>

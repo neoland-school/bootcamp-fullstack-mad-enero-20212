@@ -1,0 +1,28 @@
+ Crear una página web que imprima por pantalla los primeros 10 números, utilizando un bucle for. Modificarlo para que imprima los primeros 100. Crear una nueva versión utilizando un bucle while.
+
+2. Crear una página web que cree 100 divs de color #F47732. Modificar el ejercicio para que los divs pares se sean de color #F47732 y los impares #1148F3. Modificar para que se muestren sobre un contenedor flex. Podéis utilizar cualquier tipo de bucle.
+
+3. Crear una página web que pinte por pantalla separado por comas las primeras 100 potencias de dos. Ejemplo: 1,2,4,8,16,32,64,...
+
+4. Crear una página web que solicite al usuario una palabra y muestre un p con el número de vocales que hay.
+
+5. Crear una página web que solicite al usuario 1 número (n) y cree en HTML un tablero de ajedrez de nxn, teniendo en cuenta los colores como en el ajedrez.
+
+1. Crea un programa que dado un numero mediante promt y usando el bucle WHILE, te impirma por pantalla su tabla de multiplicar de la siguiente forma:
+Tabla de multiplicar de 5
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+2.Crea un programa que recorra los números del 1-100 e imprima por pantalla :
+        Fizz, si es multiplo de 3.
+         Buzz, si es múltiplo de 5.   
+          FizzBuzz, si es múltiplo de 3 y 5 a la vez.
+3. Escribir un programa que solicite al usuario el número de filas y el número de columnas. Dibujar una tabla con las filas y columnas introducidas, usar etiquetas html " th, tr, td.."
+4. Imprime por pantalla el siguiente patron, el cual va a depender del numero que pases por prompt, usaremos CSS para la maquetación (una vez terminado y mediante animation usando @keyframes haz que el triangulo se desplace hasta el otro punto de la pantalla de manera infinita). (editado) 

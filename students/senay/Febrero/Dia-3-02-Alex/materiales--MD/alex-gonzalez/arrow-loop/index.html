@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Loop</title>
+    <style>
+        .block {
+            width: 5px;
+            height: 10px;
+        }
+        
+        @keyframes throw_arrow {
+            /* SOLO ES LA DEFINICION DE LA ANIMACION*/
+            from {
+                transform: translateX(0vw) rotateZ(0deg);
+            }
+            to {
+                transform: translateX(100vw) rotateZ(360deg);
+            }
+        }
+        
+        .bg_asc {
+            background-color: chocolate;
+        }
+        
+        .bg_desc {
+            background-color: blueviolet;
+        }
+        
+        .row {
+            display: flex;
+            margin-bottom: 1px;
+        }
+        
+        .container {
+            /* width: fit-content; */
+            animation: throw_arrow 1s linear 0s infinite;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        /*
+                1. Solicitar al usuario un número. Este será la altura de nuestra flecha
+                2. Recorrer ascendente hasta la altura de la flecha, 
+                        pintando tantos divs como vueltas lleve el bucle
+                3. Recorrer descendiente desde la altura de la flecha hasta 0, 
+                        pintando tantos divs como vueltas lleve el bucle
+                */
+
+        const HEIGHT = parseInt(prompt('Introduzca la altura de la flecha'));
+
+        let htmlOutput = '<div class="container">';
+        for (let i = 1; i <= HEIGHT; i++) { // Recorrer ascendentemente hasta la altura de la flecha
+            htmlOutput += '<div class="row">'
+            for (let j = 1; j <= i; j++) { // pinto tantos divs como diga i
+                htmlOutput += `<div class="block bg_asc"></div>`
+            }
+            htmlOutput += '</div>';
+        }
+
+        for (let i = HEIGHT - 1; i >= 1; i--) { // recorro descendientemente hasta 0
+            htmlOutput += '<div class="row">'
+            for (let j = 1; j <= i; j++) { // pinto tantos divs como diga i
+                htmlOutput += `<div class="block bg_desc"></div>`
+            }
+            htmlOutput += '</div>';
+        }
+        htmlOutput += '</div>';
+        document.write(htmlOutput);
+    </script>
+</body>
+
+</html>

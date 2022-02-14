@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Bootcamp Molon';
+    src: url('./font/RubikBeastly-Regular.ttf');
+}
+
+body {
+    font-family: 'Bootcamp Molon';
+}

@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.main__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    height: 100%;
+
+}
+
+.container-city{
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    margin: 1rem 1rem;
+}
+
+.image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 33vh;
+    position: relative;
+}
+.share__symbol{
+    position: absolute;
+    bottom: -0.5rem;
+    right: 1rem;
+    background-color: #0748AC;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+.share__symbol i{
+
+    margin-top: 0.2rem;
+}
+
+.image p{
+    padding-top: 2rem;
+    margin-left: 0.5rem;
+    color: #ffffff;
+}
+
+.city__name{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: solid 1px #D8D6D6;
+    margin-right: 1rem;
+
+}
+
+.city__name > *{
+    margin-top: 1rem;
+
+}
+
+.city__description p{
+    padding: 0rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.button{
+    text-align: center;
+    margin: 1rem 0rem;
+    padding-bottom: 1.5rem;
+}
+
+
+
+.button a{
+    color: #ffffff;
+    background-color: #0748AC;
+    padding: 1rem;
+    border-radius: 5%;
+}
+
+.add_city{
+    margin: 1rem 1rem;
+
+}
+
+input[name="name_city"]{
+    width: 40%;
+    padding: 0.3rem;
+}
+
+.search_button{
+
+    background-color: #0E6FFD;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-left: 0.5rem;
+    border: 2px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.delete__button{
+
+    background-color: #D50000;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-left: 0.5rem;
+    border: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}

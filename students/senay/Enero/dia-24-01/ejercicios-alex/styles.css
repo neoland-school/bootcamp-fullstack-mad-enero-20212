@@ -1,0 +1,10 @@
+h2 {
+    background-color: rgb(180, 180, 214);
+    text-align: center;
+}
+
+.sub {
+    background-color: rgb(6, 6, 59);
+    color: white;
+    padding-left: 20px;
+}

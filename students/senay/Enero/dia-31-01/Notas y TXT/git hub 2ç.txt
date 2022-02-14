@@ -1,0 +1,9 @@
+1. Crear un repositorio local de git
+2. Crear el commit inicial creando un archivo README.md
+3. Crear una rama desde master que se llame 'rama-molona' y cambiaros a ella
+4. Crear un nuevo archivo en la rama-molona que se llame 'demo.md'
+5. Añadir un texto lorem ipsum en el archivo md y hacer commit
+6. Crear un repo remoto y enlazarlo con el local 
+7. Subir las dos ramas al remoto
+8. Crear un PR a master
+9. Trar los cambios de master al repo local

@@ -1,0 +1,7 @@
+1 Crea un array de objetos que tenga dos propiedades : description (un string cualquiera que nos 
+  inventemos) y votes: un number con el contador de votaciones.
+2 Pintar en el HTML una lista con el array de objetos. Cada elemento de la lista tienen que mostrar la descripción y un botón que tenga el tenga el icono de thumbs-up y dentro del botón también se muestre el número de votos.
+3 Cuando se pulse el botón añadir uno a las votaciones actualizando el HTML
+4 Añadir un input y un botón para poder crear un nuevo objeto para votar. En este punto podemos vaciar el array de objetos inicial, ya que los temas de votación los introduciremos desde la interfaz
+5 Añadir la posibilidad de que la información quede guardada mientras no cierre la pestaña del navegador.
+6 Añadir un select para poder filtrar por numero de votos de menor a mayor o de mayor a menor

@@ -1,0 +1,71 @@
+function fib(n){
+  let firstFib = 0; //fib(0) --> represetna fib(n-2)
+  let secondFib=1; // fib(1) --> representa fib(n-1)
+  
+  if(n===0) secondFib = firstFib;
+  while(n>1){
+    const fibNext = secondFib + firstFib ; // fib(next) = fib(next-1)+fib(next-2)
+    firstFib=secondFib; // fib(n-2) pasa a ser lo que en la vuelta era fib(n-1)
+    secondFib = fibNext; // fib(n-1) en la siguiente vuelta es el que acabamos de calcular fib(n)
+    n--; // restamos 1 a n
+  }
+   return secondFib;
+}
+
+
+const arr = [
+  [true, false],
+  [false, true, true]
+]; // listas de listas de booleanos
+
+for(let i=0; i<arr.length; i++){
+    arr[i]; // ¿Que tipo de datos tengo? -> lista de booleanos. i=0 -> [true, false], i=1 -> [false, true, true]
+    arr[i][0]; // ¿Que tipo de datos? --> booleano. Si i = 0 --> true, si i=1 -> false
+    arr[i].length; // ¿que tipo de datos? --> number, Si i=0--> 2, Si i=1 --> 3
+    for(let j=0; j< arr[i].length; j++){
+        arr[i][j]; // Recorre toda la sublista. Esto devuelve un bool 
+        /*
+          i=0, j=0 --> true
+          i=0, j=1 --> false
+          i=0, j=2 --> undefined, pero nunca el bucle llegaría a esta situacion
+          i=1, j=0 --> false
+          i=1, j=1 --> true
+          i=1, j=2 --> true
+          i=1, j=3 --> undefined, pero nunca el bucle llegaría a esta situacion
+          i=2, j=0 --> ERROR de JS. Can not read xxx of undefined, pero nunca el bucle llegaría a esta situacion
+        */
+    }
+}
+
+
+let arr = [];
+
+for(let i=0; i<5; i++){
+   const userNumber = parseFloat(prompt('Dame el siguiente número'));
+   arr[i] = userNumber;
+}
+
+console.log(arr); // 5
+let sumAcc = 0;
+for(let i=0; i<arr.length; i++){
+   sumAcc += arr[i];
+}
+
+console.log(sumAcc)
+
+
+
+
+function sortDesc(arr) {
+        for (let i = 1; i < arr.length; i++) {
+          for (let j = 0; j < arr.length - i; j++) {
+            if (arr[j] < arr[j + 1]) { 
+             // si es menor, cambiamos para que los menores se vayan al final
+              const aux = arr[j];
+              arr[j] = arr[j + 1];
+              arr[j + 1] = aux;
+            }
+          }
+        }
+        return arr;
+      }

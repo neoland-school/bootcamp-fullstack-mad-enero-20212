@@ -1,0 +1,4 @@
+
+Crea una pagina html  con dos input text , escribe cualquier dato recupéra los input en js  y mánda un value al localstorage y otro al session storage.
+En tu pagina html pinta en un P por pantalla el valor que tienes en el session storage.
+Obtener coordenadas mediante la api de  geolocalizacion, con los datos de la geolocalizacion mostrar en tu html   un enlace a googlemap que te lleve directo a tu posición actual.
