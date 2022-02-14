@@ -1,0 +1,140 @@
+
+
+.menu
+{text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.cabecera{
+    position: fixed;
+    background:lightcoral;
+    display: inline;
+  
+    
+    
+    }
+.menuprincipal{
+    padding-top: 200px
+    ;}
+
+
+
+
+.firstdiv{
+    width: 150px;
+    height: 150px;
+    border: solid 5px;
+    background: cadetblue;
+    box-shadow: 10px 10px
+    rgb(190, 223, 223);
+   
+   
+   
+    
+}
+
+
+
+.seconddiv{
+    width:300px;
+    height: 100px;
+    border:double;
+    background:linear-gradient(to right,red,orange,yellow, green, blue,indigo,violet);
+    box-shadow: 10px 10px black;
+
+}
+
+.thirddiv{ 
+    width: 450px;
+    height: 450px;
+    border: hidden;
+    background-image: url(https://www.nolodejesalazar.es/wp-content/uploads/sites/26/2021/03/no-lo-dejes-al-azar-border-collie.jpg);
+    background-position: center;
+    background-size:cover
+    
+}
+.textofondo{ text-align:center;
+    color:white;
+    font-size: 30px;
+    padding: 50px;
+
+
+
+}
+    
+
+
+
+.piepagina{
+    border: solid;
+    border-color: black;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    background:burlywood;
+    position: absolute;
+    margin: 10px;
+    
+   
+}
+
+.fotopie{ padding: 50px;
+       
+   
+  
+    
+}
+
+
+.div1{background-color: #F08080;
+    width: 350px;
+    height: 350px;
+    display: inline-flex;
+}
+.div2{background-color:#90EE90;
+    width: 350px;
+    height: 350px;
+    display: inline-flex;
+}
+.div3{background-color: #E0FFFF;
+    width: 350px;
+    height: 350px;
+    display: inline-flex;
+}
+.div4{background-color:#FFB6C1;
+    width: 350px;
+    height: 350px;
+    display:inline-flex
+    
+}
+.div5{background-color: #20b2aa ;
+    width: 350px;
+    height: 350px;
+    display:inline-flex
+}
+.div6{background-color: rgb(162, 207, 158);
+    width: 350px;
+    height: 350px;
+    display:inline-flex
+}
+.div7{background-color: rgb(192, 204, 121);
+    width: 350px;
+    height: 350px;
+    display:inline-flex
+}
+.div8{background-color: rgb(197, 149, 209);
+    width: 350px;
+    height: 350px;
+    display:inline-flex
+}
+.div9{background-color: rgb(214, 240, 180);
+    width: 350px;
+    height: 350px;
+    display:inline-flex
+}
+.div10{background-color: rgb(247, 119, 232);
+    width: 350px;
+    height: 350px;
+    display:inline-flex
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const op1 = parseFloat(prompt("Introduzca operando 1"));
+      const op2 = parseFloat(prompt("Introduzca operando 2"));
+      const operation = prompt("Introduzca la operacion");
+
+      function calc(op1, op2, operation) {
+        if (!isNaN(op1) && !isNaN(op2)) {
+          // si ninguno de los dos es NaN
+          switch (operation) {
+            case "+": return op1+op2;
+            case "-": return op1-op2;
+            case "*": return op1*op2;
+            case "/": return op1/op2;
+            default: return NaN;
+          }
+        }
+      }
+      const baseMsgResult = `${op1} ${operation} ${op2} =`;
+      document.write(`<p>${baseMsgResult} ${calc(op1,op2,operation)}</p>`);
+    </script>
+  </body>
+</html>

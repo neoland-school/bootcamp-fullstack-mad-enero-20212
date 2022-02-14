@@ -1,0 +1,31 @@
+* {
+  color: red;
+  font-family: "Open Sans", sans-serif;
+}
+
+div p {
+  color: blueviolet;
+}
+
+.change-mouse {
+  background-color: burlywood;
+}
+.change-mouse:hover {
+  cursor: pointer;
+}
+
+.inline {
+  display: inline-block;
+}
+
+[data-paragraph] {
+  color: black;
+  font-weight: bold;
+}
+[data-paragraph="first-paragraph"] {
+  background-color: cyan;
+}
+
+[data-paragraph="second-paragraph"] {
+  background-color: coral;
+}

@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.img_anime{
+    width: 150px;
+    height: 200px;
+    color: white;
+}
+
+.name_anime{
+    font-size: 14px;
+    width: 150px;
+    color: white;
+}
+.rank{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+
+}

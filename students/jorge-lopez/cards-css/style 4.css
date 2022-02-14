@@ -1,0 +1,35 @@
+* {margin: 0px;padding: 0px;box-sizing: border-box ;}
+
+.container {background-color: gray; display: flex; align-items: center; justify-content: center; border: black 10px;border: black 5px;}
+
+.card {background-color: rgb(204, 44, 44);padding-bottom: 5%; border: 5px rgb(122, 116, 116);box-shadow: 5px 5px rgb(31, 28, 28);margin-top: 50px;}
+
+.cardimagen {background-image:url(https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/f9a5dd24dc2f4096ad84ada100626589_9366/camiseta-adicolor-trefoil.jpg);height: 390px;width: 400px;}
+
+.circulo1 {border-radius: 50%; border: solid black 1px;height: 30px; width: 30px; margin-left: 50%;background-color: blue; margin: 5px;}
+
+.circulo2 {border-radius: 50%; border: solid black 1px;height: 30px; width: 30px; margin-left: 50%;background-color: red;margin: 5px;}
+
+.circulo3 {border-radius: 50%; border: solid black 1px;height: 30px; width: 30px; margin-left: 50%;background-color: green;margin: 5px;}
+
+.circulo4 {border-radius: 50%; border:solid black 1px ;height: 30px; width: 30px; margin-left: 50%;background-color: white;margin: 5px;}
+
+.colores {display: flex ;flex-direction: row ;}
+
+.boton { color:red; padding: 10px; margin: 135px;} 
+.precio {display: flex; justify-content: end;margin-right: 50px;font-size: 30px;}
+
+
+
+p {padding-left: 50px;}
+
+
+
+
+
+
+
+
+
+
+

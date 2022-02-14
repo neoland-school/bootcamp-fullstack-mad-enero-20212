@@ -1,0 +1,20 @@
+.green {
+    background-image: url(src/120.jpg);
+    background-size: 100% 100%;
+    width: 70px;
+    height: 70px;
+}
+
+.orange {
+    background-image: url(src/90.jpg);
+    background-size: 100% 100%;
+    width: 70px;
+    height: 70px;
+}
+
+.red {
+    background-image: url(src/70.jpg);
+    background-size: 100% 100%;
+    width: 70px;
+    height: 70px;
+}
