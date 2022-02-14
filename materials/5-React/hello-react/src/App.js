@@ -1,27 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import HelloWorld from './hello-world';
+import Greeting from './components/greeting';
+import Anime from './components/anime';
+import { animes, persons } from './data';
+import LifeCycleExample from './components/lifecycle-example';
+import FormsExample from './components/forms-example';
+import PropsParent from './components/props-parent';
 
 function App() {
+  
   return (
-    <div className="App">
-      <h2>Hola caracola</h2>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <HelloWorld></HelloWorld>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      {/* {persons.map((p, i) => <Greeting key={i} name={p} extended={p.length < 6}></Greeting>)} */}
+      {/* <h1>Top Anime</h1>
+      <Anime animes={animes}></Anime> */}
+      {/* <LifeCycleExample></LifeCycleExample> */}
+      {/* <FormsExample></FormsExample> */}
+      <PropsParent></PropsParent>
+    </React.Fragment>
   );
 }
 
