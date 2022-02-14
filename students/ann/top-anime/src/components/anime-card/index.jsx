@@ -10,6 +10,7 @@ function AnimeCard(props) {
           <img className="anime__img" src={props.image}/>
           <h1 className="anime__title">{props.title}</h1>
           <Rank className="anime__rank" rank={props.rank}></Rank>
+          {/* <button className="anime__button__info"></button> */}
         </article>
     </React.Fragment>
   )

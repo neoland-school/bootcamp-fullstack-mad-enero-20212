@@ -1,8 +1,13 @@
+import React from "react";
 import "./style.css";
 
 function Rank(props) {
   return (
-    <p>{props.rank}</p>
+    <React.Fragment>
+      <div class="anime__rank__container">
+        <p>{props.rank}</p>
+      </div>
+    </React.Fragment>
   )
 }
 
