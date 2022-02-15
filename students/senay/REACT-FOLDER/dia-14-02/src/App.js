@@ -6,7 +6,6 @@ import GreenButton from "./components/green-button";
 import CopyInput from "./components/copy-input";
 import Avatar from "./components/avatar";
 
-//Crea una aplicación React con dos botones como en la siguiente imagen, valiéndonos del State al darle click al de + deberá sumar 1 y al de - restar un numero.
 
 function App() {
   let contacts = [
@@ -39,9 +38,14 @@ function App() {
 
   return (
     <React.Fragment>
+      <header>
+          <h1>Contacts</h1>
+          <input type="search" name="input" id="input" placeholder='busca contenido'/>
+      </header>
       {/* <GreenButton></GreenButton>
       <CopyInput></CopyInput> */}
       {contacts.map((c, i) => <Avatar pole={c.img} senay={c.name} key={i}> </Avatar>)}
+    
     </React.Fragment>
   );
 }
