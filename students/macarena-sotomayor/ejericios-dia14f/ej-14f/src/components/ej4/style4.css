@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgsON{
+    border-radius: 50%;
+
+}
+.onlineColorON{
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 50%;
+}
+.imgsOFF{
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.onlineColorOFF{
+    width: 30px;
+    height: 30px;
+    background-color:red;
+    border-radius: 50%;
+}
