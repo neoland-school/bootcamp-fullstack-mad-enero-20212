@@ -13,29 +13,50 @@
 import React, { useEffect, useState } from "react";
 
 function ApiWorld() {
-    
-    let [contries, updateContries] = useState([]);
+
+    let [countries, updateContries] = useState([]);
+    let [filterCountries, updateArray] = useState([]);
+
+    const handleOnChange = e => {
+        const newValue = e.target.value.toLowerCase()
+        const newArr = countries.filter(c => c.name_es.toLowerCase().includes(newValue))
+        updateArray(newArr)
+    }
+
 
     useEffect(() => {
-    fetch('https://gist.githubusercontent.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/raw/107e0bdf27918adea625410af0d340e8fc1cd5bf/countries.json')
-    .then(r => r.json())
-    .then(c => updateContries(c.contries));
-    
-    }), []);
+        
+        fetch('https://gist.githubusercontent.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/raw/107e0bdf27918adea625410af0d340e8fc1cd5bf/countries.json')
+            .then(r => r.json())
+            .then(x => {    
+                updateContries(x.countries)
+                updateArray(x.countries);
 
-    
+                
+            } )
+    }, []);
+
+    // useEffect(() => {
+    //     fetch('https://gist.githubusercontent.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/raw/107e0bdf27918adea625410af0d340e8fc1cd5bf/countries.json')
+    //         .then(r => r.json())
+    //         .then(c => {
+    //             updateContries(c.countries)
+    //             updateArrat(c.countries)
+
+    //             []), });
 
     return (
         <React.Fragment>
-            
-            <ol>
-                <input type="text" />
-                { contries.map(c => <li>{c.name_es}</li>)
-            </ol>
-            
+            <input onChange={handleOnChange} type="text" />
+            <ul>
+                {filterCountries.map((c,i) => <li key={i}>{c.name_es} {c.dial_code}</li>)}
+                {/* <input type="text" name="apiInput" id="childInput"></input> */}
+                {/* {contries.map(x => <li>{x.name_es}{x.dial_code}</li>)} */}
+            </ul>
+
         </React.Fragment>
-        
-    
+
+
     )
 }
 export default ApiWorld;
