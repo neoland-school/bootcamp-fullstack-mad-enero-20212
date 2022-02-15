@@ -1,27 +1,64 @@
-import cervezas from './assets/img/cervezas.jpg'
+
 import './App.css';
-import HelloWorld from './components/first-component/index.jsx';
-import Lorem from './components/second-component';
-import Cuadro from './components/cuadro';
-import Text from './components/hijo-cuadro';
-import './components/cuadro/style.css';
-import './components/titulo/style.css';
-import './components/boton/style.css';
-import CardTitle  from './components/titulo';
-import Boton from './components/boton';
+import React, { useState } from 'react';
+import Color from './components/color';
+import Escribir from './components/escribir';
+import Avatar from './components/avatar';
+import Cabecera from './components/cabecera';
+let contacts = [
+  {
+    img: `https://randomuser.me/api/portraits/men/1.jpg`,
+    name: "pepe"
+  },
+  {
+    img: `https://randomuser.me/api/portraits/women/2.jpg`,
+    name: "carla"
+  },
+  {
+    img: `https://randomuser.me/api/portraits/men/3.jpg`,
+    name: "andres"
+  },
+  {
+    img: `https://randomuser.me/api/portraits/women/4.jpg`,
+    name: "andrea"
+  },
+  {
+    img: `https://randomuser.me/api/portraits/men/5.jpg`,
+    name: "victor"
+  },
+  {
+    img: `https://randomuser.me/api/portraits/men/6.jpg`,
+    name: "jose"
+  },
+
+
+];
+
 
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={cervezas} className="beerimg" alt="logo" />
-        <CardTitle></CardTitle>
-        <Boton></Boton>
-        
-      </header>
-    </div>
-  );
+  // let[counter,updateCounter] = useState(5);
+  // return (
+  //   <div className="App">
+  //     <button onClick={()=> updateCounter(++counter)}>+</button>
+  //     <p>{counter}</p>
+  //     <button onClick={()=> updateCounter(--counter)}>-</button>
+
+      
+  //   </div>
+  // );
+  return(
+    <React.Fragment>
+      <div>
+      <Cabecera></Cabecera>
+      </div>
+    
+    {contacts.map((v,i) =>
+    <Avatar key={i} nombre={v.name} img={v.img}></Avatar>)
+  }
+  
+  </React.Fragment>
+  )
 }
 
 export default App;
