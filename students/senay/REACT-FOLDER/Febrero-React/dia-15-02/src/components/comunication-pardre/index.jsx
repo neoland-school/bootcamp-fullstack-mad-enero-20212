@@ -1,5 +1,5 @@
-import ComunicationHijo from "../comunication-hijo";
-import React, { useState } from "react";
+// import ComunicationHijo from "../comunication-hijo";
+// import React, { useState } from "react";
 
 
 // function ComunicationParde() {

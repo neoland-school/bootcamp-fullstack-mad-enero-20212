@@ -14,45 +14,40 @@ import React, { useEffect, useState } from "react";
 
 function ApiWorld() {
 
-    let [countries, updateContries] = useState([]);
-    let [filterCountries, updateArray] = useState([]);
+    let [countries, updateContries] = useState([]); // countries original, updateContries es una () k peritira guardar y modificar
+    let [filterCountries, updateArray] = useState([]); // creamos el useState 2 para guardar y modificar el filterCountries originalmente seria L17 countries
 
     const handleOnChange = e => {
         const newValue = e.target.value.toLowerCase()
-        const newArr = countries.filter(c => c.name_es.toLowerCase().includes(newValue))
+        const newArr = countries.filter(c => c.name_es.toLowerCase().includes(newValue)) 
         updateArray(newArr)
     }
 
 
-    useEffect(() => {
+    useEffect(() => {  // 1 creamos el fetch sin el updateArray hasta'.then(x => updateContries(x.countries);' 
+        // se quedaria asi...[] es pork usamos useEffect... es un array vacio.
+          // fetch('https://gist.githubusercontent.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/raw/107e0bdf27918adea625410af0d340e8fc1cd5bf/countries.json')
+    //         .then(r => r.json())
+    //         .then(x => updateContries(x.countries), []);
+
         
         fetch('https://gist.githubusercontent.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/raw/107e0bdf27918adea625410af0d340e8fc1cd5bf/countries.json')
             .then(r => r.json())
             .then(x => {    
                 updateContries(x.countries)
                 updateArray(x.countries);
-
-                
-            } )
+                } )
     }, []);
+// L47 onChange esta pendiente de cambios en su valor... lo k escribimos. yo lo crearia primero y su () seria el nombre de la () k capturara y modificara el filter mira L20
+// L49 primero pasamos el updateContries .map guarda el nuevo array de objetos y asi podemos manipularlo
 
-    // useEffect(() => {
-    //     fetch('https://gist.githubusercontent.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/raw/107e0bdf27918adea625410af0d340e8fc1cd5bf/countries.json')
-    //         .then(r => r.json())
-    //         .then(c => {
-    //             updateContries(c.countries)
-    //             updateArrat(c.countries)
-
-    //             []), });
 
     return (
         <React.Fragment>
             <input onChange={handleOnChange} type="text" />
             <ul>
-                {filterCountries.map((c,i) => <li key={i}>{c.name_es} {c.dial_code}</li>)}
-                {/* <input type="text" name="apiInput" id="childInput"></input> */}
-                {/* {contries.map(x => <li>{x.name_es}{x.dial_code}</li>)} */}
-            </ul>
+                {filterCountries.map((c,i) => <li key={i}>{c.name_es} {c.dial_code}</li>)} 
+            </ul> 
 
         </React.Fragment>
 
