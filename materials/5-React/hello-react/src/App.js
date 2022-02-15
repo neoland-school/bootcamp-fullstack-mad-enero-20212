@@ -2,10 +2,12 @@ import React from 'react';
 import './App.css';
 import Greeting from './components/greeting';
 import Anime from './components/anime';
-import { animes, persons } from './data';
+import { animes, persons, contacts } from './data';
 import LifeCycleExample from './components/lifecycle-example';
 import FormsExample from './components/forms-example';
 import PropsParent from './components/props-parent';
+import AvatarList from './components/avatar-list';
+import FetchExample from './components/fetch-example';
 
 function App() {
   
@@ -16,7 +18,9 @@ function App() {
       <Anime animes={animes}></Anime> */}
       {/* <LifeCycleExample></LifeCycleExample> */}
       {/* <FormsExample></FormsExample> */}
-      <PropsParent></PropsParent>
+      {/* <PropsParent></PropsParent> */}
+      {/* <AvatarList avatars={contacts}></AvatarList> */}
+      <FetchExample></FetchExample>
     </React.Fragment>
   );
 }
