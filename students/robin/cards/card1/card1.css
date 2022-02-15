@@ -1,0 +1,140 @@
+
+
+
+body{
+    border: 1px solid black;
+    width: 360px;
+}
+
+
+
+/* Section1 */
+
+.foto {
+    background: url(./img/camiseta.jpg);
+    height: 370px;
+    width: 340px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.foto h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.foto h1:hover {
+    background: #cacbd2;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 10px;
+    transition: 0.3s;
+    box-shadow: 2px 5px 2px ;
+    
+}
+/* COLORS */
+.colors{
+    margin-left: 30px;
+    margin-bottom: -30px;
+}
+.colors h2 {
+   margin-bottom: 0px;
+}
+
+.red {
+    color: #d53a3a;
+    cursor: pointer;
+}
+.red:hover {
+    color: #ae2525;
+}
+.yellow {
+    color:#ffd965 ;
+    cursor: pointer;
+}
+.yellow:hover {
+    color: #ffaf39;
+}
+
+.pink{
+    color: 	#fb5bde;
+    cursor: pointer;
+}
+.pink:hover {
+    color: #b160b0;
+}
+
+.black{
+    color: #0d0d0d;
+    cursor: pointer;
+}
+.black:hover {
+    color: 	#352e2a;
+}
+
+/* Section2*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    background: #cacbd2;
+    box-shadow:inset 5px 5px 20px 8px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fb5b5b;
+    font-style: italic;
+    width: 340px;
+}
+
+.title h1 {
+    
+    margin-bottom: -15px;
+}
+
+
+.sizes h2 {
+    margin-bottom: -15px;
+}
+
+
+.title{
+    margin-left: 30px;
+}
+.sizes {
+    margin-left: 30px;
+}
+
+/*PRICE*/
+
+.price i{
+    font-style: italic;
+    color: #fb5b5b;
+    font-size: 20px;
+    margin-left: -11px;
+    font-weight: bold;
+    
+  
+}
+
+.price {
+    margin-bottom: -20px;
+}
+ /*Selector hermano*/
+
+ .container h1 + p {
+    color: #fb5b5b;
+    font-style: italic;
+}
+
+.sizes h2 + p {
+    color: #fb5b5b;
+    font-style: italic;
+}
+

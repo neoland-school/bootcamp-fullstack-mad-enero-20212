@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */ 
+
+nav {
+    display: flex;
+    background-color: rgb(26, 26, 26);;
+    position: sticky;
+    top: 0; 
+}
+
+#nav-bar {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+
+#nav-links a {
+    padding-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#squares-link {
+    color: yellow;
+    font-weight: bold;
+}
+
+
+#spacexlogo {
+    width: 300px;
+    justify-content: flex-start;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+/* MAIN */
+
+#first-div {
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+    border: 4px solid rgb(138, 93, 209);
+    background-color: rgb(4, 4, 36);
+    box-shadow: 10px 10px 5px rgba(138, 93, 209, 0.5);
+}
+
+#second-div {
+    margin-top: 30px;
+    width: 300px;
+    height: 100px;
+    border: 4px dashed black;
+    background: rgb(174,238,211);
+    background: radial-gradient(circle, rgba(174,238,211,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+#third-div {
+    background-image: url('../imgs/space-invaders.jpeg');
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 450px;
+    height: 450px;
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(26, 26, 26);
+    align-items: center;
+    margin-top: auto;
+}
+
+#footer-icon {
+ margin-left: 10px;
+}
+
+#logo-git {
+    width: 40px;
+    border-radius: 50%;
+}
+
