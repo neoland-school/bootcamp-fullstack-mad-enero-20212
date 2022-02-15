@@ -4,6 +4,7 @@ import "./style.css";
 
 
 function Avatar(props) {
+    let []
     
     return (
         <React.Fragment>
