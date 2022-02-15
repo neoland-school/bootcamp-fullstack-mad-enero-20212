@@ -1,9 +1,17 @@
+import React from 'react';
 import './App.css';
-import ComunicationHijo from './components/comunication-hijo';
+import ApiWorld from './components/api-world';
+// import ComunicationPadre from './components/comunication-pardre';
 
 function App() {
+
   return (
-  <ComunicationHijo></ComunicationHijo>
+    <React.Fragment>
+        {/* <ComunicationPadre></ComunicationPadre> */}
+        <ApiWorld></ApiWorld>
+    </React.Fragment>
+    
+  
   );
 }
 
