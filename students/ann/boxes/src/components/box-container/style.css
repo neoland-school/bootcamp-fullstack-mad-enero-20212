@@ -1,0 +1,9 @@
+.box-container {
+  display: flex;
+}
+
+.green-bar {
+  width: 5px;
+  height: 200px;
+  background-color: green;
+}
