@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 /**
  * 1 crea la () y su html
@@ -22,27 +22,33 @@ function Sentiment() {
     //     .then(data = data.fetchy)
 
     // })
+
+    const [sentiment, updateSentiment] = useState('');
+
     const handleSubmit = e => {
         e.preventDefault();
         
+        const data = new FormData(e.target);
 
         fetch('http://text-processing.com/api/sentiment/', {
             method: 'POST',
             body: data
         })
-        console.log(handleSubmit);
+            .then(r => r.json())
+            .then(s => updateSentiment(s.label));
     }
 
     return (
             <React.Fragment>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <fieldset>
                     <legend>Analize Sentiment</legend>
-                    <label htmlFor="sentiment"></label>
-                    <textarea name="" id="sentiment" cols="30" rows="10"></textarea>
+                    <label htmlFor="sentiment">Introduzca texto</label>
+                    <textarea required name="text" id="sentiment" cols="30" rows="10"></textarea>
                     <button type="submit">Analyze</button>
                 </fieldset>
             </form>
+            <p>{sentiment}</p>
             </React.Fragment>
     )
 }
