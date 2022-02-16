@@ -3,7 +3,11 @@ import './App.css';
 import React, { useState } from 'react';
 import Child from './components/child';
 import Parent from './components/parent';
-import Countries from './components/Countries';
+import Countries from './components/countries';
+import Sentiment from './components/sentimientos';
+import BoxContainer from './components/boxcontainer';
+import CounterInterval from './components/counterinterval';
+import CounterContainer from './components/countercontainer'
 
 
 
@@ -14,8 +18,11 @@ function App() {
     <React.Fragment>
      {/* <Parent></Parent> */}
 
-      <Countries></Countries>
+    {/* <Sentiment></Sentiment> */}
   
+{/* <BoxContainer></BoxContainer> */}
+{/* <CounterInterval></CounterInterval> */}
+<CounterContainer></CounterContainer>
   </React.Fragment>
   )
 }
