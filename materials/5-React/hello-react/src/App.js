@@ -8,6 +8,7 @@ import FormsExample from './components/forms-example';
 import PropsParent from './components/props-parent';
 import AvatarList from './components/avatar-list';
 import FetchExample from './components/fetch-example';
+import Sentiment from './components/sentiments';
 
 function App() {
   
@@ -20,7 +21,8 @@ function App() {
       {/* <FormsExample></FormsExample> */}
       {/* <PropsParent></PropsParent> */}
       {/* <AvatarList avatars={contacts}></AvatarList> */}
-      <FetchExample></FetchExample>
+      {/* <FetchExample></FetchExample> */}
+      <Sentiment></Sentiment>
     </React.Fragment>
   );
 }
