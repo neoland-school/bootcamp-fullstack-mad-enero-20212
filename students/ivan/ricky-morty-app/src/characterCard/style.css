@@ -1,9 +1,10 @@
 .card_container{
     display: flex;
     gap: 1rem;
-   width: 30%;
+   width: 100%;
     background-color: rgb(241, 241, 241);
     border-radius: 20px;
+    margin-bottom: 2rem;
 }
 
 .img{
@@ -54,5 +55,19 @@
 
 .alive{
     background-color: #37c50c;
+}
 
+
+
+
+@media screen and (min-width:801px) and (max-width:1500px){
+    .card_container{    
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1501px) {
+    .card_container{
+        width: 30%;    
+    }
 }

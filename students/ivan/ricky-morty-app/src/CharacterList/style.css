@@ -18,6 +18,7 @@
     font-weight: bolder;
     opacity: 1;
     color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 .search_area{
@@ -51,10 +52,7 @@ gap: 0.5rem;
 }
 
 .main__Container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
+   
     background-color: #5e5e5e;
     padding: 2rem;
     
@@ -65,4 +63,17 @@ gap: 0.5rem;
     display: flex;
     justify-content: center;
 
+}
+
+
+@media screen and (min-width:780px) {
+    .main__Container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        background-color: #5e5e5e;
+        padding: 2rem;
+        
+      }
 }
