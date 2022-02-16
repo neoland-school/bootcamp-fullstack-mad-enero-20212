@@ -14,6 +14,7 @@ function Sentiment() {
             body: data,
         })
             .then((response) => response.json())
+            .catch(err => update(`Blocked by CORS policy. Please add a CORS unblock extension to your browser.`))
             .then((json) => {
                 if (json.label === 'pos') {
                     update(`"positive" with a probabilty of ${json.probability.pos.toFixed(2)}`);
