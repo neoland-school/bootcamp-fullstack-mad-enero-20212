@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container_form{
+    border: 1px lightgrey solid;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    
+}
+.container_input{
+    padding-top:80px;
+    margin: 20px;
+}
+.input_text{
+    width: 250px;
+    height: 150px;
+}
+.title{
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.bottom{
+    margin-left: 10px;
+    margin-top: 40px;
+    padding: 4px 8px 4px 8px;
+    font-size: 15px;
+}
+.title_outside{
+    margin: 5px;
+}
