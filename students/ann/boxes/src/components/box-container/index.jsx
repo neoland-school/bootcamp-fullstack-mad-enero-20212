@@ -5,11 +5,8 @@ import React, { useState } from 'react';
 
 function BoxContainer() {
     const [color, updateColor] = useState('');
-    console.log(color);
-    const handleSetGreen = bool => {
-        if (bool === true) updateColor('green')
-        else updateColor('white')
-    }
+    
+    const handleSetGreen = bool => bool ? updateColor('green') : updateColor('white')
 
     return (
         <div className="box-container">

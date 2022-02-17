@@ -6,8 +6,8 @@ import CounterContainer from "./components/counter-container";
 function App() {
   return (
     <div className="App">
-      {/* <BoxContainer></BoxContainer>
-      <CounterContainer></CounterContainer> */}
+      <BoxContainer></BoxContainer>
+      <CounterContainer></CounterContainer>
     </div>
   );
 }

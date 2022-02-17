@@ -11,10 +11,11 @@ function CounterContainer() {
 
     return (
         <React.Fragment>
+            <label>Check the box to start the interval</label>
             <input
                 id="checkbox" type="checkbox" onChange={handleCheckChange}
             ></input>
-            {/* <CounterInterval intervalRunning={isCheck}></CounterInterval> */}
+            <CounterInterval intervalRunning={isCheck}></CounterInterval>
         </React.Fragment>
     )
 }

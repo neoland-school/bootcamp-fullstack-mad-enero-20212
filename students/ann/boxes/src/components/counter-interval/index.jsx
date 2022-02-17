@@ -14,20 +14,17 @@ function CounterInterval({ intervalRunning }) {
                 counterArr.push(` ${counter} ,`)
                 updateArr(counterArr)
             }, 1000);
-            return () => clearInterval(interval)
+            
         }
-
         function stopInterval() {
             clearInterval(interval)
             updateArr([])
             updateCounter(0)
         }
-        if (intervalRunning) {
-            startInterval()
-        } else {
-            stopInterval()
-        }
-
+        
+        intervalRunning ? startInterval() : stopInterval()
+        
+        return () => clearInterval(interval)
     }, [intervalRunning])
 
     return <p>{counterArr}</p>
