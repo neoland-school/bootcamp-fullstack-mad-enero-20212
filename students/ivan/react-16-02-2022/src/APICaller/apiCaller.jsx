@@ -19,53 +19,74 @@ function ApiCaller() {
   let [value, updateValue] = useState();
   const handlePostOk = (e) => {
     e.preventDefault();
-    fetch("https://bootcamp.free.beeceptor.com/hello-ok", {
+    fetch("https://ivansp.free.beeceptor.com/post", {
       method: "POST",
     })
       .then((r) => {
-        r.json();
         console.log(r);
-        updatePreValue(r);
+        updateValue(r);
+
+        return r.json();
       })
-      .then((c) => updateValue(c));
+      .then((c) => {
+        updatePreValue(JSON.stringify(c));
+        console.log(c);
+      });
   };
 
   const handlePutOk = (e) => {
     e.preventDefault();
-    fetch("https://bootcamp.free.beeceptor.com/hello-ok", {
+    fetch("https://ivansp.free.beeceptor.com/put", {
       method: "PUT",
+      body: JSON.stringify({
+        userId: 1,
+        id: 5,
+        title: "hello task",
+        completed: false,
+      }),
     })
       .then((r) => {
-        r.json();
         console.log(r);
-        updatePreValue(r);
+        updateValue(r);
+
+        return r.json();
       })
-      .then((c) => updateValue(c));
+      .then((c) => {
+        updatePreValue(JSON.stringify(c));
+      });
   };
   const handleDeleteOk = (e) => {
     e.preventDefault();
-    fetch("https://bootcamp.free.beeceptor.com/hello-ok", {
+    fetch("https://ivansp.free.beeceptor.com/delete", {
       method: "DELETE",
     })
       .then((r) => {
-        r.json();
         console.log(r);
-        updatePreValue(r);
+        updateValue(r);
+
+        return r.json();
       })
-      .then((c) => updateValue(c));
+      .then((c) => {
+        updatePreValue(JSON.stringify(c));
+      });
   };
 
   const handlePostKo = (e) => {
     e.preventDefault();
-    fetch("https://bootcamp.free.beeceptor.com/hello-ok", {
-      method: "DELETE",
+    fetch("https://ivansp.free.beeceptor.com/postko", {
+      method: "GET",
     })
       .then((r) => {
-        r.json();
         console.log(r);
-        updatePreValue(r);
+        updateValue(r);
+
+        return r.json();
       })
-      .then((c) => updateValue(c));
+      .then((c) => {
+        updatePreValue(c);
+        //console.log(preValue);
+        console.log(value);
+      });
   };
 
   return (
@@ -77,8 +98,8 @@ function ApiCaller() {
         <button onClick={handlePostKo}>POST ko</button>
       </div>
       <div>
-        <h4>{preValue.statusText ? preValue.statusText : "Empty"}</h4>
-        <h3>Status code: {preValue.status} </h3>
+        <h4>{preValue ? preValue : "The body is Empty"}</h4>
+        <h3>Status code: {value ? value.status : ""} </h3>
       </div>
     </div>
   );
