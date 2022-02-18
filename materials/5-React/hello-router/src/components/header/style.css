@@ -1,0 +1,16 @@
+header {
+    padding: 1rem;
+    background-color: brown;
+    color: white;
+}
+
+.hola {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: crimson;
+}
+
+.hola:hover {
+    background-color: black;
+}
