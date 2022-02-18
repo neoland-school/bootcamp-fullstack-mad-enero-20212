@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.img{
+    background-color: aqua;
+    width: 180px;
+    height: 70px;
+    margin: 10px;
+}
+
+.table_container{
+    width: 200px;
+    padding: 20px;
+    color: white;
+    border: 1px solid darkgrey;
+    background-color: rgb(85, 85, 85);
+}
+
+.title{
+    border-bottom: 1px solid darkgrey;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.info{
+    border-bottom: 1px solid darkgrey;
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 10px;
+}

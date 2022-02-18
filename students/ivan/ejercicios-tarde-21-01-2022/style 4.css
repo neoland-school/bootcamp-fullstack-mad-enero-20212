@@ -1,0 +1,48 @@
+td{
+    background-color: rgb(112, 112, 133);
+    border: solid 1px black;
+    padding: 5px;
+}
+
+
+.column{
+    width: 100px;
+    height: 20px;
+    background-color: chartreuse;
+    margin: 5px;
+    width: 30px;
+    display: inline-block;
+}
+
+.container{
+    animation: rotate_arrow 10s linear 0s infinite;
+    width: fit-content;
+}
+
+.block{
+    width: 5px;
+    height: 10px;
+    animation: throw_arrow 20s linear 0s infinite;
+}
+.row{
+    display: flex;
+    margin-bottom: 1px;
+}
+
+.bg_asc{
+    background-color: burlywood;
+
+}
+.bg_desc{
+    background-color: chartreuse;
+}
+
+@keyframes throw_arrow{ /*Esto es solo la definición de la animación  */
+    0%{
+        transform: translateX(0vw) ;
+    }
+    100%{
+
+        transform: translateX(100vw) ;
+    }
+}

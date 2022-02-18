@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card_nota {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.radios {
+    display: flex;
+    flex-direction: row;
+
+}
+.text_note {
+    width: 240px;
+    height: 70px;
+    text-align: justify;
+    vertical-align: top;
+}
+
+label{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.sumar_tarea{
+    width: 20px;
+    height: 20x;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.container_buscador {
+    margin: 10px;
+    background-color: grey;
+    width: 320px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.64);
+}
+.title_creation {
+    padding-top: 10px;
+    color: whitesmoke;
+}
+
+.container_notas {
+    margin: 20px 10px 10px 10px;
+    background-color: rgb(184, 184, 184);
+    width: 320px;
+    height: 1000px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card_container{
+    padding: 15px;
+    border: 1px solid rgb(77, 76, 76);
+    background-color: rgb(202, 199, 199);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 260px;
+    word-break:break-all;
+    list-style:none
+}
+
+.checkbox:checked + p  {
+    text-decoration:line-through;
+}

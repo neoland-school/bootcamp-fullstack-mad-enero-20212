@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+form {
+   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+} 
+
+.client-name {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.client-email {
+    display: flex;
+    flex-direction: column;
+}
+
+.type-iphone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quantity-iphone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

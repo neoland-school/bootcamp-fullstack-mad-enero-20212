@@ -1,0 +1,42 @@
+.img_op_zero{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.img_op_total{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-top: 20px;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+
+.users{
+    display: flex;
+    flex-direction: row;
+}
+.green{
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    margin-top: 90px;
+    border-radius: 100%;
+}
+.red{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    margin-top: 90px;
+    border-radius: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}

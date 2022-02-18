@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ejercicio 4 */
+
+/* body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    gap: 4px;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+input{
+    padding: 1rem, 2rem;
+    width: 60%;
+    height: auto;
+    border: none;
+}
+
+.boton_enviar{
+    width: 30%;
+    border-radius: 10%;
+} */
+
+/* Ejercicios 5 */
+
+.cities__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+
+.city__container {
+    max-width: 300px;
+    box-shadow: 10px 10px 19px -1px rgb(0 0 0 / 75%);
+}
+
+.city__header{
+    position: relative;
+}
+
+.city__img{
+    max-width: 300px;
+    opacity: 0.6;
+}
+
+.city__subheading{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.city__share-icon{
+    position: absolute;
+    bottom: -4px;
+    right: 15px;
+    color: white;
+    background-color: blue;
+    padding: 0.50rem;
+    border-radius: 100%;
+    box-shadow: 4px 6px 5px -1px rgb(0 0 0 / 25%);
+}
+
+.city__body{
+  padding: 1rem;
+}
+
+.city__body > * {
+    margin: 1rem 0rem;
+}
+
+.city__button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.city__action-button{
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 0.40rem 1.25rem;
+    box-shadow: 4px 6px 5px -1px rgb(0 0 0 / 25%);
+}

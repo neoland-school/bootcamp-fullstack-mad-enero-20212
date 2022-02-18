@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button_ej3{
+    background-color: grey;
+    width: 60px;
+    height: 50px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(219, 218, 218);
+    padding-top: 30px;
+}
+
+.container_card{
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.6)
+    
+}
+.animacion_card{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+.green {
+    background-color: rgb(97,205,114);
+}
+.red {
+    background-color: rgb(231,75,59);
+}
+
+.parte_batery{
+    width: 70px;
+    height: 88px;
+    border: 3px solid white;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+.parte_arriba{
+    width: 30px;
+    height: 10px;
+    border: 3px solid white;
+    border-bottom: transparent;
+}
+
+.level_batery{
+    width: 58px;
+    height: 13px;
+    background-color: white;
+    margin: 1px;
+}
+
+
+.details_card{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p_level{
+    font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;  
+  font-weight: bold;
+}
+.text_level {
+    font-size: 25px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    color: grey;
+}
