@@ -10,9 +10,10 @@ import AvatarList from './components/avatar-list';
 import FetchExample from './components/fetch-example';
 import Sentiment from './components/sentiments';
 import CounterContainer from './components/counter-container';
+import FilterComponentExample from './components/filter-component-example';
 
 function App() {
-  
+
   return (
     <React.Fragment>
       {/* {persons.map((p, i) => <Greeting key={i} name={p} extended={p.length < 6}></Greeting>)} */}
@@ -36,7 +37,8 @@ function App() {
         </code>
       </pre>
       <p style={{marginTop: '1rem'}} >Status code: 200</p> */}
-      <CounterContainer></CounterContainer>
+      {/* <CounterContainer></CounterContainer> */}
+      <FilterComponentExample></FilterComponentExample>
     </React.Fragment>
   );
 }
