@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function NavPokedex({ HandleFiltered }) {
+function Header({ HandleFiltered }) {
   return (
     <React.Fragment>
       <header className="header">
@@ -20,4 +20,4 @@ function NavPokedex({ HandleFiltered }) {
   );
 }
 
-export default NavPokedex;
+export default Header;

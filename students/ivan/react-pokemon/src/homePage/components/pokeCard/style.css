@@ -1,5 +1,10 @@
 .card_container{
     border-radius: 20px;
+    width: 100%;
+}
+
+.linkcard{
+
     width: 15%;
 }
 
