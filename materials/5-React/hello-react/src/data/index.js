@@ -108,3 +108,17 @@ export const contacts = [
 
 
 ];
+
+
+export const getCountriesFromApi = async () => {
+  const r = await fetch('https://countriesnow.space/api/v0.1/countries/capital')
+  if (r.ok){
+    const d = await r.json();
+    return d.data;
+  }else{
+    switch(r.status){
+      case 400: console.log('se ha producido un 400'); break;
+      default: console.log('Opcion por defecto')
+    }
+  }
+}
