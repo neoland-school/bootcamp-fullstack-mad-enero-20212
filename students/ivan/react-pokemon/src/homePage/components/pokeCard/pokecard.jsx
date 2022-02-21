@@ -28,7 +28,7 @@ function PokeCard({ pokemonInfo }) {
     >
       <div className="card_container">
         <div className="image_container">
-          <img className="imgage" src={pokemonInfo.img} alt="" />
+          <img className="imgage" src={pokemonInfo.img1} alt="" />
         </div>
         <div className="pokemon_info">
           <div>

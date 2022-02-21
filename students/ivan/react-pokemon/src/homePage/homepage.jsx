@@ -4,42 +4,48 @@ import PokeCard from "./components/pokeCard/pokecard";
 import "./style.css";
 
 function HomePAge() {
-  let [currentInfo, updateCurrentInfo] = useState({});
   let [allPokemonInfo, updateAllPokemonInfo] = useState([]);
   let [filteredPokemon, updateFilteredPokemon] = useState([]);
-  let [nextUrl, updateNextUrl] = useState("https://pokeapi.co/api/v2/pokemon");
-  let [prevURL, updatePrevUrl] = useState("https://pokeapi.co/api/v2/pokemon");
-  let [isNext, updateIsNext] = useState(true);
+  let [nextUrl, updateNextUrl] = useState("");
+  let [url, updateUrl] = useState("https://pokeapi.co/api/v2/pokemon");
+  let [prevUrl, updatePrevUrl] = useState("");
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     console.log("hola");
     async function fetchAllPokemon() {
-      const r = await fetch(isNext === true ? nextUrl : prevURL);
+      const r = await fetch(url);
       const allP = await r.json();
-      updateCurrentInfo(allP);
+      updateNextUrl(allP.next != null ? allP.next : "");
+      updatePrevUrl(allP.previous != null ? allP.previous : "");
 
       allP.results.forEach(async (pokemon) => {
         const r = await fetch(pokemon.url);
         const p = await r.json();
+        console.log(p);
         const objPoke = {
           id: p.id,
           name: p.species.name,
           url: p.species.url,
-          img: p.sprites.other.dream_world.front_default,
+          img1: p.sprites.other.dream_world.front_default,
+          img2: p.sprites.other["official-artwork"].front_default,
           numerOfTypes: p.types.lenngt,
           type: p.types,
+          forms: p.forms,
+          height: p.height,
+          moves: p.moves,
+          weight: p.weight,
+          stats: p.stats,
+          ability: p.abilities[0].ability.name,
         };
         allPokemonInfo.push(objPoke);
         updateAllPokemonInfo([...allPokemonInfo]);
         updateFilteredPokemon([...allPokemonInfo]);
-        updateIsNext(false);
-
-        console.log(isNext);
+        console.log(allPokemonInfo.ability);
       });
     }
 
     fetchAllPokemon();
-  }, [nextUrl, prevURL]);
+  }, [url]);
 
   const HandleFiltered = (e) => {
     const filteredPokemon = allPokemonInfo.filter((pokemon) =>
@@ -50,32 +56,29 @@ function HomePAge() {
 
   const handleNextFilter = () => {
     updateAllPokemonInfo([]); //no me está actualizando mi array a cero
-    updateIsNext(true);
-    if (currentInfo.next) {
-      updatePrevUrl(nextUrl);
-      updateNextUrl(currentInfo.next);
-
-      console.log(prevURL);
-    } else {
-      updateNextUrl("");
-    }
+    updateUrl(nextUrl);
+    console.log(url);
   };
 
   const handlePrevFilter = () => {
     updateAllPokemonInfo([]); //no me está actualizando mi array a cero
-    console.log(isNext);
-    if (currentInfo.prev) {
-      updateNextUrl(prevURL);
-      updatePrevUrl(currentInfo.prev);
-      console.log(currentInfo.next);
-    }
+    updateUrl(prevUrl);
   };
 
   return (
     <React.Fragment>
       <Header HandleFiltered={HandleFiltered}></Header>
+      <section className="search_area">
+        <input
+          id="search"
+          name="search"
+          type="text"
+          placeholder="Search Pokemon"
+          onKeyUp={HandleFiltered}
+        />
+      </section>
       <div className="button_container">
-        {prevURL !== "" ? (
+        {prevUrl !== "" ? (
           <button className="button" onClick={handlePrevFilter}>
             PREV
           </button>
