@@ -22,7 +22,8 @@ function App() {
   
 {/* <BoxContainer></BoxContainer> */}
 {/* <CounterInterval></CounterInterval> */}
-<CounterContainer></CounterContainer>
+{/* <CounterContainer></CounterContainer> */}
+<Filter></Filter>
   </React.Fragment>
   )
 }

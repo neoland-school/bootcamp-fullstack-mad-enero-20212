@@ -18,12 +18,12 @@ import CounterInterval from '../counterinterval';
 function CounterContainer() {
     let [boton, updateboton] = useState(false);
     let handler = () => { 
-        // if (boton === false) {
-        //     updateboton(boton = true)
+        if (boton === false) {
+            updateboton(boton = true)
            
-        // } else{updateboton(boton = false)}
-        // console.log(boton)
-        updateboton( !boton )
+        } else{updateboton(boton = false)}
+        console.log(boton)
+        // updateboton( !boton )
 
 
 

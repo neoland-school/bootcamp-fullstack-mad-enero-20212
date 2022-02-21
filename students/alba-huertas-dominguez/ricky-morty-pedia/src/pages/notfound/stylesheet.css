@@ -1,0 +1,22 @@
+
+@font-face {
+    font-family:'Pokemon Hollow' ;
+    src: url(./PokemonHollow.ttf);}
+
+    @font-face {
+        font-family:'Pokemon Solid' ;
+        src: url(./PokemonSolid.ttf);}
+
+
+
+
+.notf{
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    gap:50px;
+    padding-top: 30px;
+    font-family: 'Pokemon Hollow';
+
+
+}
