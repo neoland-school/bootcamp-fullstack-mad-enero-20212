@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.BoxContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+.EmptyBox{
+    width: 150px;
+    height: 150px;
+    border: solid;
+    border-color: black;
+}
+
+.red{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border: solid;
+    border-color: black;
+}
+
+.green{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    border: solid;
+    border-color: black;
+}

@@ -1,0 +1,51 @@
+@font-face {
+    
+    font-family:'PokemonVacia' ;
+    src: url(./Pokemon\ Hollow.ttf)
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.header__container{
+    background-color: rgba(189, 20, 20, 0.877);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.pokemon__logo{
+    font-family:'PokemonVacia' ;
+    margin-left: 100px;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: yellow;
+    
+}
+.search__info{
+    width: 40%;
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+.input__header{
+    padding-left: 10px;
+border-radius: 5px;
+box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.75);
+
+}
+
+.boton__sus{
+    margin-right: 200px;
+
+}
