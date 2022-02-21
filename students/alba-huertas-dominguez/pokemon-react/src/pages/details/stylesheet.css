@@ -1,0 +1,32 @@
+
+
+@font-face {
+    font-family:'Pokemon Hollow' ;
+    src: url(./PokemonHollow.ttf);}
+
+    @font-face {
+        font-family:'Pokemon Solid' ;
+        src: url(./PokemonSolid.ttf);}
+
+.containerdetails{
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    gap: 20px;
+    
+}
+.back{
+    min-height: 200px ;
+    min-width: 200px ;
+    margin: 50px;
+    
+}
+.detailtitle{
+    font-family:'Pokemon Solid';
+    opacity: 0.8;
+
+    
+}

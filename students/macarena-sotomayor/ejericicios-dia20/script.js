@@ -118,9 +118,9 @@ alert(años )
 
 //ejercicio 7
 
-// let dato1= prompt('mete numero')
-// let operacion=prompt ('qué operacion quieres realizar?')
-// let dato2=prompt('segundo numero')
+let dato1= prompt('mete numero')
+let operacion=prompt ('qué operacion quieres realizar?')
+let dato2=prompt('segundo numero')
 
 
 

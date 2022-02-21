@@ -1,0 +1,22 @@
+.div-title{
+display: flex;
+flex-direction: column;
+
+
+}
+
+.card-list{
+    list-style: none;
+    align-content: center;
+    align-self: center;
+    padding: 0%;
+    
+    
+
+
+}
+.title{
+margin: 0.5px
+
+    
+}

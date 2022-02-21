@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 350px;
+    height: 350px;
+    font-size: 100px;
+    text-align: center;
+}
+
+#box-one {
+    background-color: #6d80a3;
+}
+
+#box-two {
+    background-color: #21e87c;
+}
+
+#box-three {
+    background-color: #a0bcac;
+}
+
+#box-four {
+    background-color: #272532;
+}
+
+#box-five {
+    background-color: #rgb(238, 130, 238);
+}
+
+#box-six {
+    background-color: rgb(255, 0, 0);
+}
+
+#box-seven {
+    background-color: rgb(60, 179, 113);
+}
+
+#box-nine {
+    background-color: rgb(255, 165, 0);
+}
+
+#box-ten {
+    background-color: rgb(0, 0, 255);
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
