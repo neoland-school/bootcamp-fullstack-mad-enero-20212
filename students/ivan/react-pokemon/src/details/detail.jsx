@@ -12,42 +12,74 @@ function Details() {
   pokemon.state.type.forEach((t) => {
     typesNames.push(t.type.name);
   });
+  const drawNumber = () => {
+    let ceros = "";
+
+    if (pokemon.state.id < 10) {
+      ceros = "00";
+    } else if (pokemon.state.id >= 10 && pokemon.state.id < 100) {
+      ceros = "0";
+    }
+    return ceros;
+  };
 
   return (
     <React.Fragment>
       <Header></Header>
       <div className="main__container">
+        <div className="pokemon_name">
+          <h4 className="poke-id">{`# ${drawNumber()}${pokemon.state.id}`}</h4>
+          <h2 className="name">
+            {pokemon.state.name[0].toUpperCase() +
+              pokemon.state.name.substring(1)}
+          </h2>
+        </div>
         <div className="pokedex_pokemon">
           <section className="pokemon">
+            <h2 className="status">POKEMON STAUS </h2>
             <div className="pokemon_status">
-              <p>{pokemon.state.stats[0].stat.name.toUpperCase()}</p>
+              <p className="status-name">
+                {`${pokemon.state.stats[0].stat.name.toUpperCase()}:`}
+              </p>
 
-              <p>{pokemon.state.stats[0].base_stat}</p>
+              <p className="status-value ">
+                {pokemon.state.stats[0].base_stat}
+              </p>
             </div>
             <div className="pokemon_status">
-              <p>{pokemon.state.stats[1].stat.name.toUpperCase()}</p>
+              <p className="status-name">{`${pokemon.state.stats[1].stat.name.toUpperCase()}:`}</p>
 
-              <p>{pokemon.state.stats[1].base_stat}</p>
+              <p className="status-value ">
+                {pokemon.state.stats[1].base_stat}
+              </p>
             </div>
             <div className="pokemon_status">
-              <p>{pokemon.state.stats[2].stat.name.toUpperCase()}</p>
+              <p className="status-name ">{`${pokemon.state.stats[2].stat.name.toUpperCase()}:`}</p>
 
-              <p>{pokemon.state.stats[2].base_stat}</p>
+              <p className="status-value ">
+                {pokemon.state.stats[2].base_stat}
+              </p>
             </div>
             <div className="pokemon_status">
-              <p>{pokemon.state.stats[3].stat.name.toUpperCase()}</p>
+              <p className="status-name">{`${pokemon.state.stats[3].stat.name.toUpperCase()}:`}</p>
 
-              <p>{pokemon.state.stats[3].base_stat}</p>
+              <p className="status-value ">
+                {pokemon.state.stats[3].base_stat}
+              </p>
             </div>
             <div className="pokemon_status">
-              <p>{pokemon.state.stats[4].stat.name.toUpperCase()}</p>
+              <p className="status-name">{`${pokemon.state.stats[4].stat.name.toUpperCase()}:`}</p>
 
-              <p>{pokemon.state.stats[4].base_stat}</p>
+              <p className="status-value ">
+                {pokemon.state.stats[4].base_stat}
+              </p>
             </div>
             <div className="pokemon_status">
-              <p>{pokemon.state.stats[5].stat.name.toUpperCase()}</p>
+              <p className="status-name">{`${pokemon.state.stats[5].stat.name.toUpperCase()}:`}</p>
 
-              <p>{pokemon.state.stats[5].base_stat}</p>
+              <p className="status-value ">
+                {pokemon.state.stats[5].base_stat}
+              </p>
             </div>
           </section>
           <article className="images">
@@ -59,35 +91,36 @@ function Details() {
             />
           </article>
           <div className="pokemon__info">
-            <div className="pokemon-height">
-              <p>HEIGHT</p>
+            <div className="pokemon__info-container">
+              <div className="pokemon_properties">
+                <p className="status-name">HEIGHT:</p>
 
-              <p>{`${pokemon.state.height / 10} m`}</p>
-            </div>
-            <div className="pokemon-weight">
-              <p>{`${pokemon.state.weight / 10} m`}</p>
-            </div>
-            <div className="pokemon-ability">
-              <p>ABILITY</p>
-              <p>
-                {pokemon.state.ability[0].toUpperCase() +
-                  pokemon.state.ability.substring(1)}
-              </p>
-            </div>
-            <div className="pokemon-height">
-              {typesNames.map((type, i) => (
-                <p key={i} className={`type ${type}`}>
-                  {type}
+                <p>{`${pokemon.state.height / 10} m`}</p>
+              </div>
+              <div className="pokemon_properties">
+                <p className="status-name">WEIGHT:</p>
+
+                <p>{`${pokemon.state.weight / 10} kg`}</p>
+              </div>
+              <div className="pokemon_properties">
+                <p className="status-name">ABILITY:</p>
+                <p>
+                  {pokemon.state.ability[0].toUpperCase() +
+                    pokemon.state.ability.substring(1)}
                 </p>
-              ))}
+              </div>
+              <div className="flex_row">
+                {typesNames.map((type, i) => (
+                  <p key={i} className={`type ${type}`}>
+                    {type}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
         </div>
         <section className="pokemon_moves">
-          <div>
-            <p>ataque</p>
-            <p>nivel</p>
-          </div>
+          <div></div>
         </section>
       </div>
     </React.Fragment>
