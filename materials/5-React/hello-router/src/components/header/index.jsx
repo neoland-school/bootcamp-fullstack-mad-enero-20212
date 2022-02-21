@@ -7,6 +7,7 @@ function Header() {
             <nav>
                 <Link className='hola' to='/hello'>Go to hello</Link>
                 <Link className='hola' to='/countries'>Search Countries</Link>
+                <Link className='hola' to='/contact'>Contactanos</Link>
             </nav>
         </header>
     )
