@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 function Pokemon(props) {
     return (
         <React.Fragment>
-             <Link className="link" to={`details/${props.id}`} state= {{from:props.back}}>
+             <Link className="link" to={`details/${props.id}`} state= {{from:props}}>
             <div className="containercard">
 
                 <div className="img">

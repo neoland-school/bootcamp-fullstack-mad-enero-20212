@@ -24,7 +24,11 @@ function Details(){
     <div className='containerdetails'>
 
     <p className='detailtitle'> y ahora de espaldas </p>
-    <img  className='back' src={location.state.from} alt=""></img>
+    {/* <img  className='back' src={location.state.from.back} alt=""></img> */}
+    <p> mi peso es {location.state.from.weight}</p>
+    <p> experiencia {location.state.from.base}</p>
+    <img  className='shiny' src={location.state.from.shiny} alt=""></img>
+    {/* <img  className='big' src={location.state.from.imgb} alt=""></img> */}
     </div>
   
     
