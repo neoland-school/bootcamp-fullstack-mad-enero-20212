@@ -6,6 +6,9 @@ import CountriesList from './pages/countries-list';
 import CountryDetail from './pages/country-detail';
 import PokemonDetail from './pages/pokemon-detail';
 import Contact from './pages/contact';
+import Login from './pages/login';
+import PrivateHome from './pages/private-home';
+import PrivateRoute from './components/private-route';
 
 function App() {
   return (
@@ -17,7 +20,9 @@ function App() {
           <Route path='/countries' element={<CountriesList />}></Route>
           <Route path='/countries/:code' element={<CountryDetail></CountryDetail>}></Route>
           <Route path='/pokemon/:id' element={<PokemonDetail/>}></Route>
-          <Route path='/contact' element={<Contact/>}></Route>
+          <Route path='/contact' element={<PrivateRoute><Contact/></PrivateRoute>}></Route>
+          <Route path='/login' element={<Login></Login>}></Route>
+          <Route path='/private/home' element={<PrivateHome/>}></Route>
         </Routes>
       </main>
       <p>Esto es despues de las página</p>
