@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import {useNavigate} from 'react-router-dom';
 
 function Contact() {
-
+    const navigate = useNavigate(); // navigate es una funcion
     const [msgOk, updateResponse] = useState(false);
 
     const handleSubmit = e => {
@@ -20,7 +21,14 @@ function Contact() {
             })
         })
         .then(r => r.json())
-        .then(() => updateResponse(true))
+        .then(() => {
+            updateResponse(true);
+            // en este caso quiero navegar a los 3 segundos
+            setTimeout(() => {
+                // navegación
+                navigate('/countries');
+            }, 3000);
+        })
         .catch(error => console.log(error));
     }
 
