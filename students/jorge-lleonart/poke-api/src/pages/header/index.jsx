@@ -6,7 +6,7 @@ function Header(){
     return(
         <header>
             <nav className="header__container">
-                <Link to='/home'><h1 className="pokemon__logo">POKEDEX</h1></Link>
+                <Link to='/'><h1 className="pokemon__logo">POKEDEX</h1></Link>
                 
                 <div className='search__info'>
                     <input type="text" className="input__header" placeholder="SEARCH"/>

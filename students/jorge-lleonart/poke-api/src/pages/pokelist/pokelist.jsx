@@ -21,12 +21,15 @@ function PokeList() {
                 c.results.forEach(e => {
                     fetch(e.url)
                         .then(s => s.json())
-                        .then(a => {
-                            let pokemon = {
-                                id: a.id,
-                                img: a.sprites.front_default,
-                                name: a.name,
-                                type: [a.types]
+                        .then(data => {
+                            let pokemon ={
+                                id: data.id,
+                                img: data.sprites.front_default,
+                                name: data.name,
+                                type:[data.types],
+                                weight: data.weight,
+                                height: data.height,
+                                img2: data.sprites.other.dream_world.front_default,
                             };
                             // console.log(pokemon)
                             // return(pokemon)
@@ -51,7 +54,7 @@ function PokeList() {
 
             <button className='button__home'>NEXT</button>
             <div className='main__container'>
-                {pokemons.length === 0 ? <h2>Cargando</h2> : pokemons.map((v, i) => <PokeCard key={i} name={v.name} img={v.img} type={v.type} id={v.id}></PokeCard>)}
+                {pokemons.length === 0 ? <h2>Cargando</h2> : pokemons.map((v, i) => <PokeCard key={i} name={v.name} img={v.img} type={v.type} id={v.id} img2={v.img2} height={v.height}  weight={v.weight}></PokeCard>)}
 
             </div>
         </div>

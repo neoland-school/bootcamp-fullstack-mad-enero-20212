@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
+import {useLocation} from 'react-router-dom'
 
 
 function Detail(Props){
-
+    const location = useLocation()
+    const info = location.state
     return(
         <>
             <div className="container">
+
                 <div className="img__container">
-                    <img src={Props.img2} alt="" />
+                    <img src={info.img2} alt="" />
                 </div>
                 {/* <div className="info__container">
                     <h3 className="pokemon__name">{Props.name}</h3>
