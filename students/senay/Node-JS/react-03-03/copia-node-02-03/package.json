@@ -1,0 +1,13 @@
+{
+  "name": "02-03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node-02-03.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
