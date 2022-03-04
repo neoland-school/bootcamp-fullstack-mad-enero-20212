@@ -20,7 +20,7 @@ function App() {
       {/* {persons.map((p, i) => <Greeting key={i} name={p} extended={p.length < 6}></Greeting>)} */}
       {/* <h1>Top Anime</h1>
       <Anime animes={animes}></Anime> */}
-      {/* <LifeCycleExample></LifeCycleExample> */}
+      <LifeCycleExample></LifeCycleExample>
       {/* <FormsExample></FormsExample> */}
       {/* <PropsParent></PropsParent> */}
       {/* <AvatarList avatars={contacts}></AvatarList> */}
@@ -40,7 +40,7 @@ function App() {
       <p style={{marginTop: '1rem'}} >Status code: 200</p> */}
       {/* <CounterContainer></CounterContainer> */}
       {/* <FilterComponentExample></FilterComponentExample> */}
-      <CustomHookExample></CustomHookExample>
+      {/* <CustomHookExample></CustomHookExample> */}
     </React.Fragment>
   );
 }
