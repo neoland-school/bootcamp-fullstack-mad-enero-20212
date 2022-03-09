@@ -12,10 +12,8 @@ import express from 'express';
 const app = express();
 const port = process.env.PORT || 4000;
 
-let middleExample = (req, res, next) => {
-    console.log(req.ip)
-    console.log('Pintando el IP')
-    next();
+let middleExample = (req, res) => {
+
 }
 
 app.use(middleExample);
