@@ -1,5 +1,5 @@
 import express from 'express';
-import { getBooksCtrl, postBooksCtrl, putBooksCtrl } from './book.controller.js';
+import { getBooksCtrl, postBooksCtrl, getABooksCtrl, deleteBookCtrl } from './book.controller.js';
 // l, deletetBooksCtrl lo mismo k en el controller
 
 
@@ -9,8 +9,12 @@ const router = express.Router();
 router.route('/')
     .get(getBooksCtrl)
     .post(postBooksCtrl)
-    .put(putBooksCtrl)
-// .delete(deletetBooksCtrl)
+
+
+
+router.route('/:isbn')
+    .get(getABooksCtrl)
+    .delete(deleteBookCtrl)
 
 export default router;
 

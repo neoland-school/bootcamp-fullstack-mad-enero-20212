@@ -5,21 +5,48 @@ import { MongoClient } from 'mongodb';
 const URI = 'mongodb+srv://ddr400:ddr400@cluster0.vjygb.mongodb.net/?retryWrites=true&w=majority';
 const DB_NAME = 'booksDB';
 const COLLECTION_NAME = 'book';
-const COLLECTION_NAME2 = 'library';
 const client = new MongoClient(URI);
 
-export const retrieveBook = async () => {
+export const retrieveBook = async (isbn) => {
     try {
         await client.connect();
         const db = client.db(DB_NAME)
         const bookCollection = db.collection(COLLECTION_NAME)
+        const query = { ISBN: isbn }
+        return await bookCollection.findOne(query)
         // await bookCollection.insertOne(book);
     } catch (err) {
-        console.log.error('Retrieve book error:', err);
+        console.log('Retrieve book error:', err);
+        // console.log.error('Retrieve book error:', err); console.log.error is not a function
     } finally {
         await client.close()
     }
 }
+
+
+export const retrieveBooks = async () => {
+    try {
+        await client.connect(); // paso 6
+        const db = client.db(DB_NAME); // paso 7
+        const bookCollection = db.collection(COLLECTION_NAME); // paso 8
+
+        // a partir de aqui ya puedo hacer operaciones con la collection
+        const libros = await bookCollection.find().toArray(); // paso 9 devuelve todos los documentos en formato Array de JS
+        return libros;
+    } catch (err) {
+        console.error('Error al encontrar la lista de libros ', err);
+    } finally {
+        await client.close(); // paso 10. Cerramos la conexión
+    }
+};
+
+
+
+
+
+
+
+
 
 export const postBook = async (book) => {
     try {
@@ -33,6 +60,23 @@ export const postBook = async (book) => {
         await client.close()
     }
 }
+//--------------------------------- DELETE
+export const deleteBook = async (isbn) => {
+    try {
+        await client.connect();
+        const db = client.db(DB_NAME)
+        const bookCollection = db.collection(COLLECTION_NAME)
+        const query = { ISBN: isbn }
+        return await bookCollection.deleteOne(query)
+        // await bookCollection.insertOne(book);
+    } catch (err) {
+        console.log('Retrieve book error:', err);
+        // console.log.error('Retrieve book error:', err); console.log.error is not a function
+    } finally {
+        await client.close()
+    }
+}
+
 
 
 

@@ -1,0 +1,7 @@
+.titlePrize {
+  display: flex;
+  flex-direction: row;
+}
+.prize {
+  color: green;
+}
