@@ -5,6 +5,8 @@ import Country from './components/country';
 import Anime from './components/anime'
 import Ranking from './components/ranking'
 import Card from './components/card';
+import CustomHookExample from './components/pokemon/customhookexample';
+
 
 let pais = { name_en: "Afghanistan", name_es: "Afganistán", dial_code: "+93", code: "AF", img: "https://www.despertaferro-ediciones.com/wp-content/uploads/2021/08/7408738172_4442b9be54_o.jpg" }
 
@@ -123,7 +125,9 @@ function App() {
     {animes.map((v, i) =>
       <Anime Key={i} titulo={v.title} ranking={v.rank} img={v.image} ></Anime>)}
     </div> */}
-<Card></Card>
+{/* <Card></Card> */}
+<CustomHookExample></CustomHookExample>
+
 
   </react.Fragment>
 
@@ -134,3 +138,5 @@ function App() {
 }
 
 export default App;
+
+

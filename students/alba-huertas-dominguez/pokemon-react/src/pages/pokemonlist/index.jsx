@@ -9,7 +9,7 @@ function PokemonList() {
 
 
     let [pok, updatepok] = useState([]);
-    let [poknext, updatenext] = useState([])
+    
     const [pokfilter, updatefilter] = useState([]);
 
     useEffect(() => {
@@ -49,13 +49,7 @@ function PokemonList() {
             });
 
     }, []);
-    // useEffect(() => {
-
-    //     fetch('https://pokeapi.co/api/v2/pokemon')
-    //         .then(r => r.json())
-    //         .then(c => {
-
-    //             c.results.forEach(v => {
+ 
     console.log(pok)
 
     const Onfilter = (e) => {
