@@ -237,7 +237,7 @@ function comprarBtnClicked() {
 document.addEventListener("keyup", e => {
     
     if (e.target.matches("#search")){
-        document.querySelectorAll(".article").forEach(movil => {
+        document.querySelectorAll(".article").forEach(movil => {console.log(e.name)
             movil.textContent.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
             ? movil.classList.remove("filter") 
             :movil.classList.add("filter")
