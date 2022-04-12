@@ -1,0 +1,26 @@
+.board{
+    border: 5px solid #924527;
+    padding: 1px;
+    background-color: #E9C998;
+    width: fit-content;
+}
+
+.row{
+    display: flex;
+}
+
+.col{
+    width: 50px;
+    height: 50px;
+}
+
+
+.board > .row:nth-child(odd) > .col:nth-child(odd),
+.board > .row:nth-child(even) > .col:nth-child(even){
+    background-color: #E9C998;
+}
+
+.board > .row:nth-child(odd) > .col:nth-child(even),
+.board > .row:nth-child(even) > .col:nth-child(odd){
+    background-color: #924527;
+}

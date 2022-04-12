@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    color: #fff;
+    background-color: #FFD600;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
+.pokemon__name{
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.info__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.general-info {
+    min-width: 100px;
+    transform: rotateY(55deg);
+}
+
+.stats {
+    min-width: 100px;
+    transform: rotateY(-55deg);
+    transform-style: preserve-3d;
+}
+
+.image > img {
+    width: 150px;
+}

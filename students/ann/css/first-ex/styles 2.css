@@ -1,0 +1,21 @@
+* {
+    margin: 30px;
+}
+
+body {
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+}
+
+div p {
+    color: gainsboro;
+}
+
+div:hover {
+    cursor: not-allowed;
+}
+
+button {
+    display: block;
+    
+}
