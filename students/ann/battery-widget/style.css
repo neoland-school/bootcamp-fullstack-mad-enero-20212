@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.battery__widget-title {
+  margin-bottom: 3rem;
+}
+
+.battery__container {
+  width: 12rem;
+  height: 16rem;
+  background-color: #dadada;
+  border-radius: 5px;
+}
+
+.battery__img-container {
+  width: auto;
+  height: 8rem;
+  background-color: rgb(75, 211, 75);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+  position: relative;
+}
+
+.battery__icon {
+  width: 2rem;
+  height: 4rem;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+.battery__bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.battery__bar {
+  padding: 0.1rem;
+  width: 1.75rem;
+  height: 0.77rem;
+  background-color: white;
+  border: 1px solid rgb(75, 211, 75);
+}
+
+.battery__info-charge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  height: 10rem;
+  text-align: center;
+}
+
+.battery__percentage {
+  font-size: 1.8rem;
+  color: rgb(43, 43, 43);
+}
+
+.battery__charge-status {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: rgb(138, 138, 138);
+}
