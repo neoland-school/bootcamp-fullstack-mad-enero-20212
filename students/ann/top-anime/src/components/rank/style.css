@@ -1,0 +1,18 @@
+.anime__rank__container {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(228, 207, 88);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    margin: 8px;
+}
+
+p {
+    color: black;
+    font-weight: 900;
+    font-size: 12px;
+}
+
