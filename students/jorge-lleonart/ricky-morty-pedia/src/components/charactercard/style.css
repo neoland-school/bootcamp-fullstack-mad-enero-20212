@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.card{
+    width: 500px;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(78, 78, 78);
+}
+
+img{
+    width: 35%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.card__info{
+    justify-content: left;
+    gap: 20px;
+}
+
+.point__spice{
+    display: flex;
+    flex-direction: row;
+}
+
+.point{
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+}
