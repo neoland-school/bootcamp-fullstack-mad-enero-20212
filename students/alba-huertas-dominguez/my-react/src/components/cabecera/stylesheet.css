@@ -1,0 +1,19 @@
+.divcabecera{
+    background-color: green;
+    text-align: left;
+    color: white;
+    font-size: 2rem;
+    padding-left: 1rem;
+
+
+
+}
+
+.buscador{
+    min-width: 40%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+
+
+
+}
