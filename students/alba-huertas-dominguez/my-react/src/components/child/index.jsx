@@ -7,6 +7,7 @@
 // en esta parte tenemos que crear una funcion (hanleron) que haga de prons para que pueda pasarle los parametros al padre. 
 //luego hacer la funcion normal y actualizar esa funcion 
 // luego en el evento poner la funcion del handler
+
 import React, { useState } from "react"
 import react from "react";
 
