@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.grid{
+    margin: 2px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(350px,1fr)); */
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-auto-rows: auto;
+}
+
+.container{
+    border: 2px;
+    border-color: gray;
+    /* width: 25%;
+    height: auto; */
+    box-shadow: 3px 4px 10px 5px rgba(0,0,0,0.75);
+    border-radius: 2%;
+    
+    
+}
+
+.container:hover{
+    transition-duration: 1000ms;
+    transition-timing-function: linear;
+    transform: scale(1);
+    transform: rotateZ(-0.1turn);
+
+}
+
+.div1__img{
+    background-image: url(./zapa.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1__boton{
+    text-decoration: none;
+    background-color: honeydew;
+    color: black;
+    padding: 5px;
+    font-size: large;
+    border-radius: 5%;
+    box-shadow: 3px 4px 10px 5px rgba(0,0,0,0.75);
+
+
+}
+
+.div2{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+}
+
+.div2__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+h6{
+    color: gray;
+}
+
+.div2__price{
+    color: blue;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.blue{
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.yellow{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: yellow;
+
+}
+
+.red{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+
+}
+
+.green{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+
+}
+
+ul{
+    gap: 5px;
+
+}

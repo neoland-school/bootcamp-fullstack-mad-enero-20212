@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.container-1 {
+    
+    background-color: #8756F3;
+}
+
+.container-2 {
+   
+    background-color: #12f467;
+}
+
+.container-3 {
+    
+    background-color: #007743;
+}
+
+.container_semaforo {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    height: auto;
+    width: fit-content;
+    border: black 1px solid;
+}
+
+.luces {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    border: black 1px solid;
+    padding: 10px;
+    background-image: grey;
+
+}
+
+.verde {
+    background-color: greenyellow;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.naranja {
+    background-color: orange;
+}
+
+.ambar {
+    background-color: yellow;
+}
+
+.blanco {
+    background-color: white;
+}

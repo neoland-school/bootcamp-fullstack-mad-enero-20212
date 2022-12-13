@@ -1,0 +1,27 @@
+form input:focus {
+    background:#ffd965;
+}
+
+#name:active {
+    background: #ae2525;
+}
+
+#email:active {
+    background: #ae2525;
+}
+
+#name2:active {
+    background: #ae2525;
+}
+
+.btn:checked{
+    box-shadow: 2px 2px  green;
+    background: green;
+}
+
+.submit:disabled{
+    background: #cacbd2;
+    color: white;
+}
+
+

@@ -1,0 +1,10 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}

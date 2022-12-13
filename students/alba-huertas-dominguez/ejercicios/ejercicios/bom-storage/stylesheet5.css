@@ -1,0 +1,81 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.app_header{
+    background-color:white;
+    color: turquoise;
+
+
+}
+.search_section{
+    border-radius: 10%;
+
+
+}
+
+
+.app_main{
+    padding: 2rem;
+
+
+
+}
+main>section{
+    margin-top: 1rem;
+}
+
+.app_section{
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.boton{
+    background-color: green;
+    color:white;
+    padding: 1rem;
+    margin-left: 3rem;
+
+}
+
+.task{
+
+
+
+}
+
+
+.task_list{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+
+}
+
+.list_task>*{
+   font-size: 2rem;
+   background-color: cornflowerblue;
+   border-radius: 10px;
+   padding: 1rem;
+   font-weight: bold;
+
+
+
+}
+
+
+/* esto sirve para tachar el elemento completado. 
+
+.task__complete-check:checked + label{
+    text-decoration:line-through;
+
+

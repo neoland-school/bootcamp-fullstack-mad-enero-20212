@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="container">
+        <div class="first-part">
+            <input type="text" name="nane" id="name" placeholder="Nombre">
+            <input type="text" name="nane" id="secondName" placeholder="Apellido">
+        </div>
+
+       
+        <div class="email">
+            <input type="email" name="email" id="email" placeholder="email">
+        </div>
+
+        <div class="number">
+            <input type="number" name="number" id="number" placeholder="number" >
+        </div>
+
+        <div class="paises-container">
+            <label for="paises" class="label-pais">Selecciona tu pais</label>
+            <select name="paises" id="paises">
+                <option value="españa">España</option>
+                <option value="China">China</option>
+                <option value="Alemania">Alemania</option>
+            </select>
+        </div>
+        
+        <div class="servicios-container">
+            <label for="services" class="label">Selecciona un sevivcio</label>
+            <select name="services" id="paises">
+                <option value="atencion">Atencion al cliente</option>
+                <option value="duda">Duda</option>
+                <option value="reclamacion">Reclamacion</option>
+            </select>
+
+            
+        </div>
+        <input type="text" name="mensaje" id="mensaje">
+        <div class="btn-div">
+            <input type="submit" name="button" id="btn">
+        </div>
+
+
+    </form>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

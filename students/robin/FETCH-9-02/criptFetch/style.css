@@ -1,0 +1,88 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border-bottom: 3px solid black;
+}
+
+.info-header {
+    display: flex;
+}
+
+#price {
+    margin-right: 15rem;
+}
+
+.coin {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.coin-part1 {
+    display: flex;
+    align-items: center;
+}
+
+.coin-part2 {
+    display: flex;
+    
+    
+}
+
+.price-change {
+    margin-right:20rem;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.symbol {
+    margin-left: 30px;
+    color: gray;
+}
+
+.colored {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.filter {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: 	#244348;
+}
+
+.header h2 {
+    margin-left: 3rem;
+    color:white;
+}
+
+#search {
+    margin-right: 32rem;
+    height: 20px;
+    width: 20rem;
+    border-radius: 10px;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}

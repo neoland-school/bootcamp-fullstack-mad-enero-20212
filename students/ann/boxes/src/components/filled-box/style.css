@@ -1,0 +1,13 @@
+.green {
+  background-color: green;
+}
+
+.filledBox {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.white {
+  background-color: white;
+}

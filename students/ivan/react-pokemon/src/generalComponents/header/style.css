@@ -1,0 +1,40 @@
+
+
+.header{
+    height: 25vh;
+    background-image: url('../../assets/images/pokeball_Header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tittle{
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: 0.2rem;
+    color: #f8fc05;
+    font-size: 6rem;
+    opacity: 0.9;
+
+}
+
+.search_area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+#search{
+
+    background-color: #d1d1d1;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+}
+

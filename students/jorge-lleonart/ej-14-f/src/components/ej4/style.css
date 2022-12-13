@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.contacts__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin: 10px;
+    gap: 10px;
+}
+
+.img__on{
+    border-radius: 50%;
+}
+
+.point__on{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.name__on{
+    color: green;
+}
+
+.img__off{
+    border-radius: 50%;
+    opacity: 50%;
+}
+
+.point__off{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.name__off{
+    color: red;
+}

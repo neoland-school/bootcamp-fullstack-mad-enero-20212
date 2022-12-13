@@ -1,0 +1,39 @@
+
+.card {
+    width: 300px;
+    background-color:	#dcdcdc;
+    border-radius: 5px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    margin-bottom: 2px;
+}
+
+
+
+.card-footer {
+   display: flex;
+   justify-content: space-between;
+   padding: 1rem;
+   color: gray;
+}
+
+
+
+
+.title-card{
+    font-size: 15px;
+    padding: 0.5rem;
+}
+
+.fa-plus{
+    margin-right: 5px; 
+}
+
+.fa-credit-card{
+    font-size: 12px;
+}

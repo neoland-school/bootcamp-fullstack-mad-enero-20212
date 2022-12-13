@@ -1,0 +1,16 @@
+
+*{ margin: 10px;
+    
+
+}
+
+div p {color:blueviolet;
+    font-family: 'Roboto Condensed', sans-serif;
+   
+}
+div  {cursor: cell;
+}
+
+.display { display:block;
+
+}

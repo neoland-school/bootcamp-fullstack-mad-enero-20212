@@ -1,0 +1,44 @@
+
+
+
+.container1{height: 100px;
+    width: 100px;
+    background-color: red ;
+    border-radius:50%;
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+
+}
+.container2{background-color:green;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align:unset;
+
+
+}
+
+
+.container3{background-color:yellow;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align:end;
+
+
+
+
+}
+.container4{background-color:orange;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align:start;
+
+
+
+
+}

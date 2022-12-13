@@ -1,0 +1,73 @@
+.card_container{
+    display: flex;
+    gap: 1rem;
+   width: 100%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.img{
+    height: contain;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 50%;
+
+    
+}
+.character_container-info{
+    color: #363636;
+    width: 50%;
+
+}
+
+.character_container-info{
+
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.character_description{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.life{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    
+}
+.unknown{
+
+    background-color: #929293;
+
+}
+
+.dead{
+    background-color: #c50c0c;
+
+}
+
+.alive{
+    background-color: #37c50c;
+}
+
+
+
+
+@media screen and (min-width:801px) and (max-width:1500px){
+    .card_container{    
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1501px) {
+    .card_container{
+        width: 30%;    
+    }
+}

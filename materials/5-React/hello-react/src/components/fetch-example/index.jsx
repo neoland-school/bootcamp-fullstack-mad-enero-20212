@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 
 function FetchExample(props) {
@@ -35,9 +35,11 @@ function FetchExample(props) {
     }, []);
 
     return (
-        <ul>
-            {countries.map(c => <li>{c.name_en}</li>)}
-        </ul>
+        <React.Fragment>
+            <ul>
+                {countries.map(c => <li>{c.name_en}</li>)}
+            </ul>
+        </React.Fragment>
     )
 }
 
