@@ -1,0 +1,5 @@
+Con los conocimientos adquiridos de html 5, Inicia un proyecto trabajando desde una rama develops donde  crees tu pagina web portafolio la cual debe tener menú de navegación y te lleve a  las paginas home, mi CV y  Contacto, cada pagina es un documento html diferente con navegacion de HARD-LINK.
+La pagina Home debe tener un footer con un enlace que te lleve a tu pagina github abriendo otra pestaña.
+La pagina contacto debe tener un formulario html5, que contenga input para nombre, apellido, email,  teléfono ( deben tener placeholder y un label vinculado),  un input  de tipo radio, un input de tipo select ,  un textarea para dejar un comentario y finalmente un input submit que diga enviar.
+El input nombre, apellido, telefono y email deben ser campos obligatorios (buscar atributo).
+Se debe subir  tu carpeta en el repositorio común en github con una pull request.

@@ -1,6 +1,6 @@
 import express from 'express';
-import {getFlightsCtrl, getFlightByIdCtrl, createFlightCrtl} from './flights.controller.js';
-import {validateFlight} from './flights.middleware.js';
+import { getFlightsCtrl, getFlightByIdCtrl, createFlightCrtl } from './flights.controller.js';
+import { validateFlight } from './flights.middleware.js';
 
 const router = express.Router();
 

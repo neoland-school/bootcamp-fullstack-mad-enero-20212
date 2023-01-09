@@ -1,0 +1,23 @@
+h2 {
+    background-color: #afc9c9;
+    padding-left: 40%;
+}
+
+.div-ej-1 {
+    width: 100px;
+    height: 100px;
+    background-color: #8756F3;
+}
+
+.div-ej-2 {
+    width: 100px;
+    height: 100px;
+    background-color: #12F467;
+}
+
+.div-ej-3 {
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+    /* background-color: #007743; */
+}

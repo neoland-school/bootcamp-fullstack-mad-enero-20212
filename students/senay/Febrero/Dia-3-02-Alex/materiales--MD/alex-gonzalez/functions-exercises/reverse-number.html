@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number</title>
+</head>
+
+<body>
+    <script>
+        // 649327 --> 723946
+        /**
+         * 1. Obtengo el resto del numero actual y lo almaceno en otra variable
+         * 2. Obtengo el cociente de la division entera y actualizo el número con ese cociente
+         * 3. Añado a la variable el nuevo dígito
+         * 4. Repetir hasta que el cociente de 0
+         */
+        const reverse = function(n) {
+            let currentNumber = n;
+            let reverseNumber = 0;
+            while (currentNumber > 0) { // paso 4
+                reverseNumber = reverseNumber * 10 + (currentNumber % 10); // paso 1 y 3
+                currentNumber = Math.floor(currentNumber / 10); // paso 2
+            }
+
+            return reverseNumber;
+        }
+
+        const userNumber = parseInt(prompt('Ingrese un número'));
+        document.write(`<p>${reverse(userNumber)}</p>`);
+    </script>
+</body>
+
+</html>

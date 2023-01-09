@@ -1,0 +1,12 @@
+[
+    {
+        "name": "banana",
+        "type": "fruit",
+        "id": "f31c18ce-90aa-419e-8687-4ad9dcee3438"
+    },
+    {
+        "name": "tomato",
+        "type": "another fruit",
+        "id": "34ef1af3-0a62-4545-8de3-19b029bf3528"
+    }
+]

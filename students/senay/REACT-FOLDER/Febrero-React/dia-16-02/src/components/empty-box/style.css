@@ -1,0 +1,8 @@
+.empty-box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+.empty-box-hover > .fill-box {
+    background-color: green;
+}

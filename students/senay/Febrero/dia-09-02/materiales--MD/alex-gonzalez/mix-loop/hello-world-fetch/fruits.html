@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+</head>
+<body>
+    <script>
+        /**
+         * 1. Buscar la información de las frutas en esta URL https://run.mocky.io/v3/b68bb258-78a1-4c92-acf5-2c5401707ae0
+         * 2. Una vez tenga el body, pintar una fruta en el HTML
+         * 3. Pintar el listado de frutas en el HTML
+         * 
+         */
+
+        async function getFruits(){
+            const r = await fetch('https://run.mocky.io/v3/b68bb258-78a1-4c92-acf5-2c5401707ae0');
+            const fruits = await r.json();
+            return fruits;
+        }
+
+        function printFruit(fruit){
+            // pinta una fruta en el HTML
+            const container = document.createElement('div');
+
+            const img = document.createElement('img');
+            img.src = fruit.img;
+
+            const pName = document.createElement('p');
+            pName.textContent = fruit.name;
+
+            const pOrigin = document.createElement('p');
+            pOrigin.textContent = fruit.origin;
+
+            container.appendChild(pName);
+            container.appendChild(img);
+            container.appendChild(pOrigin);
+
+            document.body.appendChild(container);
+        }
+
+        function printFruits(fruitArr){
+            // pinte todas sus frutas en el HTML
+            fruitArr.forEach(f => printFruit(f));
+        }
+
+        /*
+            ¿Qué tipo de datos tiene la respuesta? --Array Objetos --JSON
+            ¿Cuál es la ip y el puerto de la petición? -- 46.252.181.104:443
+            ¿Cuántos atributos tiene cada elemento de la fruta de la respuesta? -- 3
+            ¿Qué tipo de datos tiene esos atributos? -- 3 strings
+            ¿Qué código http de respuesta hemos recibido? -- 202 Accepted
+        */
+       async function startApp(){
+          const fruits = await getFruits();
+          printFruits(fruits);
+       }
+    
+       startApp();
+    // let fruits;
+    // getFruits().then(f => printFruits(f));
+    // // se ejecuta antes que el resol
+    // printFruits(fruits); // aqui fruits es undefined
+    </script>
+</body>
+</html>

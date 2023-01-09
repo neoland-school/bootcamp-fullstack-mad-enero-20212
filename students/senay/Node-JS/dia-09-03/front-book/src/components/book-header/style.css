@@ -1,0 +1,23 @@
+.headerContainer {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #dfdfdf;
+}
+.form-container {
+  display: flex;
+  padding: 0.5rem;
+  gap: 1rem;
+  background-color: white;
+  width: fit-content;
+}
+.inputs {
+  width: 220px;
+  border: none;
+  border-radius: 0%;
+}
+.searchInput {
+  background-color: #009600;
+  color: white;
+  width: 160px;
+}

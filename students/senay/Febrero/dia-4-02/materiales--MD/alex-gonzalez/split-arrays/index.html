@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split arrays</title>
+</head>
+<body>
+    <script>
+        /*
+          Esta funcion recibe un array y un number y 
+          debe devolver un array de arrays cuya longitud sea igal a n
+          arr = [1,3,4,6,2,3]  n=3
+          subArr = [];
+          i=0 -> subArr = [1]
+          i=1 -> subArr = [1,3]
+          i=2 -> subArr = [1,3,4]
+          subArr = []
+          i=3 -> subArr = [6]
+          i=4 -> subArr = [6,2]
+          i=5 -> subArr = [6,2,3]
+
+          arr = [1,3,4,6,2,3]  n=4
+          subArr = [];
+          i=0 -> subArr = [1]
+          i=1 -> subArr = [1,3]
+          i=2 -> subArr = [1,3,4]
+          i=3 -> subArr = [1,3,4,6]
+          subArr = [] --> ¿Cuando tengo que hacer este cambio?
+                Op1: Si la length del subArr === n
+                Op2: Si (i+1)%n === 0 o i%n === n-1
+          i=4 -> subArr = [2]
+          i=5 -> subArr = [2,3]
+
+          1. Crear un array general y un subArray para los grupos.
+          2. Recorro el array de entrada añadiendo al subArray el elemento i
+          3. Si el grupo está lleno (Op1 u Op2) o es la ultima vuelta -> el subArray lo almaceno en el resultado
+             y reinicio el subArray
+          4. devuelvo el array resultado
+
+        */
+        function splitArrays(arr, n){
+            const resultArr = []; //paso 1
+            let subArray = [];
+
+            for(let i=0; i<arr.length; i++){
+                subArray[subArray.length] = arr[i]; // paso 2
+                if(i%n === n-1 || i === arr.length-1){ // paso 3
+                    resultArr[resultArr.length] = subArray; // añado el subArray en la ultima posicion del array resultado
+                    subArray = []; // lo inicializo para generar el siguiente grupo
+                }
+            }
+            return resultArr; // paso 4. Array de Arrays.
+        }
+
+        splitArrays([1,3,2], -44);  // --> [[1,3,2]]
+    </script>
+    
+</body>
+</html>

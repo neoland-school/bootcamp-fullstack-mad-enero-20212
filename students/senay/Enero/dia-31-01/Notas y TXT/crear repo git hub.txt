@@ -1,0 +1,8 @@
+1 Crea un repositorio publico en github, seguidamente crea una carpeta (por consola) que contenga un archivo con  extensión html o extensión md que contenga un hola mundo.
+2.  Mediante los  comandos de git aprendidos sube el proyecto creado en la carpeta en tu repositorio de github ( leer los comandos que el mismo github te sugiere).
+3.  Crear varios archivos nuevos en visual studio y mediante comando sube tus archivos al Staging.
+4. Mediante comando devuelve tus archivos del staging al directorio de trabajo, comprabar que ha funcionado mediante comando git.
+5. Esta vez sí sube los nuevos archivos a tu repositorio, seguidamente borra  uno de los archivos en visual studio y luego recuperalo mediante comandos git.
+6. Una vez  subido a tu repositorio de github, crea una nueva carpeta vacía y trae el repositorio de github a tu nueva carpeta  mediante el comando necesario.
+7. Dentro de tu repositorio de github usa el add file y crea un archivo, y ahora mediante el comando necesario traelo a tu directorio de trabajo.
+8. Repite el ejercicio  número 7, esta vez usa el comando git fetch y seguidamente el comando necesario para poder tenerlo en tu directorio local. (editado) 
